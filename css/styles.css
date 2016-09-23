@@ -42,11 +42,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 300;
     line-height: 1.3em;
 }
-h1.page-header {
-    font-size: 30px;
-}
-h2, h3 {
+h1, h2, h3, h4 {
     color: #708fca;
+}
+h2, h3, h4 {
     font-weight: 100;
 }
 
@@ -329,6 +328,9 @@ header#masthead #navbar .nav > li > a {
 .project {
     margin: 20px 0;
 }
+.project img {
+    margin-bottom: 10px;
+}
 .project .name {
     font-size: 1.2em;
     font-weight: 500;
@@ -348,27 +350,4 @@ footer .container {
 }
 footer .copyright {
     font-size: .8em;
-}
-
-
-.glyphicon-circle {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #27518F;
-  background-color: white;
-  display: table-cell;
-  text-align: center;
-	vertical-align: middle; 
-  font-size: 22px;
-	color: #27518F;
-}
-
-.center-block{
-	display: table;
-  margin: 0 auto;
-	}
-
-.news{
-	font-size: small;
 }
