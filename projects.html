@@ -1,93 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Projects
+---
+    <h1>Projects</h1>
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Research</title>
-    <link rel="shortcut icon" href="images/theme/favicon.ico?v=2">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </head>
-
-  <body>
-    
-   <header id="masthead">
-      <nav id="navbar" class="navbar" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/"><img class="img-responsive" src="images/theme/logo_globus_labs.svg" alt="Globus Labs" data-pin-nopin="true"></a>
-          </div>
-          
-         <div class="collapse navbar-collapse" id="main-nav">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="/globus-labs">Overview</a></li>
-              <li><a href="/globus-labs/people.html">People</a></li>
-              <li><a href="/globus-labs/projects.html" class="active">Projects</a></li>
-							<li><a href="/globus-labs/join.html">Join Us</a></li>
-            </ul>
-          </div>
+    {% for project in site.projects %}
+    <div class="row">
+        <div class="col-xs-3 project">
+            <img src="images/projects/{{ project.image }}" class="img-responsive">
         </div>
-      </nav>
-    </header>
-
-    <main class="container">
-      <h1>Projects</h1>
-
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 project">
-          <img src="images/projects/ramses.png" class="img-responsive">
-          <div class="project-info">
-            <p><span class="name">RAMSES</span><br>
-              The RAMSES project aims to develop a new science of end-to-end analytical performance modeling that will transform understanding of the behavior of science workflows in extreme-scale science environments.</p>
-          </div>
+        <div class="col-xs-9 project-info">
+            <p><span class="name"><a href="{{ project.url }}">{{ project.title }}</a></span><br>
+            {{ project.description }}
         </div>
-
-        <div class="col-xs-12 col-sm-6 project">
-          <img src="images/projects/search.png" class="img-responsive">
-          <div class="project-info">
-            <p><span class="name">Data Search</span><br>
-              There is a vast amount of scientific data distributed across storage systems and data repositories. We are developing methods to crawl, extract metadata, and index huge amounts of scientific data.</p>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 project">
-          <img src="images/projects/extraction.png" class="img-responsive">
-          <div class="project-info">
-            <p><span class="name">Information Extraction</span><br>
-              A wealth of valuable data is locked within the millions of research articles published each year. We are researching methods to liberate this data via hybrid human-machine models.</p>
-          </div>
-        </div>
-<!--
-        <div class="col-xs-12 col-sm-6 project">
-          <img src="images/projects/project-pic.jpg" class="img-responsive">
-          <div class="project-info">
-            <p><span class="name">Research Project</span><br>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis nec dui non molestie. Integer felis risus, blandit vitae iaculis sit amet, condimentum vitae est. Nam rutrum lorem vel nibh facilisis iaculis.</p>
-          </div>
-        </div>
-	-->
       </div>
-    </main>
-
-    <footer>
-      <div class="container">
-          <div class="row">
-              <div class="col-xs-12">
-                <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> The University of Chicago</p>
-              </div>
-          </div>
-      </div>
-    </footer>
-
-  </body>
-</html>
+    </div>
+    {% endfor %}
