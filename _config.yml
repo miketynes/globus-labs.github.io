@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   spans the Computation Institute, Department of Computer Science, and Math and 
   Computer Science Division at the University of Chicago and Argonne National Laboratory.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
+url: "http://globus.github.io/globus-labs" # the base hostname & protocol for your site
 collections: 
   projects: 
     output: true
