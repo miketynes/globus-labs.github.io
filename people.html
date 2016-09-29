@@ -34,7 +34,7 @@ title: People
           {% endif %}
       {% endfor %}
      
-      {% assign val = people | modulo: 2 %}
+      {% assign val = people.size | modulo: 2 %}
       {% if val == 1 %} 
             </div>
       {% endif %}
