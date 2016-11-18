@@ -34,7 +34,9 @@ title: Globus Labs
                 <div class="col-xs-3">
 		    <div class="center-block">
                         <div class="glyphicon-circle">
-                            {% if post.type == "paper" %}
+                            {% if post.type == "award" %}
+                                <span class="glyphicon glyphicon-glass"></span>
+                            {% elsif post.type == "paper" %}
                                 <span class="glyphicon glyphicon-duplicate"></span>
                             {% elsif post.type == "presentation" %}
                                 <span class="glyphicon glyphicon-blackboard"></span>

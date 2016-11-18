@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: news
 title: "Blending Education and Polymer Science: Semiautomated Creation of a Thermodynamic Property Database"
 date:  2016-09-24 10:13:16 -0700
 type: paper
