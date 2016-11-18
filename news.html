@@ -1,0 +1,28 @@
+---
+layout: default
+title: News
+---
+    <h1>Projects</h1>
+
+    {% for n in site.posts %}
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            {% if post.type == "award" %}
+                <span class="glyphicon glyphicon-glass"></span>
+            {% elsif post.type == "paper" %}
+                <span class="glyphicon glyphicon-duplicate"></span>
+            {% elsif post.type == "presentation" %}
+                <span class="glyphicon glyphicon-blackboard"></span>
+            {% elsif post.type == "join" %}
+                <span class="glyphicon glyphicon-user"></span>
+            {% endif %}
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">{{ n.date | date: '%B %d, %Y' }}</span><br>
+            <p>{{ n.content }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
