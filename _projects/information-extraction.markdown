@@ -7,7 +7,6 @@ teaser: "We are developing methods to automatically extract scientific facts bur
 description: " A wealth of valuable data is locked within the millions of research articles published each year. We are researching methods to liberate this data via hybrid human-machine models."
 ---
 A wealth of valuable data is locked within the millions of research articles published each year. We are researching methods to liberate this data via hybrid human-machine models.
-[Figshare Posters](https://figshare.com/articles/CHIMaD_Poster_Roselyne_2015_pptx/3146842)
 
 <center><div><img class="img-responsive" width="70%" text-align="center" src="https://globus.github.io/globus-labs/images/projects/chidb_architecture_ms.png"></div></center>
 
@@ -33,3 +32,9 @@ The content of the database was analyzed to learn new information about how the 
 The first target for improvement identified in the χDB system is the publication selection process. Only 38.5% of our selected publications actually contained χ values; thus, about 60% of the papers curated by student reviewers did not in fact contribute to the digital handbook. As a first step, machine learning techniques can help optimize the use of reviewer time by prioritizing and better classifying relevant publications. The question this component χDB aims to answer is whether we can automatically classify and predict papers that contain χ values, based solely on abstracts and captions. Using a support vector machine classifier, we report a precision of 86.94% and a recall of 90.87% on classifying papers containing χ values for polymer-polymer pairs based on abstracts. Find more details in our publications[1](https://www.researchgate.net/publication/303746084_A_Hybrid_Human-computer_Approach_to_the_Extraction_of_Scientific_Facts_from_the_Literature),[2](https://www.nist.gov/node/1095636).
 
 <center><div><img class="img-responsive" width="70%" text-align="center" src="https://globus.github.io/globus-labs/images/projects/classification_results.png"></div></center>
+
+Further reading
+
+- [Figshare Posters](https://figshare.com/articles/CHIMaD_Poster_Roselyne_2015_pptx/3146842)
+- [A Hybrid Human-computer Approach to the Extraction of Scientific Facts from the Literature](https://www.researchgate.net/publication/303746084_A_Hybrid_Human-computer_Approach_to_the_Extraction_of_Scientific_Facts_from_the_Literature). Procedia Computer Science 80, 386-397.
+- [Blending Education and Polymer Science: Semiautomated Creation of a Thermodynamic Property Database](https://www.nist.gov/node/1095636). Journal of Chemical Education.

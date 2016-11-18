@@ -7,15 +7,15 @@ teaser: "We are creating a searchable index of disparate geospatial data."
 description: "Architecting a solution to crawl, index, integrate, and distribute geo-spatial data at scale."
 ---
 
-New sensors, simulation models, and observational pro-
-grams are producing a veritable deluge of high quality
-geospatial data. However, these data are often hard for re-
-searchers to access, being stored in independent silos that are
+New sensors, simulation models, and observational programs 
+are producing a veritable deluge of high quality
+geospatial data. However, these data are often hard for researchers 
+to access, being stored in independent silos that are
 distributed across many locations (e.g., consortium registries,
 institutional repositories, and personal computers), accessible
 via different protocols, represented in different formats (e.g.,
 NetCDF, CSV) and types (e.g., vector, raster), and are in
-general, difficult to discover, integrate, and use [1]. These
+general, difficult to discover, integrate, and use. These
 challenges are none more evident than in environmental and
 climate science. Here, vast collections of data are stored in
 dark, heterogeneous repositories distributed worldwide.
@@ -24,9 +24,9 @@ We aspire to make these large quantities of geospatial
 data accessible by creating the virtual data lake, a cached
 subset of a data lake paired with additional metadata for
 non-cached datasets. A data lake is “a centralized repository
-containing virtually inexhaustible amounts of raw (or mini-
-mally curated) data that is readily made available anytime to
-anyone authorized to perform analytical activities” [2]. Such
+containing virtually inexhaustible amounts of raw (or minimally 
+curated) data that is readily made available anytime to
+anyone authorized to perform analytical activities”. Such
 a system allows for the local caching of raw data in a stan-
 dardized format, making integration and distribution more
 efficient at query-time. A geospatial data lake should allow
@@ -48,10 +48,15 @@ example of a centralized, searchable index across disparate
 web-accessible resources, combined with a virtual lake cache
 for raw data. We adopt a scalable crawling and metadata
 extraction model, using a dynamic pool of Docker contain-
-ers [3] to discover and process files. Thus, we pave the way
+ers to discover and process files. Thus, we pave the way
 for creation of a scalable system that has the capacity to scour
 an increasing number of available resources for geospatial
 data. To further reduce usage barriers, Klimatic supports the
 integration of heterogeneous datasets (in both file type and
 format) to match users’ queries, while also ensuring data
-integrity [4], [5].
+integrity.
+
+Publications
+
+- [Klimatic: A Virtual Data Lake for Harvesting and Distribution of Geospatial Data](http://conferences.computer.org/pdswdiscs/2016/papers/5216a031.pdf). 1st Joint International Workshop on Parallel Data Storage & Data Intensive Scalable Computing Systems (PDSW-DISCS), 2016. 
+
