@@ -1,6 +1,6 @@
 ---
 layout: project
-published: false
+published: true
 title:  "CODAR"
 image: "codar.png"
 featured: true
