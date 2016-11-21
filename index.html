@@ -20,7 +20,7 @@ title: Globus Labs
             {% for project in site.projects %}
                 {% if project.featured %}
                 <div class="col-xs-4">
-	            <img class="img-responsive" src="images/projects/{{ project.image }}">
+	              <a href="{{ project.url }}"><img class="img-responsive" src="images/projects/{{ project.image }}"></a>
                     <p>{{ project.teaser }}</p>
                 </div>
                 {% endif %}
