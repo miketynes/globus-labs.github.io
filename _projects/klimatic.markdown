@@ -27,8 +27,7 @@ non-cached datasets. A data lake is “a centralized repository
 containing virtually inexhaustible amounts of raw (or minimally 
 curated) data that is readily made available anytime to
 anyone authorized to perform analytical activities”. Such
-a system allows for the local caching of raw data in a stan-
-dardized format, making integration and distribution more
+a system allows for the local caching of raw data in a standardized format, making integration and distribution more
 efficient at query-time. A geospatial data lake should allow
 for the straightforward alignment of spatial and time-based
 variables, and be able to manage and integrate heterogeneous
@@ -47,8 +46,7 @@ data lakes, to the best of our knowledge this is the first
 example of a centralized, searchable index across disparate
 web-accessible resources, combined with a virtual lake cache
 for raw data. We adopt a scalable crawling and metadata
-extraction model, using a dynamic pool of Docker contain-
-ers to discover and process files. Thus, we pave the way
+extraction model, using a dynamic pool of Docker containers to discover and process files. Thus, we pave the way
 for creation of a scalable system that has the capacity to scour
 an increasing number of available resources for geospatial
 data. To further reduce usage barriers, Klimatic supports the
