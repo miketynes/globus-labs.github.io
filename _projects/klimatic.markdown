@@ -2,7 +2,7 @@
 layout: project
 title:  "Klimatic"
 image: "extraction.png"
-featured: true
+featured: false
 teaser: "We are creating a searchable index of disparate geospatial data."
 description: "Architecting a solution to crawl, index, integrate, and distribute geo-spatial data at scale."
 ---
