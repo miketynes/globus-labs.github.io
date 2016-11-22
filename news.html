@@ -8,13 +8,13 @@ title: News
     <div class="row">
         <div class="col-xs-1">
             <div class="glyphicon-circle">
-            {% if post.type == "award" %}
+            {% if n.type == "award" %}
                 <span class="glyphicon glyphicon-glass"></span>
-            {% elsif post.type == "paper" %}
+            {% elsif n.type == "paper" %}
                 <span class="glyphicon glyphicon-duplicate"></span>
-            {% elsif post.type == "presentation" %}
+            {% elsif n.type == "presentation" %}
                 <span class="glyphicon glyphicon-blackboard"></span>
-            {% elsif post.type == "join" %}
+            {% elsif n.type == "join" %}
                 <span class="glyphicon glyphicon-user"></span>
             {% endif %}
             </div>
