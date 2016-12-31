@@ -8,10 +8,10 @@ description: "The Materials Data Facility (MDF) project is working to develop an
 ---
 
 With increasingly strict data management requirements from funding agencies and institutions, expanding focus on the challenges of research replicability, and growing data sizes and heterogeneity, new data needs are emerging in the materials community. The Materials Data Facility (MDF) operates two cloud-hosted services, data publication and data discovery, with features to promote open data sharing, self-service data publication and curation, and encourage data reuse, layered with powerful data discovery tools. The data publication service simplifies the process of copying data to a secure storage location, assigning data a citable persistent identifier, and recording custom (e.g., material, technique, or instrument specific) and automatically-extracted metadata in a registry while the data discovery service will provide advanced search capabilities (e.g., faceting, free text range querying, and full text search) against the registered data and metadata. The MDF services empower individual researchers, research projects, and institutions to: 
-* Publish research datasets, regardless of size, from local storage, institutional data stores, or cloud storage, without involvement of third- party publishers
-* Build, share, and enforce extensible domain-specific custom metadata schemas
-* Interact with published data and metadata via repre- sentational state transfer (REST) application program interfaces (APIs) to facilitate automation, analysis, and feedback;
-* Access a data discovery model that allows researchers to search, interrogate, and eventually build on existing published data.
+- Publish research datasets, regardless of size, from local storage, institutional data stores, or cloud storage, without involvement of third- party publishers
+- Build, share, and enforce extensible domain-specific custom metadata schemas
+- Interact with published data and metadata via repre- sentational state transfer (REST) application program interfaces (APIs) to facilitate automation, analysis, and feedback;
+- Access a data discovery model that allows researchers to search, interrogate, and eventually build on existing published data.
 
 
 Publications
@@ -20,9 +20,9 @@ Publications
 
 Other Links
 
-[http://www.materialsdatafacility.org](Materials Data Facility - Home)
-
-[http://www.slideshare.net/BenBlaiszik/20160922-materials-data-facility-tms-webinar](Materials Data Facility TMS Webinar Slides)
+- [Materials Data Facility - Home ](http://www.materialsdatafacility.org)
+- [Materials Data Facility TMS Webinar Slides](http://www.slideshare.net/BenBlaiszik/20160922-materials-data-facility-tms-webinar)
+- [Center for Hierarchical Materials Design ChiMaD](http://chimad.northwestern.edu)
 
 Support
 
