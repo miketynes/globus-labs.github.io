@@ -12,20 +12,20 @@ large number of disparate and heterogeneous storage
 locations. It is not uncommon for data to be generated, analyzed, 
 shared, published, and archived in different locations, 
 each of which might even expose a different storage interface (e.g., 
-Posix, object stores, etc.). Globus alone provides acess to more 
+Posix, object stores, etc.). Globus alone provides access to more 
 than 10,000 active endpoints. There are also many thousands of 
 scientific data repositories. This rapidly growing pool of 
 storage systems has made the task of finding and managing
 scientific data increasingly burdensome. 
 
 We are researching methods to index the world's
-scientific data irespective of the location and model
+scientific data irrespective of the location and model
 in which it is stored. We aim to provide for the community
 a scalable search index that allows researchers to find, browse,
-and discover disparate scientific data based upon metadata burried
-within scientific data formats. To acheive this goal we are
+and discover disparate scientific data based upon metadata buried
+within scientific data formats. To achieve this goal we are
 developing models for automatically extracting metadata from
-within different formations, developing tehcniques to 
+within different formations, developing techniques to 
 index this metadata both securely and flexibly using 
 typed metadata, and designing approaches for keeping 
 our index in sync with frequently changing data.
