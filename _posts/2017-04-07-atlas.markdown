@@ -1,0 +1,7 @@
+---
+layout: post
+title: "ATLAS: A visualization and analysis framework for geospatial datasets"
+date:  2017-04-07 09:00:00 -0700
+type: paper
+---
+[ATLAS: A visualization and analysis framework for geospatial datasets](https://www.researchgate.net/publication/315812134_ATLAS_A_visualization_and_analysis_framework_for_geospatial_datasets). [XVIII Brazilian Symposium on Remote Sensing](http://www.dsr.inpe.br/sbsr2017/en/). May 28-31, 2017.
