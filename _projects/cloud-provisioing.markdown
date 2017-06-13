@@ -4,7 +4,7 @@ title:  "Cloud Provisioning"
 image: "provision.png"
 teaser: "We are developing methods to automate the provisioning of cloud computing infrastructure"
 featured: false
-description: "Cloud platforms are increasingly relied upon to conduct large scale science. However, the method by which infrastructure is provisioned and managed are ad hoc. We are developing new methods to profile application performance, predict cloud market conditions, and automate provisioning decisions.."
+description: "Cloud platforms are increasingly relied upon to conduct large scale science. However, the method by which infrastructure is provisioned and managed are ad hoc. We are developing new methods to profile application performance, predict cloud market conditions, and automate provisioning decisions."
 ---
 
 Cloud computing has the potential to revolutionize scientific computing, much as it has transformed
