@@ -4,7 +4,7 @@ title:  "Ripple"
 image: "ripple.png"
 teaser: "We are developing methods to automate the provisioning of cloud computing infrastructure"
 featured: false
-description: "It is increasingly common for data to flow through pipelines comprised of dozens of different management, organization, and analysis steps distributed across multiple institutions and storage systems. To alleviate the resulting complexity, we propose an automation framework designed to managing data throughout its lifecycle, in which users specify via high-level rules the actions that should be performed on data at different times and locations."
+description: "Ripple is an automation framework designed to managing data throughout its lifecycle, in which users specify via high-level rules the actions that should be performed on data at different times and locations."
 ---
 
 Researchers are faced with an increasingly complex data landscape in which data are obtained from a number of different sources (e.g., instruments, computers, published data), stored in disjoint storage systems, and analyzed on an area of high performance and cloud computers. Given the increasing speed at which data are produced, combined with increasingly complex scientific processes and the requisite data management, munging, and organization activities required to make sense of data, researchers are faced with new bottlenecks in the discovery process. Improving data lifecycle management practices is essential to enhancing productivity, facilitating reproducible research, and encouraging collaboration. We posit that researchers require automated methods for managing their data such that tedious and repetitive tasks (e.g., transferring, archiving, and analyzing) are accomplished without continuous user input.
