@@ -25,6 +25,8 @@ collections:
     output: true
   people:
     output: false
+  publications:
+    output: false
 # Build settings
 #markdown: kramdown
 #theme: minima
