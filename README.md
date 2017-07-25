@@ -14,5 +14,6 @@ Procedure for adding new publication
 	- File name should start with "YEAR-MONTH-DAY" (ex: 2017-07-21).
 	- Follow the format of `2016-08-15-Tchoua.markdown`. All fields except `doi` and `pages` are required
 	- Filename is the name of the file, not the full path (i.e., `A.pdf` not `pubs/A.pdf`)
+	- Bold authors who are in Globus Labs (using markdown's `**` syntax)
 	
 3. Add both files into the git repo
