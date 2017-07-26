@@ -10,7 +10,7 @@ title: Publications
     <div class="row">
         <li>
 			<p>{{ n.authors | markdownify | remove: "<p>" | remove: "</p>" }}</br>
-            <a href="/pubs/{{n.filename}}">"{{ n.title }}"</a></br>
+			<a href="/pubs/{{n.filename}}"><img src="/images/pdficon.png">"{{ n.title }}"</a></br>
 			<u>{{ n.journal }}</u>. <b>{{ n.volume }}</b> ({{n.year}}){% if n.pages %},{{ n.pages }}{% endif %}</br>
 			{% if n.doi %}
 			doi: <a href="https://doi.org/{{n.doi}}">{{n.doi}}</a></p>
