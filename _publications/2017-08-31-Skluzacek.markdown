@@ -1,8 +1,0 @@
----
-authors: "**Ryan Chard**, **Kyle Chard**, Jason Alt, Dilworth Y. Parkinson, **Steve Tuecke**, **Ian Foster**"
-title: "RIPPLE: Home Automation for Research Data Management"
-journal: "First International Workshop on Serverless Computing (WoSC)"
-year: 2017
-filename: "Chard_WoSC_2017.pdf"
-doi: 10.1109/ICDCSW.2017.30
----
