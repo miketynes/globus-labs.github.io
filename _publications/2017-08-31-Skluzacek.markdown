@@ -1,9 +1,8 @@
 ---
-authors: "**Paul Beckman**, **Tyler J. Skluzacek**, **Kyle Chard**, **Ian Foster**"
-title: "Skluma: A Statistical Learning Pipeline for Taming Unkempt Data Repositories"
-journal: "Proceedings of the 29th International Conference on Scientific and Statistical Database Management"
+authors: "**Ryan Chard**, **Kyle Chard**, Jason Alt, Dilworth Y. Parkinson, **Steve Tuecke**, **Ian Foster**"
+title: "RIPPLE: Home Automation for Research Data Management"
+journal: "First International Workshop on Serverless Computing (WoSC)"
 year: 2017
-pages: 41-45
-filename: "Beckman_SSDBM_2017.pdf"
-doi: 10.1145/3085504.3091116
+filename: "Chard_WoSC_2017.pdf"
+doi: 10.1109/ICDCSW.2017.30
 ---
