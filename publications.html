@@ -2,20 +2,99 @@
 layout: default
 title: Publications
 ---
+
+<script src="js/parser.js"></script>
+
+<script>
+
+function get_format(data, field, pre, post){
+    if (field in data && data[field] != ""){
+        return pre + data[field] + post;
+    }
+    return "";
+}
+
+function get_authors(authors){
+    var author_string = "";
+    for (var i = 0, len = authors.length; i < len; i++) {
+        author_string += authors[i].trim();
+        if (i < authors.length - 2){
+                author_string += ', ';
+        } else if (i == authors.length - 2){
+                author_string += ' and ';
+        }
+    } 
+    if (author_string.endsWith(".")){
+      author_string = author_string.substring(0, author_string.length - 1);
+    }
+    return author_string;
+
+}
+
+function format_bib(data){
+    var formated = $("<p>");
+ 
+    var author_string = get_authors(data["Fields"]["author"].split("and"));
+    
+    formated.append($("<span>", {"text" : author_string + ". ", "class" : "authors"}));
+    formated.append($("</br>"));
+
+    var link = $("<a>", {"href" : "pubs/" + data["Fields"]["note"]});
+    var pdf = $("<img>", {"src": "/images/pdficon.png"});
+    var title = $("<span>", {"text" : "\"" + data["Fields"]["title"] + ".\" "})
+    link.append(pdf).append(title).append($("</br>"));
+
+    formated.append(link);
+    
+    var journal_conference = ""
+    if (data["EntryType"] == "article"){
+        journal_conference += data["Fields"]["journal"];
+    } else if (data["EntryType"] == "inproceedings"){
+        journal_conference += data["Fields"]["booktitle"] ;
+    } else if (data["EntryType"] == "incollection"){
+        journal_conference += data["Fields"]["booktitle"];
+    }
+
+    
+    journal_conference += get_format(data["Fields"], "volume", ". ", "");
+    journal_conference += get_format(data["Fields"], "number", "(", ")");
+    journal_conference += get_format(data["Fields"], "pages", ". pp ", "");
+    journal_conference += get_format(data["Fields"], "year", ". ", ".");
+
+    formated.append($("<span>", {"text" : journal_conference}));
+    formated.append($("<br>"));
+
+    if ("doi" in data["Fields"] && data["Fields"]["doi"] != ""){
+        formated.append($("<span>", {"text" : "doi: "}));
+        formated.append($("<a>", {"href" : "https://doi.org/" + data["Fields"]["doi"], "text" :  data["Fields"]["doi"]}));
+    }
+
+    return formated; 
+}
+
+$( document ).ready(function() {
+
+   var display_bib = function(data) {
+       var paper = $("<div>", {"id" : data['EntryKey'], "class": "row ref-holder"});
+       var li = $("<li>");
+       var ref_text =  format_bib(data);
+       li.append(ref_text);
+       paper.append(li);
+       $("#publist").append(paper)
+   }
+
+   $.get( "pubs/labs-pubs.bib", function( data ) {
+       var parser = BibtexParser(display_bib);
+       parser.parse(data);
+   });
+
+
+
+});
+
+</script>
+
     <h1>Recent Publications</h1>
 
-	{% assign pubs = site.publications | sort: "date" | reverse %}
-    <ol>
-    {% for n in pubs %}
-    <div class="row">
-        <li>
-			<p>{{ n.authors | markdownify | remove: "<p>" | remove: "</p>" }}</br>
-			<a href="/pubs/{{n.filename}}"><img src="/images/pdficon.png">"{{ n.title }}"</a></br>
-			<u>{{ n.journal }}</u>. <b>{{ n.volume }}</b> ({{n.year}}){% if n.pages %},{{ n.pages }}{% endif %}</br>
-			{% if n.doi %}
-			doi: <a href="https://doi.org/{{n.doi}}">{{n.doi}}</a></p>
-			{%endif%}
-        </li>
-    </div>
-    {% endfor %}
-	</ol>
+    <ol id='publist'>
+    </ol>
