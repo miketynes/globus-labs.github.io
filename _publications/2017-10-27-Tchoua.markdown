@@ -1,7 +1,0 @@
----
-type: conference
-authors: "**Roselyne B. Tchoua**, **Kyle Chard**, Debra J. Audus, **Logan Ward**, Joshua Lequieu, Juan de Pable and **Ian T. Foster**"
-title: "Towards a Hybrid Human-Computer Scientific Information Extraction Pipeline"
-conference: To be published in eScience 2017
-filename: "Tchoua_escience_2017.pdf"
----
