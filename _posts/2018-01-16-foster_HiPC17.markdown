@@ -4,7 +4,7 @@ title: "Foster presents at the 24th HiPC in Jaipur, India."
 date:  2018-01-16 01:00:01 -0700
 type: join
 ---
-Ian Foster attended the 24th IEEE International Conference on High Performance Computing, Data and Analytics [(HiPC)](http://hipc.org/) in Jaipur India. He presented a keynote talk entitled ["Computing Just What You Need: Online Data Analysis and Reduction at Extreme Scales"](https://www.slideshare.net/ianfoster/computing-just-what-you-need-online-data-analysis-and-reduction-at-extreme-scales-86234444) on Dec. 21, 2017.
+Ian Foster attended the 24th IEEE International Conference on High Performance Computing, Data and Analytics [(HiPC)](http://hipc.org/) in Jaipur, India. He presented a keynote talk entitled ["Computing Just What You Need: Online Data Analysis and Reduction at Extreme Scales"](https://www.slideshare.net/ianfoster/computing-just-what-you-need-online-data-analysis-and-reduction-at-extreme-scales-86234444) on Dec. 21, 2017.
 <center>
 <div><img class="img-responsive" width="70%" text-align="center" src="https://globus.github.io/globus-labs/images/posts/Ian_HiPC18_Jaipur_India.jpg"></div></center>
 
