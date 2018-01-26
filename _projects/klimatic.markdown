@@ -56,5 +56,5 @@ integrity.
 
 Publications
 
-- [Klimatic: A Virtual Data Lake for Harvesting and Distribution of Geospatial Data](http://conferences.computer.org/pdswdiscs/2016/papers/5216a031.pdf). 1st Joint International Workshop on Parallel Data Storage & Data Intensive Scalable Computing Systems (PDSW-DISCS), 2016. 
+- [Klimatic: A Virtual Data Lake for Harvesting and Distribution of Geospatial Data](http://www.pdsw.org/pdsw-discs16/papers/p31-skluzacek.pdf). 1st Joint International Workshop on Parallel Data Storage & Data Intensive Scalable Computing Systems (PDSW-DISCS), 2016. 
 
