@@ -17,6 +17,9 @@ Our research focuses on three core areas:
 (2) investigating serverless computing's ability to provide a service which reliably coordinates the execution of tasks over thousands of distributed endpoints; and 
 (3) exploring techniques and programming models which enable non-technical users to design and configure custom flows of data.
 
+Try it out at:
+[https://ripple.globuscs.info](https://ripple.globuscs.info)
+
 Further reading
 
 - R. Chard, K. Chard, S. Tuecke, and I. Foster, [Software Defined Cyberinfrastructure for Data Management](https://www.researchgate.net/publication/321120695_Software_Defined_Cyberinfrastructure_for_Data_Management). 13th International Conference on e-Science, 2017.
