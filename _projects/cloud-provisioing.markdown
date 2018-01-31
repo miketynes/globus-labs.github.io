@@ -32,6 +32,7 @@ optimizing run time, reducing costs).
 
 Further reading
 
+- R. Chard, K. Chard, R. Wolski, R. Madduri, B. Ng, K. Bubendorfer, and I. Foster, ["Cost-Aware Cloud Profiling, Prediction, and Provisioning as a Service,"](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7515692&isnumber=7515592) IEEE Cloud Computing 4 (4) : 48-59. 2017.
 - R. Chard, K. Chard, B. Ng, K. Bubendorfer, A. Rodriguez, R. Madduri, and I. Foster, ["An Automated Tool Profiling Service for the Cloud,"](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7515692&isnumber=7515592) 2016 16th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGrid), Cartagena, 2016, pp. 223-232.
 - R. Chard, K. Chard, K. Bubendorfer, L. Lacinski, R. Madduri and I. Foster, ["Cost-Aware Cloud Provisioning,"](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7304284&isnumber=7304061) e-Science (e-Science), 2015 IEEE 11th International Conference on, Munich, 2015, pp. 136-144.
-- R. Wolski, J. Brevik, R. Chard, and K. Chard. [Probabilistic guarantees of execution duration for Amazon spot instances](https://www.cs.ucsb.edu/sites/cs.ucsb.edu/files/docs/reports/master.pdf). Under review. 2016
+- R. Wolski, J. Brevik, R. Chard, and K. Chard. [Probabilistic guarantees of execution duration for Amazon spot instances](https://www.researchgate.net/publication/320955546_Probabilistic_guarantees_of_execution_duration_for_Amazon_spot_instances). The International Conference for High Performance Computing, Networking, Storage and Analysis. 2017
