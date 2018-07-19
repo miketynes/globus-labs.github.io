@@ -3,7 +3,7 @@ layout: project
 title:  "Ripple"
 image: "ripple-new.png"
 teaser: "We are developing methods to automate the provisioning of cloud computing infrastructure"
-featured: false
+featured: true
 description: "Ripple is an automation framework designed to managing data throughout its lifecycle, in which users specify via high-level rules and the actions to be performed on data at different times and locations."
 ---
 
