@@ -3,7 +3,7 @@ layout: project
 published: true
 title:  "CODAR"
 image: "codar.png"
-featured: true
+featured: false
 teaser: "We are developing methods for online data analysis and reduction on exascale computers"
 description: "The Center for Codesign of Online Data Access and Reduction (CODAR) will develop new methods and science for delivering the right bits to the right place at the right time on exascale computers."
 ---
