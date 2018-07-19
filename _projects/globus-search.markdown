@@ -3,7 +3,7 @@ layout: project
 title:  "Globus Search"
 image: "search.png"
 teaser: "We are developing methods to index large amounts of scientific data distributed over heterogeneous storage systems"
-featured: true
+featured: false
 description: "Vast quantities of scientific data are distributed across storage systems and data repositories. We are developing methods to crawl, extract metadata from, and index those data."
 ---
 The changing landscape of science has created a world in which
