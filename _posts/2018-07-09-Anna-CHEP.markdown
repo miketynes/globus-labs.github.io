@@ -4,5 +4,5 @@ title: "Anna presented **CHEP** "
 date:  2018-07-09 10:13:16 -0700
 type: presentation
 ---
-Anna Woodard attended *Computing in High Energy and Nuclear Physics* [(**CHEP 2018**)](http://chep2018.org/). She presented a talk on  [Interactive, scalable, reproducible data analysis with containers, Jupyter, and Parsl](https://indico.cern.ch/event/587955/contributions/2937563/).
+Anna Woodard attended [**Computing in High Energy and Nuclear Physics (CHEP) 2018**](http://chep2018.org/). She presented a talk on  [Interactive, scalable, reproducible data analysis with containers, Jupyter, and Parsl](https://indico.cern.ch/event/587955/contributions/2937563/).
 
