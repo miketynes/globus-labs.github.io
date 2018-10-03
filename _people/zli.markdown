@@ -1,6 +1,6 @@
 ---
 title: "Zhuozhao Li"
-image: "zhuozhaoli.jpg"
+image: "zli.jpg"
 position: "Postdoctoral Fellow"
 department: "Department of Computer Science"
 institution: "University of Chicago"
