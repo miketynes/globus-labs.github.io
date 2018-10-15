@@ -1,6 +1,6 @@
 ---
 title: "Takuya Kurihana"
-image: "tkurihana.jpg"
+image: "kurihana.jpg"
 position: "Graduate Student"
 department: "Department of Computer Science"
 institution: "University of Chicago"
