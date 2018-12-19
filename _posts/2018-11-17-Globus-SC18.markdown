@@ -1,0 +1,8 @@
+---
+layout: news
+title: "Globus has booth at SC18"
+date:  2018-11-17 13:00:00 -0700
+type: presentation
+---
+
+Globus has a great turn out at their booth at the Supercomputing Conference (SC18). You can learn more about it [here](https://www.globus.org/events/sc18).
