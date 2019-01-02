@@ -153,7 +153,7 @@ blockquote:before {
 .go-icon-list-checkbox:before { display: none; }
 .go-icon-list-checkbox li { list-style: none; margin-bottom: 15px; }
 .go-icon-list-checkbox li:before {
-    background-image: url("images/sprite_globus_landing_40.png");
+    background-image: url("images/sprite_globus_40.png");
     background-position: -9px -167px;
     margin-top: -4px;
 }
@@ -168,7 +168,7 @@ blockquote:before {
 .go-icon-around-globe:before,
 .go-icon-cloud-up:before,
 .go-icon-share:before {
-    background-image: url("images/sprite_globus_landing_40.png");
+    background-image: url("images/sprite_globus_40.png");
     width: 30px;
     height: 30px;
     margin-left: -37px;
