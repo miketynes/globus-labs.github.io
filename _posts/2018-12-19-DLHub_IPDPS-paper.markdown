@@ -1,6 +1,6 @@
 ---
 layout: news
-title: "Lab Members publish paper at UCC 2018"
+title: "Lab members publish paper at IPDPS 2019"
 date:  2018-12-19 23:00:00 -0700
 type: paper
 ---
