@@ -1,7 +1,7 @@
 ---
 layout: news
 title: "Ian Foster presents keynote at Multicore World 2019"
-date:  2018-12-19 13:00:00 -0700
+date:  2019-02-13 13:00:00 -0700
 type: paper
 ---
 
