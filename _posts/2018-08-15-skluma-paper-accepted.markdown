@@ -1,6 +1,6 @@
 ---
 layout: paper
-title: "Skulma Paper Accepted to eScience 2018"
+title: "Skluma Paper Accepted to eScience 2018"
 date:  2018-08-15 10:13:16 -0700
 type: paper
 ---
