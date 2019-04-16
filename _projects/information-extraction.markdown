@@ -8,7 +8,7 @@ description: " A wealth of valuable data is locked within the millions of resear
 ---
 A wealth of valuable data is locked within the millions of research articles published each year. We are researching methods to liberate this data via hybrid human-machine models.
 
-<center><div><img class="img-responsive" width="70%" text-align="center" src="images/projects/chidb_architecture_ms.png"></div></center>
+<center><div><img class="img-responsive" width="70%" text-align="center" src="https://labs.globus.org/images/projects/chidb_architecture_ms.png"></div></center>
 
 The amount of scientific literature published every year is growing at an overwhelming rate. Some studies place the number of scientific journals at more than 28,000 and the number of articles published each year at 1.8 million. Therefore, the amount of important findings (e.g. experiment results) locked in tables, figures and text of various format is staggering. Reading and extracting pertinent information has become an unmanageable task for scientists and is now hindering their research. For example, in materials science and chemistry, difficulties discovering published materials properties directly affect the design of new materials. Indeed, despite the large number of publications in this domain, the process of designing new materials is still one of trial and error. Access to a structured, queryable database of all materials properties would facilitate the design and model validation of new substances, improving efficiency by enabling scientists and engineers to more quickly discover, query and compare properties of existing compounds.
  
@@ -27,11 +27,11 @@ Once an extracted values has passed through the review cycle, it is stored in a 
 
 The content of the database was analyzed to learn new information about how the χ parameter is currently found in the literature. Based on a 5-year search period of publications in Macromolecules we gained some insight about the most studied polymers, polymer pairs in this area. We also identified the most common form under which χ (a number at a specific temperature) is published as well as the most common source of χ in publications (plain text). We reported more interesting findings from a polymer science perspective. For example, in the case of polymer-polymer χ values - as opposed to polymer solvent χ values - the most commonly reported methods were in agreements with the ones originally proposed by our materials experts. Find more details in our publications[1](https://www.researchgate.net/publication/303746084_A_Hybrid_Human-computer_Approach_to_the_Extraction_of_Scientific_Facts_from_the_Literature),[2](https://www.nist.gov/node/1095636).
 
-<center><div><img width="60%" src="images/projects/polymers_full_grid.png"></div></center>
+<center><div><img width="60%" src="https://labs.globus.org/images/projects/polymers_full_grid.png"></div></center>
 
 The first target for improvement identified in the χDB system is the publication selection process. Only 38.5% of our selected publications actually contained χ values; thus, about 60% of the papers curated by student reviewers did not in fact contribute to the digital handbook. As a first step, machine learning techniques can help optimize the use of reviewer time by prioritizing and better classifying relevant publications. The question this component χDB aims to answer is whether we can automatically classify and predict papers that contain χ values, based solely on abstracts and captions. Using a support vector machine classifier, we report a precision of 86.94% and a recall of 90.87% on classifying papers containing χ values for polymer-polymer pairs based on abstracts. Find more details in our publications[1](https://www.researchgate.net/publication/303746084_A_Hybrid_Human-computer_Approach_to_the_Extraction_of_Scientific_Facts_from_the_Literature),[2](https://www.nist.gov/node/1095636).
 
-<center><div><img class="img-responsive" width="70%" text-align="center" src="images/projects/classification_results.png"></div></center>
+<center><div><img class="img-responsive" width="70%" text-align="center" src="https://labs.globus.org/images/projects/classification_results.png"></div></center>
 
 Further reading
 
