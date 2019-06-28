@@ -8,12 +8,12 @@ https://globus.github.io/globus-labs
 Procedure for adding new publication
 
 1. Add the publication as a PDF to `./pubs`
-	- No file name format required. Recommended: `<first author surname>-<journal abbreviation>-<year>.pdf`
+	- No file name format required. Recommended: `<first author surname>-<journal/conference abbreviation>-<year>.pdf`
 
-2. Add a "yaml" file to describe the publication to `./_publications`:
-	- File name should start with "YEAR-MONTH-DAY" (ex: 2017-07-21).
-	- Follow the format of `2016-08-15-Tchoua.markdown`. All fields except `doi` and `pages` are required
-	- Filename is the name of the file, not the full path (i.e., `A.pdf` not `pubs/A.pdf`)
-	- Bold authors who are in Globus Labs (using markdown's `**` syntax)
+2. Add bibtex info for the publication at the top of `./pubs/labs-pubs.bib`:
+	- For all publications: Add publication name, author names, year, and "note" attribute pointing to the pdf (just `<filename>.pdf`, not the entire path)
+	- For journal publications: Add journal name, volume, issue number, and page numbers. DOI and other available identifying information is recommended, but not required
+	- For conference and workshop publications: Add conference or workshop name (in the format of `Proceedings of <conference-name-here>`)
+	- Note: Only add publication to the top of the bibtex document if it is a new publication. If it is not new, check the dates of the other publications and add yours in its correct chronological place in the document.
 	
-3. Add both files into the git repo
+3. Add both files into the git repo and verify appearance on the [Globus Labs website](https://labs.globus.org/publications.html) within 5 minutes or so.
