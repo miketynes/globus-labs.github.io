@@ -1,7 +1,7 @@
 ---
 layout: news
 title: "Logan presents on supervised learning at AI for science student workshop"
-date:  2019-07-00 13:00:00 -0700
+date:  2019-07-09 13:00:00 -0700
 type: presentation
 ---
 
