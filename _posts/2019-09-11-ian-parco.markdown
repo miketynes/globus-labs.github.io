@@ -1,0 +1,7 @@
+---
+layout: news
+title: "Ian keynotes ParCO2019: Coding the Continuum."
+date:  2019-09-11 10:13:16 -0700
+type: presentation
+---
+Ian gives a keynote at [ParCO2019](https://www.parco.org/) on Coding the Continuum.
