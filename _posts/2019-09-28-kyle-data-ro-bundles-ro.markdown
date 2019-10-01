@@ -7,4 +7,4 @@ type: paper
 
 
 
-Kyle’s paper "Application of BagIt-Serialized Research Object Bundles for Packaging and Re-execution of Computational Analyses” was presented at the [Research Objects workshop at eScience 2019] (https://researchobject.github.io/ro2019/).
+Kyle’s paper "Application of BagIt-Serialized Research Object Bundles for Packaging and Re-execution of Computational Analyses” was presented at the [Research Objects workshop at eScience 2019](https://researchobject.github.io/ro2019/).
