@@ -6,4 +6,4 @@ type: paper
 ---
 
 
-Kyle presented "Serverless Science for Simple, Scalable, and Shareable Scholarship” at [eScience 2019] (https://escience2019.sdsc.edu/). 
+Kyle presented "Serverless Science for Simple, Scalable, and Shareable Scholarship” at [eScience 2019](https://escience2019.sdsc.edu/). 
