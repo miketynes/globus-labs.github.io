@@ -1,0 +1,9 @@
+---
+layout: news
+title: "HPC wire Readers' Choice Awards 2019"
+date:  2019-10-23 13:00:00 -0700
+type: award
+---
+
+Globus labs projects are nominated in several categories in this year's [HPCwire Readers' Choice Awards](https://www.hpcwire.com/2019-hpcwire-readers-choice-awards/).
+Vote for us in categories: "Best Use of HPC in Physical Sciences", "Best HPC Programming Tool or Technology", "Best HPC Storage Product or Technology"
