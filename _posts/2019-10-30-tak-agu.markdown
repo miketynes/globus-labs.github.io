@@ -1,0 +1,7 @@
+---
+layout: news
+title: "Tak's abstract accepted to AGU"
+date:  2019-09-13 13:00:00 -0700
+type: paper
+---
+Takuya Kurihana's abstract titled "Cloud Characterization With Deep Learning II" was accepted to [American Geophysical Union (AGU) 2019 Fall Meeting](https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/492604).
