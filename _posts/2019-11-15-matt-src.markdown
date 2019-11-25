@@ -1,0 +1,7 @@
+---
+layout: news
+title: "Matt's poster accepted to SRC on SC"
+date:  2019-11-15 13:00:00 -0700
+type: paper
+---
+Matthew E. Baughman's poster titled "Enhancing Neural Architecture Search with Speciation and Inter-Epoch Crossover" was accepted to [ACM Student Research Competition on SC 2019](https://sc19.supercomputing.org/session/?sess=sess238).

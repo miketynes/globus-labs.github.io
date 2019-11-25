@@ -1,0 +1,8 @@
+---
+layout: news
+title: "Anna presents funcX on CHEP"
+date:  2019-11-04 13:00:00 -0700
+type: presentation
+---
+
+Anna Woodard presented the talk [Real-time HEP analysis with funcX, a high-performance platform for function as a service](https://indico.cern.ch/event/773049/contributions/3473813/) at [CHEP2019](http://chep2019.org/).
