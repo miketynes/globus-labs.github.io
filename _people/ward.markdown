@@ -1,8 +1,8 @@
 ---
 title: "Logan Ward"
 image: "ward.jpg"
-position: "Postdoctoral Fellow"
-department: "Computer Science"
-institution: "University of Chicago"
+position: "Assistant Scientist"
+department: "Data Science and Learnign, JCESR"
+institution: "Argonne National Laboratory"
 ranking: 21
 ---

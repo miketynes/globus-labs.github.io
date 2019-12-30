@@ -1,8 +1,8 @@
 ---
 title: "Ryan Chard"
 image: "chard-ryan.jpg"
-position: "Postdoctoral Fellow"
-department: "Computing, Environment and Life Sciences"
+position: "Assistant Scientist"
+department: "Data Science and Learning"
 institution: "Argonne National Laboratory"
 ranking: 21
 ---
