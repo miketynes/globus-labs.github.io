@@ -1,7 +1,7 @@
 ---
 layout: news
 title: "Takuya presents twice at AGU Fall Meeting 2019"
-date:  2019-12-13 14:00:00 -0700
+date:  2019-12-13 14:01:00 -0700
 type: presentation
 ---
 Takuya Kurihana presented [Developing Unsupervised Learning Models for Cloud Classification](https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/612555) and [Cloud Characterization with Deep Learning II](https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/492604) at the AGU Fall Meeting in San Francisco, CA.
