@@ -1,0 +1,7 @@
+---
+layout: news
+title: "Yadu Presents funcX at K8s-HEP Meetup"
+date:  2020-01-30 14:00:00 -0700
+type: presentation
+---
+Yadu Babuji presented [How funcX uses k8s](https://indico.cern.ch/event/882955/contributions/3724859/attachments/1978221/3295018/Yadu_K8S-HEP.pdf) at the Chicagoland [K8s-HEP Meetup](https://indico.cern.ch/event/882955/) in Chicago, IL. 
