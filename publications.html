@@ -42,10 +42,11 @@ function format_bib(data){
     var link = $("<span>");
     if ("note" in data["Fields"]){ 
         link = $("<a>", {"href" : "pubs/" + data["Fields"]["note"]});
+        var pdf = $("<img>", {"src": "/images/pdficon.png"});
+        link.append(pdf)
     }
-    var pdf = $("<img>", {"src": "/images/pdficon.png"});
     var title = $("<span>", {"text" : "\"" + data["Fields"]["title"] + ".\" "})
-    link.append(pdf).append(title).append($("</br>"));
+    link.append(title).append($("</br>"));
 
     formated.append(link);
     
