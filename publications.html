@@ -40,7 +40,7 @@ function format_bib(data){
     formated.append($("</br>"));
     
     var link = $("<span>");
-    if "note" in data["Fields"]{ 
+    if ("note" in data["Fields"]){ 
         link = $("<a>", {"href" : "pubs/" + data["Fields"]["note"]});
     }
     var pdf = $("<img>", {"src": "/images/pdficon.png"});
