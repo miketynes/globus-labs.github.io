@@ -39,7 +39,7 @@ function format_bib(data){
     formated.append($("<span>", {"text" : author_string + ". ", "class" : "authors"}));
     formated.append($("</br>"));
     
-    var link = $("<span>")
+    var link = $("<span>");
     if "note" in data["Fields"]{ 
         link = $("<a>", {"href" : "pubs/" + data["Fields"]["note"]});
     }
