@@ -1,0 +1,7 @@
+---
+layout: news
+title: "Globus Labs joins the fight against Covid19"
+date:  2020-03-10 14:00:00 -0700
+type: presentation 
+---
+Globus Labs is contributing to the fight against Covid-19. Read more [here](https://www.anl.gov/coronavirus). 
