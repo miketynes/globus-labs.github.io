@@ -5,3 +5,4 @@ date:  2020-03-10 14:00:00 -0700
 type: presentation
 ---
 Ryan Chard presented [5G Enabled Energy Innovation Workshop (5GEEIW)](https://www.orau.gov/5GScience/) at Westin Hotel in Chicago, IL. 
+``
