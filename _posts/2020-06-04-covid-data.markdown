@@ -1,7 +1,7 @@
 ---
 layout: news
 title: "Targeting SARS-CoV-2 with AI- and HPC-enabled Lead Generation: A First Data Release"
-date:  2020-05-26 11:00:00 -0700
+date:  2020-06-04 11:00:00 -0700
 type: paper
 ---
 
