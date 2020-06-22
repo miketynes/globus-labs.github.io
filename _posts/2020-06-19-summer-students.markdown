@@ -1,8 +1,8 @@
 ---
 layout: news
-title: "Machine Learning for Materials Science and Chemistry"
-date:  2020-06-19 10:13:16 -0700
-type: presentation
+title: "2020 CDAC Summer Lab Kicks Off with 38 Student Researchers" 
+date:  2020-06-18 10:13:16 -0700
+type: join
 ---
 
-Marcus Schwarting gave a presentation to summer students at Argonne National Lab on [Machine Learning for Materials Science and Chemistry](https://drive.google.com/file/d/1CNOSusmXmFAxQyRIxRjZHD02QOjuwTBs/view). 
+[2020 CDAC Summer Lab](https://cdac.uchicago.edu/news/2020-cdac-summer-lab-kicks-off-with-38-student-researchers/) has started with Globus Labs hosting four students. 
