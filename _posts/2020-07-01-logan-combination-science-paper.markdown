@@ -1,7 +1,7 @@
 ---
 layout: news
 title: "Logan's paper accepted to ACS Combinatorial Science"
-date:  2020-05-26 11:00:00 -0700
+date:  2020-07-01 11:00:00 -0700
 type: paper
 ---
 
