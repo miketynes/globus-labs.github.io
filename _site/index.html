@@ -1,181 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Globus Labs</title>
-    <link rel="shortcut icon" href="http://localhost:4000/images/theme/favicon.ico?v=2">
+<head>
+  <meta charset="UTF-8">
+  <title>Globus Labs</title>
+  <link rel="shortcut icon" href="http://localhost:4000/images/theme/favicon.ico?v=2">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost:4000/css/styles.css" type="text/css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <script src="/js/jquery.min.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        TeX: {
+            extensions: ["cancel.js"],
+            equationNumbers: {
+                autoNumber: "AMS"
+            },
+            Macros: {
+             '\(': '\\left(',
+             '\)': '\\right)',
+             '\[': '\\left[',
+             '\]': '\\right]',
+            }
+        },
+        tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            displayMath: [ ['$$','$$'] ],
+            skipTags: ["script","noscript","style","textarea"],
+            processEnvironments: true,
+            processEscapes: true,
+        }
+    });
+   </script>
+  <script src="http://localhost:35729/livereload.js"></script>
+  <script src="https://togetherjs.com/togetherjs-min.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</head>
+
+<body>
   
-    <script src="js/jquery.min.js"></script>
 
-  </head>
-
-  <body>
-    
-  
-    <header id="masthead">
-      <nav id="navbar" class="navbar" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/"><img class="img-responsive" src="http://localhost:4000/images/theme/logo_globus_labs.svg" alt="Globus Labs" data-pin-nopin="true"></a>
-          </div>
-          
-         <div class="collapse navbar-collapse" id="main-nav">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/" class="active">Overview</a></li>
-                <li><a href="/people.html"  >People</a></li>
-                <li><a href="/projects.html"  >Projects</a></li>
-                <li><a href="/news.html"  >News</a></li>
-				<li><a href="/publications.html"  >Publications</a></li>
-                <li><a href="/join.html"  >Join Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main class="container">
-    
-          <div class="jumbotron" style="background-image: url('images/home/facebook-image.jpg'); background-size: cover;">
-        <font color="white"><p style="font-size:30px">Making all research data accessible, discoverable, and usable</p></font>
-        <p></p>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <p>Globus Labs is a research group led by Prof. Ian Foster and Dr. Kyle Chard that spans the <a href="https://www.ci.uchicago.edu">Computation Institute</a>, <a href="https://www.cs.uchicago.edu/">Department of Computer Science</a>, and <a href="https://www.mcs.anl.gov">Math and Computer Science Division</a> at the University of Chicago and Argonne National Laboratory. Our modest goal is to realize a world in which <strong>all research data are reliably, rapidly, and securely accessible, discoverable, and usable</strong>. To this end, we work on a broad range of research problems in data-intensive computing and research data management. Our work is made possible by much-appreciated support from the National Science Foundation, National Institutes of Health, Department of Energy, National Institute of Standards and Technology, and other sources, and in addition to computer science, engages fields as diverse as materials science, biology, archaeology, climate policy, and social sciences. We work closely with the team developing the <a href="https://www.globus.org">Globus research data management platform</a>, who often challenge us to think bigger&mdash;and sometimes implement our less crazy ideas.
-</p>
-            </div>
-        </div>
-	<hr>
-			
-	<h4>FEATURED PROJECTS</h4>
-	<div class="row">
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-                <div class="col-xs-4">
-	              <a href="/projects/information-extraction.html"><img class="img-responsive" src="images/projects/extraction.png"></a>
-                    <p>We are developing methods to automatically extract scientific facts buried in scientific publications</p>
-                </div>
-                
-            
-                
-            
-                
-            
-                
-                <div class="col-xs-4">
-	              <a href="/projects/parsl.html"><img class="img-responsive" src="images/projects/parsl-logo.png"></a>
-                    <p>Parallel scripting in Python</p>
-                </div>
-                
-            
-                
-                <div class="col-xs-4">
-	              <a href="/projects/ripple.html"><img class="img-responsive" src="images/projects/ripple-new.png"></a>
-                    <p>We are developing methods to automate the provisioning of cloud computing infrastructure</p>
-                </div>
-                
-            
-        </div>
-			
-        <hr>
-	<h4>RECENT NEWS</h4>
-            <div class="row news">
-                			
-                <div class="col-xs-3">
-		    <div class="center-block">
-                        <div class="glyphicon-circle">
-                            
-                                <span class="glyphicon glyphicon-duplicate"></span>
-                            
-                        </div>
-	    	    </div>
-                    <p><p>Matt Baughman, Ryan Chard, Logan Ward, Jason Pitt, Kyle Chard and Ian Foster <a href="https://www.researchgate.net/publication/329786437_Profiling_and_Predicting_Application_Performance_on_the_Cloud">publish paper</a>, “Profiling and Predicting Application Performance on the Cloud”, at UCC 2018.</p>
-</p>
-		</div>
-            			
-                <div class="col-xs-3">
-		    <div class="center-block">
-                        <div class="glyphicon-circle">
-                            
-                                <span class="glyphicon glyphicon-blackboard"></span>
-                            
-                        </div>
-	    	    </div>
-                    <p><p>Ricardo B. Lourenço and Takuya Kurihana presented a poster at the <a href="https://agu.confex.com/agu/fm18/meetingapp.cgi/Paper/439373">AGU fall meeting 2018</a> on understanding Cloud characterization with deep learning</p>
-</p>
-		</div>
-            			
-                <div class="col-xs-3">
-		    <div class="center-block">
-                        <div class="glyphicon-circle">
-                            
-                                <span class="glyphicon glyphicon-glass"></span>
-                            
-                        </div>
-	    	    </div>
-                    <p><p>Swift/T, a dataflow programming framework for scientific supercomputing workflows developed in part by Ian Foster, wins a <a href="https://www.alcf.anl.gov/articles/argonne-technologies-receive-2018-rd-100-awards">R&amp;D 100 Award</a>.</p>
-</p>
-		</div>
-            			
-                <div class="col-xs-3">
-		    <div class="center-block">
-                        <div class="glyphicon-circle">
-                            
-                                <span class="glyphicon glyphicon-blackboard"></span>
-                            
-                        </div>
-	    	    </div>
-                    <p><p>Tyler Skluzacek presented his Master’s Thesis, “Automated Workflows for Extracting and Deriving Metadata from Disorganized Data Swamps”.</p>
-</p>
-		</div>
-            
-            </div>
-
-    
-    
-    </main>
-		
-    <footer>
+  <header id="masthead">
+    <nav id="navbar" class="navbar" role="navigation">
       <div class="container">
-				<div class="row">
-				<div class="col-sm-2"></div>
-					 <div class="col-sm-3"><a href="http://www.ci.uchicago.edu/"><img class="img-responsive" src="http://localhost:4000/images/theme/ci.png"></a></div>
-					 <div class="col-sm-3"><a href="http://www.uchicago.edu/"><img class="img-responsive" src="http://localhost:4000/images/theme/uchicago.png"></a></div>
-					 <div class="col-sm-3"><a href="https://www.anl.gov/"><img class="img-responsive" src="http://localhost:4000/images/theme/anl.png"></a></div>
-					<div class="col-sm-2"></div>
-				</div>
-        <!-- 
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img class="img-responsive"
+              src="http://localhost:4000/images/globus_labs-XL-dark-bg.png" alt="Globus Labs" data-pin-nopin="true"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/" class="active" >Overview</a></li>
+            <li><a href="/people.html" >People</a></li>
+            <li><a href="/projects.html" >Projects</a>
+            </li>
+            <li><a href="/news.html" >News</a></li>
+            <li><a href="/blog.html" >Blog</a></li>
+            <li><a href="/publications.html" >Publications</a></li>
+            <li><a href="/join.html" >Join Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="jumbotron" style="background-image: url('images/home/facebook-image.jpg'); background-size: cover;">
+    <font color="white">
+        <p style="font-size:30px">Making all research data accessible, discoverable, and usable</p>
+    </font>
+    <p></p>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <p>Globus Labs is a research group led by Prof. Ian Foster and Dr. Kyle Chard that spans the <a
+                href="https://www.ci.uchicago.edu">Computation Institute</a>, <a
+                href="https://www.cs.uchicago.edu/">Department of Computer Science</a>, and <a
+                href="https://www.mcs.anl.gov">Math and Computer Science Division</a> at the University of Chicago and
+            Argonne National Laboratory. Our modest goal is to realize a world in which <strong>all research data are
+                reliably, rapidly, and securely accessible, discoverable, and usable</strong>. To this end, we work on a
+            broad range of research problems in data-intensive computing and research data management. Our work is made
+            possible by much-appreciated support from the National Science Foundation, National Institutes of Health,
+            Department of Energy, National Institute of Standards and Technology, and other sources, and in addition to
+            computer science, engages fields as diverse as materials science, biology, archaeology, climate policy, and
+            social sciences. We work closely with the team developing the <a href="https://www.globus.org">Globus
+                research data management platform</a>, who often challenge us to think bigger&mdash;and sometimes
+            implement our less crazy ideas.
+        </p>
+    </div>
+</div>
+<hr>
+
+<h4>FEATURED PROJECTS</h4>
+<div class="row">
+    
+    
+    <div class="col-xs-4">
+        <a href="/projects/automate.html"><img class="img-responsive" src="images/projects/ripple-new.png"></a>
+        <p>We are developing methods to automate the scientific data lifecycle.</p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="col-xs-4">
+        <a href="/projects/funcx.html"><img class="img-responsive" src="images/projects/funcx.png"></a>
+        <p>funcX is a Function as a Service platform for scientific computing.</p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="col-xs-4">
+        <a href="/projects/parsl.html"><img class="img-responsive" src="images/projects/parsl-logo.png"></a>
+        <p>Parallel scripting in Python</p>
+    </div>
+    
+    
+</div>
+
+<hr>
+<h4>RECENT NEWS</h4>
+<div class="row news">
+    
+    <div class="col-xs-3">
+        <div class="center-block">
+            <div class="glyphicon-circle">
+                
+                <span class="glyphicon glyphicon-duplicate"></span>
+                
+            </div>
+        </div>
+        <p><p>Logan’s paper, titled “<a href="https://pubs.acs.org/doi/10.1021/acs.jpca.0c01777">Quantum Chemically Informed Machine Learning: Prediction of Energies of Organic Molecules with 10 to 14 Non-Hydrogen Atoms</a>”, is accepted to the Journal of Physical Chemistry A.</p>
+</p>
+    </div>
+    
+    <div class="col-xs-3">
+        <div class="center-block">
+            <div class="glyphicon-circle">
+                
+                <span class="glyphicon glyphicon-duplicate"></span>
+                
+            </div>
+        </div>
+        <p><p>Logan’s paper, titled “<a href="https://pubs.acs.org/doi/10.1021/acscombsci.9b00215">A High-Throughput Structural and Electrochemical Study of Metallic Glass Formation in Ni-Ti-Al</a>”, is accepted to ACS Combinatorial Science.</p>
+</p>
+    </div>
+    
+    <div class="col-xs-3">
+        <div class="center-block">
+            <div class="glyphicon-circle">
+                
+                <span class="glyphicon glyphicon-blackboard"></span>
+                
+            </div>
+        </div>
+        <p><p>Marcus Schwarting gave a presentation to summer students at Argonne National Lab on <a href="https://drive.google.com/file/d/1CNOSusmXmFAxQyRIxRjZHD02QOjuwTBs/view">Machine Learning for Materials Science and Chemistry</a>.</p>
+
+</p>
+    </div>
+    
+    <div class="col-xs-3">
+        <div class="center-block">
+            <div class="glyphicon-circle">
+                
+                <span class="glyphicon glyphicon-user"></span>
+                
+            </div>
+        </div>
+        <p><p><a href="https://cdac.uchicago.edu/news/2020-cdac-summer-lab-kicks-off-with-38-student-researchers/">2020 CDAC Summer Lab</a> has started with Globus Labs hosting four students.</p>
+</p>
+    </div>
+    
+</div>
+
+<hr>
+<h4>RECENT BLOG POSTS</h4>
+<div class="row news">
+    
+    <div class="col-xs-3">
+        <a href="/blog/2020-07-01-Parsl.html" class="read-more">Parallel Programming in Python</a>
+    </div>
+    
+</div>
+
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3"><a href="http://www.ci.uchicago.edu/"><img class="img-responsive"
+              src="http://localhost:4000/images/theme/ci.png"></a></div>
+        <div class="col-sm-3"><a href="http://www.uchicago.edu/"><img class="img-responsive"
+              src="http://localhost:4000/images/theme/uchicago.png"></a></div>
+        <div class="col-sm-3"><a href="https://www.anl.gov/"><img class="img-responsive"
+              src="http://localhost:4000/images/theme/anl.png"></a></div>
+        <div class="col-sm-2"></div>
+      </div>
+      <!-- 
 				<div class="row">
               <div class="col-xs-12">
                 <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> The University of Chicago</p>
               </div>
           </div>
 					-->
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-  </body>
+</body>
+
 </html>

@@ -1,55 +1,2167 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Globus Labs</title>
-    <link rel="shortcut icon" href="http://localhost:4000/images/theme/favicon.ico?v=2">
+<head>
+  <meta charset="UTF-8">
+  <title>Globus Labs</title>
+  <link rel="shortcut icon" href="http://localhost:4000/images/theme/favicon.ico?v=2">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost:4000/css/styles.css" type="text/css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <script src="/js/jquery.min.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        TeX: {
+            extensions: ["cancel.js"],
+            equationNumbers: {
+                autoNumber: "AMS"
+            },
+            Macros: {
+             '\(': '\\left(',
+             '\)': '\\right)',
+             '\[': '\\left[',
+             '\]': '\\right]',
+            }
+        },
+        tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            displayMath: [ ['$$','$$'] ],
+            skipTags: ["script","noscript","style","textarea"],
+            processEnvironments: true,
+            processEscapes: true,
+        }
+    });
+   </script>
+  <script src="http://localhost:35729/livereload.js"></script>
+  <script src="https://togetherjs.com/togetherjs-min.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</head>
+
+<body>
   
-    <script src="js/jquery.min.js"></script>
 
-  </head>
-
-  <body>
-    
-  
-    <header id="masthead">
-      <nav id="navbar" class="navbar" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/"><img class="img-responsive" src="http://localhost:4000/images/theme/logo_globus_labs.svg" alt="Globus Labs" data-pin-nopin="true"></a>
-          </div>
-          
-         <div class="collapse navbar-collapse" id="main-nav">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/" >Overview</a></li>
-                <li><a href="/people.html"  >People</a></li>
-                <li><a href="/projects.html"  >Projects</a></li>
-                <li><a href="/news.html"  class="active">News</a></li>
-				<li><a href="/publications.html"  >Publications</a></li>
-                <li><a href="/join.html"  >Join Us</a></li>
-            </ul>
-          </div>
+  <header id="masthead">
+    <nav id="navbar" class="navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img class="img-responsive"
+              src="http://localhost:4000/images/globus_labs-XL-dark-bg.png" alt="Globus Labs" data-pin-nopin="true"></a>
         </div>
-      </nav>
-    </header>
 
-    <main class="container">
-    
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/" >Overview</a></li>
+            <li><a href="/people.html" >People</a></li>
+            <li><a href="/projects.html" >Projects</a>
+            </li>
+            <li><a href="/news.html" class="active" >News</a></li>
+            <li><a href="/blog.html" >Blog</a></li>
+            <li><a href="/publications.html" >Publications</a></li>
+            <li><a href="/join.html" >Join Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+
         <h1>News</h1>
 
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 01, 2020</span><br>
+            <p><p>Logan’s paper, titled “<a href="https://pubs.acs.org/doi/10.1021/acs.jpca.0c01777">Quantum Chemically Informed Machine Learning: Prediction of Energies of Organic Molecules with 10 to 14 Non-Hydrogen Atoms</a>”, is accepted to the Journal of Physical Chemistry A.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 01, 2020</span><br>
+            <p><p>Logan’s paper, titled “<a href="https://pubs.acs.org/doi/10.1021/acscombsci.9b00215">A High-Throughput Structural and Electrochemical Study of Metallic Glass Formation in Ni-Ti-Al</a>”, is accepted to ACS Combinatorial Science.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">June 19, 2020</span><br>
+            <p><p>Marcus Schwarting gave a presentation to summer students at Argonne National Lab on <a href="https://drive.google.com/file/d/1CNOSusmXmFAxQyRIxRjZHD02QOjuwTBs/view">Machine Learning for Materials Science and Chemistry</a>.</p>
+
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-user"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">June 18, 2020</span><br>
+            <p><p><a href="https://cdac.uchicago.edu/news/2020-cdac-summer-lab-kicks-off-with-38-student-researchers/">2020 CDAC Summer Lab</a> has started with Globus Labs hosting four students.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-user"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">June 18, 2020</span><br>
+            <p><p><strong>Maksim Levental</strong> has joined Globus Labs as a PhD student! 
+Max earned his BS in Math from Florida State University, and his MS in Computer Science from University of Florida. 
+He will be working on problems at the intersection of Machine Learning and Distributed HPC.
+With this next step taken, Max will finally no longer be a “Florida man”.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">June 11, 2020</span><br>
+            <p><p>Ben, Hong, Marcus, Tyler presented at  <a href="">CHiMaD: Center for Hierarchical Materials Design</a> (presentation link forthcoming).</p>
+
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">June 04, 2020</span><br>
+            <p><p><a href="https://arxiv.org/abs/2006.02431">Targeting SARS-CoV-2 with AI- and HPC-enabled Lead Generation: A First Data Release</a> is now available on arXiv.</p>
+
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">May 26, 2020</span><br>
+            <p><p>Logan’s paper, titled “<a href="https://chemrxiv.org/articles/The_MolSSI_QCArchive_Project_An_Open-Source_Platform_to_Compute_Organize_and_Share_Quantum_Chemistry_Data/11908356/1">The MolSSI QCArchive Project: An Open-Source Platform to Compute, Organize, and Share Quantum Chemistry Data</a>”, is accepted to <a href="https://onlinelibrary.wiley.com/journal/17590884">WIREs Computational Molecular Science</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">May 26, 2020</span><br>
+            <p><p>Globus Labs is contributing to the fight against COVID-19 and making our research data publicly available. Check out our data release <a href="https://doi.org/10.26311/LIT">here</a> (DOI: 10.26311/LIT).</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-glass"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">May 07, 2020</span><br>
+            <p><p>Ian and Kyle received an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2004894&amp;HistoricalAwards=false">NSF Award</a> to support our <a href="http://funcx.org/">funcX</a> project.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">May 07, 2020</span><br>
+            <p><p>Ian and Kyle have 2 papers accepted to PEARC20, one titled “OAuth SSH with Globus Auth”, and one titled “An Open Ecosystem for Pervasive Use of Persistent Identifiers”.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">April 10, 2020</span><br>
+            <p><p>Kyle, Ian, and Andrew Chien presented <em>QoS-Aware Distributed Serverless Computing</em> at the annual <a href="https://ceres.cs.uchicago.edu/">CERES</a> summit.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">April 09, 2020</span><br>
+            <p><p>Zhuozhao Li presented work at UC Merced.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">April 09, 2020</span><br>
+            <p><p>Ian’s paper titled: <a href="https://www.pnas.org/content/117/13/7071.abstract">A regional nuclear conflict would compromise global food security</a> is accepted to PNAS.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">April 09, 2020</span><br>
+            <p><p>Hong’s paper titled: “SciNER: Extracting Named Entities From Scientic Literature” is accepted to ICCS20.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">April 09, 2020</span><br>
+            <p><p>Our paper titled: “funcX: A Federated Function Serving Fabric for Science” has been accepted to HPDC20.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">March 10, 2020</span><br>
+            <p><p>Globus Labs is contributing to the fight against Covid-19. Read more <a href="https://www.anl.gov/coronavirus">here</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">March 10, 2020</span><br>
+            <p><p>Ryan Chard presented <a href="https://www.orau.gov/5GScience/">5G Enabled Energy Innovation Workshop (5GEEIW)</a> at Westin Hotel in Chicago, IL. 
+``</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">March 09, 2020</span><br>
+            <p><p>Kyle Chard presented update of complex workflow in <a href="https://indico.fnal.gov/event/23262/">HEP-CCE</a> at the Argonne National Laboratory, Chicago, IL.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">February 28, 2020</span><br>
+            <p><p>High school and undergraduate students from the Greater Chicago Area are invited to apply for the <a href="https://cdac.uchicago.edu/engage/student-opportunities/">CDAC Data and Computing Summer Lab</a>. <em>Applications due February 28th!</em></p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">February 13, 2020</span><br>
+            <p><p>Ian Foster is presenting <a href="https://cpb-ap-se2.wpmucdn.com/blogs.auckland.ac.nz/dist/8/650/files/2020/01/eRNZ2020_Draft-Programme_v2_20Dec.pdf">Automating the Research Data Lifecycle with Automate</a> at eResearch 2020 in Dunedin City, NZ.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">February 05, 2020</span><br>
+            <p><p>Logan Ward is part of the <a href="https://whova.com/embedded/subsession/aecm_202001/799268/801413/">ExaLearn Tutorial: Co-Design Center for Exascale Machine Learning Technologies</a> at the Exascale Computing Project’s <a href="https://ecpannualmeeting.com/overview.php">Annual Meeting</a> in Houston, TX.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-glass"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">February 03, 2020</span><br>
+            <p><p>Ben received an ARPA-E award to partner with researchers at MIT (led by Gomez-Bombarelli) and UTRC to <a href="https://arpa-e.energy.gov/sites/default/files/documents/files/DIFFERENTIATE_Project_Descriptions_FINAL.pdf">discover new multicomponent oxide catalyst materials using machine learning approaches</a>.</p>
+
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">January 30, 2020</span><br>
+            <p><p>Yadu Babuji presented <a href="https://indico.cern.ch/event/882955/contributions/3724859/attachments/1978221/3295018/Yadu_K8S-HEP.pdf">How funcX uses k8s</a> at the Chicagoland <a href="https://indico.cern.ch/event/882955/">K8s-HEP Meetup</a> in Chicago, IL.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">January 22, 2020</span><br>
+            <p><p>Kyle Chard Presented <a href="http://parsl-project.org/publications/Parsl-PyData.pdf">Parsl: Pervasive Parallel Programming in Python</a> at the January <a href="https://www.meetup.com/PyDataChi/events/267549801/">Chicago PyData Meetup</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">January 18, 2020</span><br>
+            <p><p>Ryan Chard presented on “Cyberinfrastructure for Autonomous Science” at Argonne National Lab’s Advanced Photon Source AI/ML Workshop. (https://www.anl.gov/article/advanced-photon-source-aiml-workshop).</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">January 15, 2020</span><br>
+            <p><p>Ian Foster penned a Globus blog post <a href="https://www.globus.org/blog/january-2020-globus-turns-1018">Globus Turns 10^18</a> about Globus history, a review of 2019, and Globus being projected to reach 1 exabyte of data transferred in 2020.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-glass"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">January 15, 2020</span><br>
+            <p><p>Ian Foster featured in <a href="https://www.energy.gov/science/articles/big-questions-ian-foster-high-performance-computing">The Big Questions: Ian Foster on High-Performance Computing</a> by the U.S. Department of Energy’s Office of Science blog.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">January 14, 2020</span><br>
+            <p><p>Ian Foster presents <a href="https://www.anl.gov/event/ai-for-science-at-argonne">AI for Science at Argonne</a> as part of Argonne National Laboratory’s <a href="https://www.anl.gov/argonne-colloquiums-and-seminars">Computational Science Seminar Series</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">January 13, 2020</span><br>
+            <p><p>Ian Foster presented <a href="https://science.osti.gov/-/media/ascr/ascac/pdf/meetings/202001/ASCAC_Ian_Foster_202001.pdf?la=en&amp;hash=AEFD44EF66F4D852C9066FEA7BC973B801EE6A78">Mechanisms Empowering Discovery</a> at the U.S. Department of Energy’s Advanced Scientific Computing Advisory Committee’s <a href="https://science.osti.gov/ascr/ascac/Meetings/202001">January meeting</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">December 13, 2019</span><br>
+            <p><p>Takuya Kurihana presented <a href="https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/612555">Developing Unsupervised Learning Models for Cloud Classification</a> and <a href="https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/492604">Cloud Characterization with Deep Learning II</a> at the AGU Fall Meeting in San Francisco, CA.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">December 13, 2019</span><br>
+            <p><p>Ian Foster presented <a href="https://drive.google.com/file/d/10j0s1a-7co3G06AjzRNfoI03hANXiQjP/view?usp=sharing">ParaOpt: Automated Application Parameterization and Optimization for the Cloud</a> on behalf of former Globus Labs Master’s students Chaofeng Wu and Ted Summer at <a href="http://2019.cloudcom.org/">CloudCom 2019</a> in Sydney, Australia.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">December 10, 2019</span><br>
+            <p><p>Tyler Skluzacek presented <a href="https://www.researchgate.net/publication/337361742_Serverless_Workflows_for_Indexing_Large_Scientific_Data">Serverless Workflows for Indexing Large Scientific Data (WoSC ‘19)</a> and <a href="https://www.researchgate.net/publication/337580860_Dredging_a_data_lake_decentralized_metadata_extraction">Dredging a Data Lake: Decentralized Metadata Extraction (Doctoral Symposium)</a> at Middleware ‘19 in Davis, CA.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 21, 2019</span><br>
+            <p><p>Zhuozhao Li presented a talk <a href="http://parsl-project.org/">Parsl: Pervasive Parallel Programming in Python</a> at <a href="https://sc19.supercomputing.org/session/?sess=sess400">Python for High Performance and Scientific Computing</a> for Birds of a Feather on SC 2019.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 21, 2019</span><br>
+            <p><p>Logan Ward gave a presentation titled “<a href="https://www.researchgate.net/publication/337497395_Materials_Data_and_AI_Efforts_in_the_US">Materials Data and AI Efforts in the US</a>” on <a href="https://www.eventbrite.com/e/materials-discovery-meets-ai-current-progress-and-intensive-hands-on-tickets-81246974889">Materials Discovery Meets AI: Current Progress and Intensive Hands-on</a> in Australia.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 19, 2019</span><br>
+            <p><p>Arjun Shankar presented a Demo about using <a href="http://parsl-project.org/">Parsl</a> to coordinate multi-site runs in DCDE project at the DOE booth on SC 2019.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 17, 2019</span><br>
+            <p><p>Check out Ian’s latest paper, “Scientific Image Restoration Anywhere” published on <a href="https://sc19.supercomputing.org/presentation/?id=ws_xloop104&amp;sess=sess137">1st Annual Workshop on Large-Scale Experiment-in-the-Loop-Computing</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 17, 2019</span><br>
+            <p><p>Check out Ian’s latest paper, “A Codesign Framework for Online Data Analysis and Reduction” published on <a href="https://sc19.supercomputing.org/presentation/?id=pec241&amp;sess=sess112">The 14th Workshop on Workflows in Support of Large-Scale Science</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 17, 2019</span><br>
+            <p><p>Check out Ian’s latest paper, “MemXCT: Memory-Centric X-Ray CT Reconstruction with Massive Parallelization” published on <a href="https://sc19.supercomputing.org/presentation/?id=pap539&amp;sess=sess148">IEEE/ACM Supercomputing (SC19) Conference on High Performance Computing Networking, Storage and Analysis</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 17, 2019</span><br>
+            <p><p>Check out Ian’s latest paper, “Estimation of RTT and Loss Rate of Wide-Area Connections Using MPI Measurements” published on <a href="https://sc19.supercomputing.org/presentation/?id=ws_indis107&amp;sess=sess103">Innovating the Network for Data Intensive Science</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 17, 2019</span><br>
+            <p><p>Check out Ian’s latest paper, “Deep Learning Accelerated Light Source Experiments” published on <a href="https://sc19.supercomputing.org/presentation/?id=ws_dls110&amp;sess=sess101">Deep Learning on Supercomputers</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 17, 2019</span><br>
+            <p><p>Check out Ian’s latest paper, “Aggregating Local Storage for Scalable Deep Learning I/O” published on <a href="https://sc19.supercomputing.org/presentation/?id=ws_dls106&amp;sess=sess101">Deep Learning on Supercompusters</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 17, 2019</span><br>
+            <p><p>Ian Foster co-organized <a href="https://web.njit.edu/~qliu/drbsd5.html">The 5th International Workshop on Data Analysis and Reduction for Big Scientific Data</a>, in conjunction with SC19.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 17, 2019</span><br>
+            <p><p>Ian Foster co-organized <a href="https://dlonsc19.github.io/">the Deep Learning on Supercomputers Workshop</a>, in conjunction with SC19.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 15, 2019</span><br>
+            <p><p>Matthew E. Baughman’s poster titled “Enhancing Neural Architecture Search with Speciation and Inter-Epoch Crossover” was accepted to <a href="https://sc19.supercomputing.org/session/?sess=sess238">ACM Student Research Competition on SC 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 15, 2019</span><br>
+            <p><p>Kathryn Leung’s poster titled “Walking the Cost-Accuracy Tightrope: Balancing Trade-Offs in Data-Intensive Genomics” was accepted to <a href="https://sc19.supercomputing.org/session/?sess=sess238">ACM Student Research Competition on SC 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 08, 2019</span><br>
+            <p><p>Zhi Hong passed his Master defense titled “Enabling Generalizable Scientific Named Entity Recognition” on November 8th. Congratulations Hong!</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">November 04, 2019</span><br>
+            <p><p>Anna Woodard presented the talk <a href="https://indico.cern.ch/event/773049/contributions/3473813/">Real-time HEP analysis with funcX, a high-performance platform for function as a service</a> at <a href="http://chep2019.org/">CHEP2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">October 30, 2019</span><br>
+            <p><p>Matt Baughman’s paper titled “Measuring, Quantifying, and Predicting the Cost-Accuracy Tradeoff” was accepted to <a href="https://userpages.umbc.edu/~jianwu/BPOD/">The Third IEEE International Workshop on Benchmarking, Performance Tuning and Optimization for Big Data Applications (BPOD 2019)</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">October 30, 2019</span><br>
+            <p><p>Check out Kyle’s latest paper, “Enabling real-time multi-messenger astrophysics discoveries with deep learning” published on <a href="https://www.nature.com/articles/s42254-019-0097-4">Nature Review Physics</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">October 30, 2019</span><br>
+            <p><p>Tyler SKluzacek’s paper titled “Serverless Workflows for Indexing Large Scientific Data” was accepted to <a href="https://www.serverlesscomputing.org/wosc5/">5th Workshop on Serverless Computing (WoSC ‘19)</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">October 30, 2019</span><br>
+            <p><p>Tyler SKluzacek’s paper titled “Dredging a Data Lake: Decentralized Metadata Extraction” was accepted to <a href="http://2019.middleware-conference.org/">Middleware ’19 Doctoral Symposium</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">October 30, 2019</span><br>
+            <p><p>Takuya Kurihana’s abstract titled “Cloud Characterization With Deep Learning II” was accepted to <a href="https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/492604">American Geophysical Union (AGU) 2019 Fall Meeting</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-glass"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">October 30, 2019</span><br>
+            <p><p>Congratulations to Ian Foster  for being honored as one of five <a href="https://energy.gov/science/articles/department-energy-names-five-office-science-distinguished-scientists-fellows">DOE Office of Science Distinguished Scientists Fellows</a>! The Department of Energy will provide $1 million in funding to support Ian’s pioneering research on data, computing and artificial intelligence.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">October 24, 2019</span><br>
+            <p><p>Kyle Chard gave a talk titled “Globus Research Data Management Service: Capabilities, International Experiences, and Future Plans” on <a href="https://conference.eresearch.edu.au/">eResearch Australasia 2019</a> in Australia.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-glass"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">October 23, 2019</span><br>
+            <p><p>Globus labs projects are nominated in several categories in this year’s <a href="https://www.hpcwire.com/2019-hpcwire-readers-choice-awards/">HPCwire Readers’ Choice Awards</a>.
+Vote for us in categories: “Best Use of HPC in Physical Sciences”, “Best HPC Programming Tool or Technology”, “Best HPC Storage Product or Technology”</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">October 03, 2019</span><br>
+            <p><p><a href="http://parsl-project.org/parslfest.html">ParslFest</a>, the first Parsl Community Meeting will be held October 3-4, 2019 at the University of Chicago.
+The two day meeting included presentations and discussions on the first day and tutorials, advanced topics, and helpdesk sessions on the second day.</p>
+
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 28, 2019</span><br>
+            <p><p>Ian served as a panelist on the topic of “Engaging Male Allies” at <a href="https://sc19.supercomputing.org/presentation/?id=pec397&amp;sess=sess102">Women in HPC: Diversifying the HPC Community and Engaging Male Allies</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 28, 2019</span><br>
+            <p><p>Kyle presented “Serverless Science for Simple, Scalable, and Shareable Scholarship” at <a href="https://escience2019.sdsc.edu/">eScience 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 28, 2019</span><br>
+            <p><p>Kyle served as a panelist on the topic of “Effective Checklists for Developers and Researchers” at <a href="https://sciencegateways.org/web/gateways2019">Gateways 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 28, 2019</span><br>
+            <p><p>Kyle’s paper “Application of BagIt-Serialized Research Object Bundles for Packaging and Re-execution of Computational Analyses” was presented at the <a href="https://researchobject.github.io/ro2019/">Research Objects workshop at eScience 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 28, 2019</span><br>
+            <p><p>Kyle presented “Big Data Bags: A Scalable Packaging Format for Science” at the <a href="https://researchobject.github.io/ro2019/">Research Objects workshop at eScience 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 28, 2019</span><br>
+            <p><p>Kyle presented “Active Learning Yields Better Training Data for Scientific Named Entity Recognition” at <a href="https://escience2019.sdsc.edu/">eScience 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 28, 2019</span><br>
+            <p><p>Ben received an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1931306">NSF award</a>, jointly with the University of Wisconsin-Madison, to enable continued research towards building a materials innovation infrastructure compatible with modern machine learning techniques.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 28, 2019</span><br>
+            <p><p>Check out Ben and Ian’s new paper, <a href="https://doi.org/10.26434/chemrxiv.9767978.v1">“Virtual Excited State Reference for the Discovery of Electronic Materials Database (VERDE Materials DB): An open-access resource for ground and excited state properties of organic molecules”</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 13, 2019</span><br>
+            <p><p>Matt (Enhancing Neural Architecture Search with Speciation and Inter-Epoch Crossover) and Kathryn’s (Walking the Cost-Accuracy Tightrope: Balancing Trade-offs in Data Intensive Genomics) posters were accepted to <a href="https://sc19.supercomputing.org/">SC2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 11, 2019</span><br>
+            <p><p>Kyle Chard’s paper: Tales at Scale: Toward Enabling Reproducibility for
+Data-Intensive Research using the Whole Tale Platform presented at <a href="https://www.parco.org/">ParCO2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 11, 2019</span><br>
+            <p><p>Ian gives a keynote at <a href="https://www.parco.org/">ParCO2019</a> on Coding the Continuum.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-glass"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 03, 2019</span><br>
+            <p><p>Ben Blaiszik, Marcus Schwarting, and Ian Foster receive Argonne LDRD award to prototype the development of automated laboratories coupled with AI.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-user"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 02, 2019</span><br>
+            <p><p>Dr. Roselyne Tchoua, 2019 Globus Labs Alumna, starts as Assistant Professor at the School of Computing at DePaul University (Chicago, IL). Congratulations, Roselyne!</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-user"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">September 01, 2019</span><br>
+            <p><p>The <a href="https://cdac.uchicago.edu/summer-program/">CDAC summer internship</a> officially concludes this week! Special thanks to Aarthi, Avery, Katy, Nikki, Ruby, Ryan, Sydney, Teresa, and Tobias for their contributions to Globus Labs research projects!</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">August 31, 2019</span><br>
+            <p><p>The inaugural ParslFest Community meeting will take place Oct. 3rd-4th at the University of Chicago. <a href="http://parsl-project.org/parsl_meeting">See the Parsl website for more information</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">August 30, 2019</span><br>
+            <p><p>Check out Logan’s, Ben’s, and Ian’s new paper, <a href="https://arxiv.org/abs/1906.03233">Machine Learning Prediction of Accurate Atomization Energies of Organic Molecules from Low-Fidelity Quantum Chemical Calculations</a>, which was accepted for publication in MRS Communications Special Issue on AI!</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">August 29, 2019</span><br>
+            <p><p>Takuya Kurihana’s paper “Cloud Characterization with Deep Learning” accepted to <a href="https://sites.google.com/view/climateinformatics2019">Climate Informatics 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">August 28, 2019</span><br>
+            <p><p>Ryan Chard previews Globus Automate at the September Campus Research Computing Consortium <a href="https://carcc.org/">meeting</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">August 27, 2019</span><br>
+            <p><p>Kyle Chard joined Argonne Physicist Katrin Heitmann to discuss “Simulating and Sharing the Universe”. <a href="https://www.facebook.com/events/358182361789620/">You can see the full interview on Facebook</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-glass"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">August 26, 2019</span><br>
+            <p><p>Globus Labs project funcX featured in HPC-Wire. <a href="https://www.hpcwire.com/2019/08/26/whats-new-in-hpc-research-tsunamis-gravitational-lenses-brain-recognition-more/">Check it out here</a>!</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">August 23, 2019</span><br>
+            <p><p>Logan Ward taught a short coarse on using convolutional neural networks for scientific research at the ALCF AI for Science Tutorial.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">August 15, 2019</span><br>
+            <p><p>Kyle Chard presents <a href="https://www.aalto.fi/en/events/cs-forum-kyle-chard-serverless-supercomputing-high-performance-function-as-a-service-for">“Serverless Supercomputing: High Performance Function as a Service”</a> at Aalto University in Otaniemi, Finland.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">August 14, 2019</span><br>
+            <p><p><a href="https://arxiv.org/abs/1908.04907">Serverless Supercomputing: High Performance Function as a Service for Science</a> paper is now available on arXiv.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">August 02, 2019</span><br>
+            <p><p>Ravi Madduri, Kyle Chard, and Ian Foster publish “Reproducible big data science: A case study in continuous FAIRness” in PLOS ONE. <a href="https://journals.plos.org/plosone/article/comments?id=10.1371/journal.pone.0213013">Check it out here</a>!</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 30, 2019</span><br>
+            <p><p>Zhuozhao Li presented <a href="https://dl.acm.org/citation.cfm?doid=3332186.3332246">Publishing and Serving Machine Learning Models with DLHub</a> at <a href="https://www.pearc19.pearc.org/">PEARC 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 30, 2019</span><br>
+            <p><p>Zhuozhao Li presented <a href="https://dl.acm.org/citation.cfm?doid=3332186.3332246">Publishing and Serving Machine Learning Models with DLHub</a> at <a href="https://www.pearc19.pearc.org/">PEARC 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 30, 2019</span><br>
+            <p><p>Rick Wagner presented <a href="https://dl.acm.org/citation.cfm?id=3332241">Petrel: A Programmatically Accessible Research Data Service</a> at <a href="https://www.pearc19.pearc.org/">PEARC 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 30, 2019</span><br>
+            <p><p>Kyle Chard presented <a href="https://dl.acm.org/citation.cfm?id=3332231">Scalable Parallel Programming in Python with Parsl</a> at <a href="https://www.pearc19.pearc.org/">PEARC 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 30, 2019</span><br>
+            <p><p>Anna Woodard will present a talk titled “Real-time HEP analysis with funcX, a high-performance platform for function as a service” at <a href="http://chep2019.org">CHEP 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 25, 2019</span><br>
+            <p><p>Check out our new paper, <a href="https://arxiv.org/abs/1904.10423">A Data Ecosystem to Support Machine Learning in Materials Science</a> which was accepted for publication in MRS Communications Special Issue on AI!</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 25, 2019</span><br>
+            <p><p>Roselyne Tchoua’s paper “Active Learning Yields Better Training Data for Scientific Named Entity Recognition” is accepted at the <a href="https://escience2019.sdsc.edu/">IEEE 15th International Conference on eScience</a>, 2019.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 22, 2019</span><br>
+            <p><p>Ian Foster presented on <a href="https://www.slideshare.net/ianfoster/ai-at-scale-for-materials-and-chemistry-157533327/">AI at Scale for Materials and Chemistry</a> at the Department of Energy <a href="https://web.cvent.com/event/b03cf98d-d350-4f66-805a-1a19f03bdcf8/summary">AI for Science Town Hall</a> hosted at Argonne National Laboratory.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 09, 2019</span><br>
+            <p><p>Logan Ward presented a tutorial on <a href="https://www.researchgate.net/publication/334328220_Supervised_Learning_Regression_and_Classification">Supervised Learning (regression, classification, CNN)</a> at the AI for Science Student workshop at Argonne National Laboratory.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 08, 2019</span><br>
+            <p><p>Logan Ward presented a talk on “Materials Design” at the AI for Science Student workshop hosted at Argonne National Laboratory.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">July 08, 2019</span><br>
+            <p><p>Ben Blaiszik presented a talk on <a href="https://www.slideshare.net/BenBlaiszik/a-fair-approach-to-publishing-and-sharing-machine-learning-models">A FAIR Approach to Publishing and Sharing Machine Learning Models</a> at the AI for Science Student workshop at Argonne National Laboratory.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">June 28, 2019</span><br>
+            <p><p>Roselyne Tchoua will present her PhD dissertation on July 2nd from 11AM at John Crerar Library (JCL) 298. Her dissertation title is HYBRID HUMAN-MACHINE SCIENTIFIC INFORMATION EXTRACTION FRAMEWORKS. Go Roselyne !</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">June 26, 2019</span><br>
+            <p><p>Yadu Babuji presented Parsl talk at the <a href="http://www.hpdc.org/2019/program/">HPDC 2019</a> on June 26th. His presentation title is Parsl: Pervasive Parallel Programming in Python.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">June 25, 2019</span><br>
+            <p><p>Matt Baughman presented his AWS talk at the <a href="https://sites.google.com/view/sciencecloud2019">ScienceCloud Workshop</a> on June 25th. He presented Deconstructing the 2017 Changes to AWS Spot Market Pricing.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">June 25, 2019</span><br>
+            <p><p>Ian Foster gave a keynote at the <a href="https://sites.google.com/view/sciencecloud2019">ScienceCloud Workshop</a> on June 25th. His present title is Coding the Continuum.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-user"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">June 24, 2019</span><br>
+            <p><p><strong>Matt Baughman</strong> After working with Globus Labs part-time for nearly two years, Matt Baughman will be joining GLabs full time as a PhD student. Matt earned his Bachelor in Computational Sciences from the Minerva Schools at KGI where he studied computational analysis and theory. He will continue working with Kyle Chard on the development of automated optimization approaches for scientific cloud computing.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">June 12, 2019</span><br>
+            <p><p>Roselyne Tchoua presented “Creating Training Data for Scientific Named Entity Recognition with Minimal Human Effort” at ICCS 2019 in Faro, Algarve, Portugal.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">June 08, 2019</span><br>
+            <p><p>Takuya Kurihana presented his cloud model at the <a href="https://today.anl.gov/2019/05/argonne-cs-1-workshop-open-forum-for-application-selection/">CS-1 Workshop</a> on June 8th. He proposed a potential application on the new ALCF deep learning machine CS-1 .</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">May 22, 2019</span><br>
+            <p><p>Marcus Schwarting gave a general overview of current techniques in machine learning and how they can be applied to problems in materials science. He also highlighted the use of DLHub and MDF for facilitating the machine learning model building process.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">May 21, 2019</span><br>
+            <p><p>Roselyne Tchoua to present “Enabling Generalizable Machine Learned Scientific Named Entity Recognition” at SIGSIM PADS 2019 on Jun. 4 in Chicago, IL.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">May 20, 2019</span><br>
+            <p><p>Dr. Ian Foster, recipient of the 2019 IEEE Computer Society Charles Babbage Award, presents keynote entitled “Coding in the Continuum” at IPDPS 2019 in Rio de Janeiro, Brazil.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">May 18, 2019</span><br>
+            <p><p>Globus Labs has three papers on DLHub, Parsl, and Petrel accepted to PEARC19.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">May 15, 2019</span><br>
+            <p><p>Dr. Kyle Chard to present “FuncX: High Performance Function-as-a-Service for Science” at the 11th International Workshop on Science Gateways in Ljubljana, Slovenia (Jun. 12-14).</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">May 04, 2019</span><br>
+            <p><p>Kyle Chard chaired and Zhuozhao Li vice-chaired the Workshops Proceedings Committee at <a href="http://www.ipdps.org/ipdps2019">IPDPS 2019</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">May 04, 2019</span><br>
+            <p><p>Logan Ward co-organized <a href="https://www.mrs.org/spring2019/symposium-sessions/symposium-sessions-detail?code=GI01">a symposium</a> at the MRS Spring Meeting integrating AI with materials engineering.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">May 03, 2019</span><br>
+            <p><p>Globus Labs presents posters on DLHub, funcX, and Parsl at GCASR 2019 at DePaul University.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">April 30, 2019</span><br>
+            <p><p>The annual <a href="https://www.globusworld.org/">GlobusWorld</a> Conference is being held in Chicago, IL on May 1-2, 2019!</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">April 30, 2019</span><br>
+            <p><p>Kyle presented <a href="https://www.parsl-project.org/">Parsl</a> at the <a href="http://www.stsci.edu/institute/conference/emma">Enabling Multi-Messenger Astrophysics in the Big Data Era Workshop</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">April 11, 2019</span><br>
+            <p><p>Our paper <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0213013">Reproducible big data science: A case study in continuous FAIRness</a> was published in PLOS One.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">April 03, 2019</span><br>
+            <p><p>Roselyne B. Tchoua was featured in <a href="http://www.educationandcareernews.com/">MediaPlanet</a>’s <em>Women in Computing Campaign</em>. You can find the article online here: <a href="http://www.educationandcareernews.com/career-development/advice-from-women-in-computer-sciences"><strong>Advice From Women in Computer Sciences</strong>”</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">April 02, 2019</span><br>
+            <p><p>Roselyne B. Tchoua, Zhi Hong, Logan T. Ward, Kyle Chard, and Ian T. Foster publish paper, “Creating Training Data for Scientific Named Entity Recognition with Minimal Human Effort”, at ICCS 2019.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-user"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">March 22, 2019</span><br>
+            <p><p><strong>Sandro Fiore (Ph.D)</strong> has joined the U. Chicago and Globus Labs as a Visiting Scientist. He is Senior Scientist and Head of the Data Science and Learning Research Team at the Euro-Mediterranean Center on Climate Change (CMCC). His research focuses on scientific data management, in particular high performance data analytics workflows as well as provenance and computational reproducibility aspects.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">March 20, 2019</span><br>
+            <p><p>Globus Labs will be giving a talk on <a href="https://labs.globus.org/projects/parsl.html">Parsl</a> at the 28th International ACM Symposium on High-Performance Parallel and Distributed Computing (HPDC’19)</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">March 12, 2019</span><br>
+            <p><p>Ryan Chard presented  <a href="https://docs.google.com/presentation/d/1u2Z7Qc2wFJSBGbai0GpIO0whRfeJWpo7xZQVIcr0fnM/edit?usp=sharing"><em>FuncX: A Function Serving Platform for HPC</em></a> at the <a href="https://www.sylabs.io/2018/12/save-the-date-for-the-inaugural-meeting-of-the-singularity-user-group-march-12-13-2019/"><strong>Singularity User Group Meeting</strong></a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">March 12, 2019</span><br>
+            <p><p>Logan Ward is invited to give a talk on <a href="http://www.programmaster.org/PM/PM.nsf/ApprovedAbstracts/3AE9B96D8853FF83852582BE0007B8B7?OpenDocument"><em>Machine-learning-aided Design of Metallic Glasses</em></a> at <a href="https://www.tms.org/TMS2019/Programming/TMS2019_Technical_Program/TMS2019/Programming/TMS2019_Technical_Program.aspx"><strong>TMS 2019</strong></a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-glass"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">March 12, 2019</span><br>
+            <p><p>The NIST Center for Hierarchical Materials (CHiMaD) has been extended for an additional 5 years. We are excited to continue expanding on the solid foundation that CHiMaD hasbuilt. Globus Labs projects including the Materials Data Facility and the Polymer Property Predictor and Database (PPPDB) are funded through CHiMaD. <a href="https://news.northwestern.edu/stories/2019/01/materials-design-center-receives-25-million-grant/"><strong>[Full Report]</strong></a></p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-glass"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">March 11, 2019</span><br>
+            <p><p>Ian Foster named recipient of the 2019 IEEE Computer Society Charles Babbage Award! Congratulations!</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-user"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">March 10, 2019</span><br>
+            <p><p>Join our <a href="https://labs.globus.org/join.html"><strong>UChicago Data and Computing Summer Lab</strong></a>. Applications due by <strong>March 10th, 2019</strong>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">February 28, 2019</span><br>
+            <p><p>Ryan Chard presents <a href="https://arxiv.org/abs/1811.11213"><em>DLHub</em></a> at <a href="https://candle.cels.anl.gov/"><strong>CANDLE Workshop</strong></a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">February 26, 2019</span><br>
+            <p><p>Ian Foster presents <a href="https://nanohub.org/groups/nanomfg/File:/uploads/MDF_DLHub-Foster-UIUC.PDF"><em>Infrastructure for data-driven discovery: Materials Data Facility and DLHub</em></a> at <a href="https://nanohub.org/groups/nanomfg/feb2019_dsean_agenda"><strong>nano manufacturing (nanoMFG)</strong></a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">February 18, 2019</span><br>
+            <p><p>Marcus Schwarting presents <a href="https://drive.google.com/open?id=1-Lt-vcB6UW5kzkPAWZjJBTdkeWIYZCZJ"><em>Machine Learning Approaches for XRD Analysis of the HTEM Database</em></a> at the APS User Science Seminar.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">February 18, 2019</span><br>
+            <p><p>Logan Ward presents <a href="https://www.researchgate.net/publication/330983046_Combining_Machine_Learning_and_High-Throughput_Science"><em>Combining Machine Learning and High-Throughput Science</em></a> at <a href="https://www.jst.go.jp/kisoken/presto/research/activity/1112073/mi_insympo.pdf"><strong>International Symposium on Materials Informatics</strong></a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">February 18, 2019</span><br>
+            <p><p>Ricardo B. Lourenço will present <em>Cloud Characterization with Deep Learning</em> at the University of São Paulo on March 28th and the University of Campinas on March 29th.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-duplicate"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">February 18, 2019</span><br>
+            <p><p>Kyle Chard’s paper on <a href="https://arxiv.org/abs/1902.03656?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+arxiv%2FQSXk+%28ExcitingAds%21+cs+updates+on+arXiv.org%29"><em>Cloud Futurology</em></a> accepted for publication to <a href="http://conferences.computer.org/cloud/2019/"><strong>IEEE Computer 2019</strong></a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">February 18, 2019</span><br>
+            <p><p>Ian Foster presents Globus Automate and Globus BoF at <a href="http://eresearch2019.org.nz/"><strong>eResearch 2019</strong></a> in Auckland, NZ.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">February 13, 2019</span><br>
+            <p><p>Ian Foster gives a keynote address at Multicore World 2019 entitled <a href="https://multicore.world/speakers/ian-foster/">“Learning Systems for Science”</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-glass"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">January 23, 2019</span><br>
+            <p><p>Ricardo Lourenco received an Outstanding Student Paper Award from the American Geophysical Union for his work titled <a href="https://agu.confex.com/agu/fm18/meetingapp.cgi/Paper/439373">Cloud Characterization with Deep Learning</a>.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">December 20, 2018</span><br>
+            <p><p>Globus Labs will be giving a <a href="https://arxiv.org/pdf/1811.11213.pdf">talk</a> on <a href="https://labs.globus.org/projects/dlhub.html">DLHub</a> at the 2019 IEEE International Parallel &amp; Distributed Processing Symposium (IPDPS)</p>
+</p>
+        </div>
+      </div>
+    </div>
     
     <div class="row">
         <div class="col-xs-1">
@@ -206,6 +2318,38 @@
         <div class="col-xs-11 news-info">
             <p><span class="name">October 15, 2018</span><br>
             <p><p>Marcus Schwarting joined the Globus Labs Team. Marcus is working on machine learning methods for materials discovery and testing. He will also be working on a project 3M on leveraging machine learning for CFD calculations. He is working on a master’s degree in computer science with an emphasis on machine learning from Georgia Tech.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">October 04, 2018</span><br>
+            <p><p>Logan Ward gave a talk on Materials Database at the Workshop on <a href="http://www.cvent.com/events/gap-analysis/event-summary-3ad86ec662904f829af44a6f24f14dc7.aspx">“Gap Analysis: Materials Discovery through Data Science at Advanced User Light Sources”</a> in Santa Fe, New Mexico.</p>
+</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="glyphicon-circle">
+            
+                <span class="glyphicon glyphicon-blackboard"></span>
+            
+            </div>
+        </div>
+        <div class="col-xs-11 news-info">
+            <p><span class="name">October 02, 2018</span><br>
+            <p><p>Yuliana Zamora presented a poster at   <a href="https://ceres.cs.uchicago.edu/index.html">CERES</a> titled “Data Driven Analysis of GPU Benchmarking”. The poster describes  a data-driven framework that makes use of data-analysis tools, such as machine learning and transfer learning, to reduce the time needed for engineers and researchers to predict the performance of a given software kernel on an arbitrary GPU architecture.</p>
 </p>
         </div>
       </div>
@@ -846,7 +2990,7 @@ summit at the University of Chicago on Sept. 27, 2017.</p>
         </div>
         <div class="col-xs-11 news-info">
             <p><span class="name">November 16, 2016</span><br>
-            <p><p>William Agnew recieved the first place award in the ACM Student Research Competition for his paper titled <a href="http://sc16.supercomputing.org/sc-archive/src_poster/src_poster_pages/spost103.html">Touring Dataland? Automated Recommendations for the Big Data Traveler</a>.</p>
+            <p><p>William Agnew received the first place award in the ACM Student Research Competition for his paper titled <a href="http://sc16.supercomputing.org/sc-archive/src_poster/src_poster_pages/spost103.html">Touring Dataland? Automated Recommendations for the Big Data Traveler</a>.</p>
 </p>
         </div>
       </div>
@@ -949,28 +3093,32 @@ summit at the University of Chicago on Sept. 27, 2017.</p>
     </div>
     
 
-    
-    
-    </main>
-		
-    <footer>
-      <div class="container">
-				<div class="row">
-				<div class="col-sm-2"></div>
-					 <div class="col-sm-3"><a href="http://www.ci.uchicago.edu/"><img class="img-responsive" src="http://localhost:4000/images/theme/ci.png"></a></div>
-					 <div class="col-sm-3"><a href="http://www.uchicago.edu/"><img class="img-responsive" src="http://localhost:4000/images/theme/uchicago.png"></a></div>
-					 <div class="col-sm-3"><a href="https://www.anl.gov/"><img class="img-responsive" src="http://localhost:4000/images/theme/anl.png"></a></div>
-					<div class="col-sm-2"></div>
-				</div>
-        <!-- 
+
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3"><a href="http://www.ci.uchicago.edu/"><img class="img-responsive"
+              src="http://localhost:4000/images/theme/ci.png"></a></div>
+        <div class="col-sm-3"><a href="http://www.uchicago.edu/"><img class="img-responsive"
+              src="http://localhost:4000/images/theme/uchicago.png"></a></div>
+        <div class="col-sm-3"><a href="https://www.anl.gov/"><img class="img-responsive"
+              src="http://localhost:4000/images/theme/anl.png"></a></div>
+        <div class="col-sm-2"></div>
+      </div>
+      <!-- 
 				<div class="row">
               <div class="col-xs-12">
                 <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> The University of Chicago</p>
               </div>
           </div>
 					-->
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-  </body>
+</body>
+
 </html>

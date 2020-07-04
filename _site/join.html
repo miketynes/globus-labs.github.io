@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Globus Labs</title>
-    <link rel="shortcut icon" href="http://localhost:4000/images/theme/favicon.ico?v=2">
+<head>
+  <meta charset="UTF-8">
+  <title>Globus Labs</title>
+  <link rel="shortcut icon" href="http://localhost:4000/images/theme/favicon.ico?v=2">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost:4000/css/styles.css" type="text/css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <script src="/js/jquery.min.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        TeX: {
+            extensions: ["cancel.js"],
+            equationNumbers: {
+                autoNumber: "AMS"
+            },
+            Macros: {
+             '\(': '\\left(',
+             '\)': '\\right)',
+             '\[': '\\left[',
+             '\]': '\\right]',
+            }
+        },
+        tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            displayMath: [ ['$$','$$'] ],
+            skipTags: ["script","noscript","style","textarea"],
+            processEnvironments: true,
+            processEscapes: true,
+        }
+    });
+   </script>
+  <script src="http://localhost:35729/livereload.js"></script>
+  <script src="https://togetherjs.com/togetherjs-min.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</head>
+
+<body>
   
-    <script src="js/jquery.min.js"></script>
 
-  </head>
-
-  <body>
-    
-  
-    <header id="masthead">
-      <nav id="navbar" class="navbar" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/"><img class="img-responsive" src="http://localhost:4000/images/theme/logo_globus_labs.svg" alt="Globus Labs" data-pin-nopin="true"></a>
-          </div>
-          
-         <div class="collapse navbar-collapse" id="main-nav">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/" >Overview</a></li>
-                <li><a href="/people.html"  >People</a></li>
-                <li><a href="/projects.html"  >Projects</a></li>
-                <li><a href="/news.html"  >News</a></li>
-				<li><a href="/publications.html"  >Publications</a></li>
-                <li><a href="/join.html"  class="active">Join Us</a></li>
-            </ul>
-          </div>
+  <header id="masthead">
+    <nav id="navbar" class="navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img class="img-responsive"
+              src="http://localhost:4000/images/globus_labs-XL-dark-bg.png" alt="Globus Labs" data-pin-nopin="true"></a>
         </div>
-      </nav>
-    </header>
 
-    <main class="container">
-    
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/" >Overview</a></li>
+            <li><a href="/people.html" >People</a></li>
+            <li><a href="/projects.html" >Projects</a>
+            </li>
+            <li><a href="/news.html" >News</a></li>
+            <li><a href="/blog.html" >Blog</a></li>
+            <li><a href="/publications.html" >Publications</a></li>
+            <li><a href="/join.html" class="active" >Join Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+
           <h1>Join Us</h1>
       <div class="row">
         <div class="col-xs-12">
@@ -59,7 +95,7 @@
 
 					<p><b>Postdoc positions:</b> applicants must have a recent Ph.D. in computer science or a related field. They must have an excellent academic record with a proven record of publication.  Funding is available for up to three years contingent on good performance. </p>
 
-					<p><b>Internship/part-time positions:</b> applicants must be current high school, undergraduate, or graduate students. They must have an excellent academic record and/or strong history of software development. Applicants with interest in both research and production software development are encouraged to apply. </p>
+			<p><b>Internship/part-time positions:</b> (Note that <b><a href="https://cdac.uchicago.edu/summer-program/">Summer 2019 internship applications</a></b> are <b>due by Friday, March 15th</b>). Applicants must be current high school, undergraduate, or graduate students. They must have an excellent academic record and/or strong history of software development. Applicants with interest in both research and production software development are encouraged to <a href="https://cdac.uchicago.edu/summer-program/">apply</a>. </p>
 
 					<p>For more information please contact Prof. Foster or Dr. Chard via email at <a href="mailto:foster@anl.gov">foster@anl.gov</a> or <a href="mailto:chard@uchicago.edu">chard@uchicago.edu</a>.</p>
 
@@ -67,28 +103,32 @@
       </div>
 
 
-    
-    
-    </main>
-		
-    <footer>
-      <div class="container">
-				<div class="row">
-				<div class="col-sm-2"></div>
-					 <div class="col-sm-3"><a href="http://www.ci.uchicago.edu/"><img class="img-responsive" src="http://localhost:4000/images/theme/ci.png"></a></div>
-					 <div class="col-sm-3"><a href="http://www.uchicago.edu/"><img class="img-responsive" src="http://localhost:4000/images/theme/uchicago.png"></a></div>
-					 <div class="col-sm-3"><a href="https://www.anl.gov/"><img class="img-responsive" src="http://localhost:4000/images/theme/anl.png"></a></div>
-					<div class="col-sm-2"></div>
-				</div>
-        <!-- 
+
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3"><a href="http://www.ci.uchicago.edu/"><img class="img-responsive"
+              src="http://localhost:4000/images/theme/ci.png"></a></div>
+        <div class="col-sm-3"><a href="http://www.uchicago.edu/"><img class="img-responsive"
+              src="http://localhost:4000/images/theme/uchicago.png"></a></div>
+        <div class="col-sm-3"><a href="https://www.anl.gov/"><img class="img-responsive"
+              src="http://localhost:4000/images/theme/anl.png"></a></div>
+        <div class="col-sm-2"></div>
+      </div>
+      <!-- 
 				<div class="row">
               <div class="col-xs-12">
                 <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> The University of Chicago</p>
               </div>
           </div>
 					-->
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-  </body>
+</body>
+
 </html>

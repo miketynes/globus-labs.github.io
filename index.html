@@ -4,49 +4,73 @@ title: Globus Labs
 ---
 
 
-      <div class="jumbotron" style="background-image: url('images/home/facebook-image.jpg'); background-size: cover;">
-        <font color="white"><p style="font-size:30px">Making all research data accessible, discoverable, and usable</p></font>
-        <p></p>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <p>Globus Labs is a research group led by Prof. Ian Foster and Dr. Kyle Chard that spans the <a href="https://www.ci.uchicago.edu">Computation Institute</a>, <a href="https://www.cs.uchicago.edu/">Department of Computer Science</a>, and <a href="https://www.mcs.anl.gov">Math and Computer Science Division</a> at the University of Chicago and Argonne National Laboratory. Our modest goal is to realize a world in which <strong>all research data are reliably, rapidly, and securely accessible, discoverable, and usable</strong>. To this end, we work on a broad range of research problems in data-intensive computing and research data management. Our work is made possible by much-appreciated support from the National Science Foundation, National Institutes of Health, Department of Energy, National Institute of Standards and Technology, and other sources, and in addition to computer science, engages fields as diverse as materials science, biology, archaeology, climate policy, and social sciences. We work closely with the team developing the <a href="https://www.globus.org">Globus research data management platform</a>, who often challenge us to think bigger&mdash;and sometimes implement our less crazy ideas.
-</p>
-            </div>
-        </div>
-	<hr>
-			
-	<h4>FEATURED PROJECTS</h4>
-	<div class="row">
-            {% for project in site.projects %}
-                {% if project.featured %}
-                <div class="col-xs-4">
-	              <a href="{{ project.url }}"><img class="img-responsive" src="images/projects/{{ project.image }}"></a>
-                    <p>{{ project.teaser }}</p>
-                </div>
+<div class="jumbotron" style="background-image: url('images/home/facebook-image.jpg'); background-size: cover;">
+    <font color="white">
+        <p style="font-size:30px">Making all research data accessible, discoverable, and usable</p>
+    </font>
+    <p></p>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <p>Globus Labs is a research group led by Prof. Ian Foster and Dr. Kyle Chard that spans the <a
+                href="https://www.ci.uchicago.edu">Computation Institute</a>, <a
+                href="https://www.cs.uchicago.edu/">Department of Computer Science</a>, and <a
+                href="https://www.mcs.anl.gov">Math and Computer Science Division</a> at the University of Chicago and
+            Argonne National Laboratory. Our modest goal is to realize a world in which <strong>all research data are
+                reliably, rapidly, and securely accessible, discoverable, and usable</strong>. To this end, we work on a
+            broad range of research problems in data-intensive computing and research data management. Our work is made
+            possible by much-appreciated support from the National Science Foundation, National Institutes of Health,
+            Department of Energy, National Institute of Standards and Technology, and other sources, and in addition to
+            computer science, engages fields as diverse as materials science, biology, archaeology, climate policy, and
+            social sciences. We work closely with the team developing the <a href="https://www.globus.org">Globus
+                research data management platform</a>, who often challenge us to think bigger&mdash;and sometimes
+            implement our less crazy ideas.
+        </p>
+    </div>
+</div>
+<hr>
+
+<h4>FEATURED PROJECTS</h4>
+<div class="row">
+    {% for project in site.projects %}
+    {% if project.featured %}
+    <div class="col-xs-4">
+        <a href="{{ project.url }}"><img class="img-responsive" src="images/projects/{{ project.image }}"></a>
+        <p>{{ project.teaser }}</p>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+<hr>
+<h4>RECENT NEWS</h4>
+<div class="row news">
+    {% for post in site.posts limit:4 %}
+    <div class="col-xs-3">
+        <div class="center-block">
+            <div class="glyphicon-circle">
+                {% if post.type == "award" %}
+                <span class="glyphicon glyphicon-glass"></span>
+                {% elsif post.type == "paper" %}
+                <span class="glyphicon glyphicon-duplicate"></span>
+                {% elsif post.type == "presentation" %}
+                <span class="glyphicon glyphicon-blackboard"></span>
+                {% elsif post.type == "join" %}
+                <span class="glyphicon glyphicon-user"></span>
                 {% endif %}
-            {% endfor %}
-        </div>
-			
-        <hr>
-	<h4>RECENT NEWS</h4>
-            <div class="row news">
-                {% for post in site.posts limit:4 %}			
-                <div class="col-xs-3">
-		    <div class="center-block">
-                        <div class="glyphicon-circle">
-                            {% if post.type == "award" %}
-                                <span class="glyphicon glyphicon-glass"></span>
-                            {% elsif post.type == "paper" %}
-                                <span class="glyphicon glyphicon-duplicate"></span>
-                            {% elsif post.type == "presentation" %}
-                                <span class="glyphicon glyphicon-blackboard"></span>
-                            {% elsif post.type == "join" %}
-                                <span class="glyphicon glyphicon-user"></span>
-                            {% endif %}
-                        </div>
-	    	    </div>
-                    <p>{{ post.content }}</p>
-		</div>
-            {% endfor %}
             </div>
+        </div>
+        <p>{{ post.content }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<hr>
+<h4>RECENT BLOG POSTS</h4>
+<div class="row news">
+    {% for blog in site.blog limit:4 %}
+    <div class="col-xs-3">
+        <a href="{{ site.baseurl }}{{ blog.url }}" class="read-more">{{ blog.title }}</a>
+    </div>
+    {% endfor %}
+</div>

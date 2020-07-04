@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog
+---
+
+<h1>Blog</h1>
+
+<div class="blog">
+  {% for blog in site.blog %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a></h1>
+
+      <div class="entry">
+        {{ blog.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ blog.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>

@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>Globus Labs</title>
-    <link rel="shortcut icon" href="http://localhost:4000/images/theme/favicon.ico?v=2">
+<head>
+  <meta charset="UTF-8">
+  <title>Globus Labs</title>
+  <link rel="shortcut icon" href="http://localhost:4000/images/theme/favicon.ico?v=2">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost:4000/css/styles.css" type="text/css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <script src="/js/jquery.min.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        TeX: {
+            extensions: ["cancel.js"],
+            equationNumbers: {
+                autoNumber: "AMS"
+            },
+            Macros: {
+             '\(': '\\left(',
+             '\)': '\\right)',
+             '\[': '\\left[',
+             '\]': '\\right]',
+            }
+        },
+        tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            displayMath: [ ['$$','$$'] ],
+            skipTags: ["script","noscript","style","textarea"],
+            processEnvironments: true,
+            processEscapes: true,
+        }
+    });
+   </script>
+  <script src="http://localhost:35729/livereload.js"></script>
+  <script src="https://togetherjs.com/togetherjs-min.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+</head>
+
+<body>
   
-    <script src="js/jquery.min.js"></script>
 
-  </head>
-
-  <body>
-    
-  
-    <header id="masthead">
-      <nav id="navbar" class="navbar" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/"><img class="img-responsive" src="http://localhost:4000/images/theme/logo_globus_labs.svg" alt="Globus Labs" data-pin-nopin="true"></a>
-          </div>
-          
-         <div class="collapse navbar-collapse" id="main-nav">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="/" >Overview</a></li>
-                <li><a href="/people.html"  class="active">People</a></li>
-                <li><a href="/projects.html"  >Projects</a></li>
-                <li><a href="/news.html"  >News</a></li>
-				<li><a href="/publications.html"  >Publications</a></li>
-                <li><a href="/join.html"  >Join Us</a></li>
-            </ul>
-          </div>
+  <header id="masthead">
+    <nav id="navbar" class="navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img class="img-responsive"
+              src="http://localhost:4000/images/globus_labs-XL-dark-bg.png" alt="Globus Labs" data-pin-nopin="true"></a>
         </div>
-      </nav>
-    </header>
 
-    <main class="container">
-    
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/" >Overview</a></li>
+            <li><a href="/people.html" class="active" >People</a></li>
+            <li><a href="/projects.html" >Projects</a>
+            </li>
+            <li><a href="/news.html" >News</a></li>
+            <li><a href="/blog.html" >Blog</a></li>
+            <li><a href="/publications.html" >Publications</a></li>
+            <li><a href="/join.html" >Join Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+
           <h1>People</h1>
     
       
@@ -74,7 +110,7 @@
                     <div class="member-info">
                         <p><span class="name">Steve Tuecke</span><br>
                         <span class="position">Senior Scientist</span><br>
-                        Computation Institute<br>
+                        Globus<br>
                         University of Chicago</p>
                     </div>
                 </div>
@@ -88,8 +124,8 @@
                     <img src="images/people/chard-kyle.jpg">
                     <div class="member-info">
                         <p><span class="name">Kyle Chard</span><br>
-                        <span class="position">Fellow</span><br>
-                        Computation Institute<br>
+                        <span class="position">Research Assistant Professor</span><br>
+                        Department of Computer Science<br>
                         University of Chicago</p>
                     </div>
                 </div>
@@ -102,8 +138,8 @@
                     <div class="member-info">
                         <p><span class="name">Ben Blaiszik</span><br>
                         <span class="position">Researcher</span><br>
-                        Computation Institute<br>
-                        University of Chicago</p>
+                        Globus, Data Science and Learning<br>
+                        University of Chicago, Argonne National Laboratory</p>
                     </div>
                 </div>
             </div>
@@ -112,6 +148,19 @@
         
           
           <div class="row">
+                <div class="col-xs-12 col-sm-6 member">
+                    <img src="images/people/babuji.jpg">
+                    <div class="member-info">
+                        <p><span class="name">Yadu Nand Babuji</span><br>
+                        <span class="position">Senior Software Engineer</span><br>
+                        Computation Institute<br>
+                        University of Chicago</p>
+                    </div>
+                </div>
+                
+      
+        
+          
                 <div class="col-xs-12 col-sm-6 member">
                     <img src="images/people/zli.jpg">
                     <div class="member-info">
@@ -121,16 +170,31 @@
                         University of Chicago</p>
                     </div>
                 </div>
+            </div>
+          
+      
+        
+          
+          <div class="row">
+                <div class="col-xs-12 col-sm-6 member">
+                    <img src="images/people/chard-ryan.jpg">
+                    <div class="member-info">
+                        <p><span class="name">Ryan Chard</span><br>
+                        <span class="position">Assistant Scientist</span><br>
+                        Data Science and Learning<br>
+                        Argonne National Laboratory</p>
+                    </div>
+                </div>
                 
       
         
           
                 <div class="col-xs-12 col-sm-6 member">
-                    <img src="images/people/chard-ryan.jpg">
+                    <img src="images/people/ward.jpg">
                     <div class="member-info">
-                        <p><span class="name">Ryan Chard</span><br>
-                        <span class="position">Postdoctoral Fellow</span><br>
-                        Computing, Environment and Life Sciences<br>
+                        <p><span class="name">Logan Ward</span><br>
+                        <span class="position">Assistant Scientist</span><br>
+                        Data Science and Learnign, JCESR<br>
                         Argonne National Laboratory</p>
                     </div>
                 </div>
@@ -140,19 +204,6 @@
         
           
           <div class="row">
-                <div class="col-xs-12 col-sm-6 member">
-                    <img src="images/people/ward.jpg">
-                    <div class="member-info">
-                        <p><span class="name">Logan Ward</span><br>
-                        <span class="position">Postdoctoral Fellow</span><br>
-                        Computer Science<br>
-                        University of Chicago</p>
-                    </div>
-                </div>
-                
-      
-        
-          
                 <div class="col-xs-12 col-sm-6 member">
                     <img src="images/people/woodard.jpg">
                     <div class="member-info">
@@ -162,29 +213,14 @@
                         University of Chicago</p>
                     </div>
                 </div>
-            </div>
-          
-      
-        
-          
-          <div class="row">
-                <div class="col-xs-12 col-sm-6 member">
-                    <img src="images/people/schwarting.jpg">
-                    <div class="member-info">
-                        <p><span class="name">Marcus Schwarting</span><br>
-                        <span class="position">Researcher</span><br>
-                        Data Science and Learning Division<br>
-                        Argonne National Laboratory</p>
-                    </div>
-                </div>
                 
       
         
           
                 <div class="col-xs-12 col-sm-6 member">
-                    <img src="images/people/tchoua.jpg">
+                    <img src="images/people/nickolay.jpg">
                     <div class="member-info">
-                        <p><span class="name">Roselyne Tchoua</span><br>
+                        <p><span class="name">Sam Nickolay</span><br>
                         <span class="position">Graduate Student</span><br>
                         Department of Computer Science<br>
                         University of Chicago</p>
@@ -196,6 +232,19 @@
         
           
           <div class="row">
+                <div class="col-xs-12 col-sm-6 member">
+                    <img src="images/people/skluzacek.jpg">
+                    <div class="member-info">
+                        <p><span class="name">Tyler J. Skluzacek</span><br>
+                        <span class="position">Graduate Student</span><br>
+                        Department of Computer Science<br>
+                        University of Chicago</p>
+                    </div>
+                </div>
+                
+      
+        
+          
                 <div class="col-xs-12 col-sm-6 member">
                     <img src="images/people/kurihana.jpg">
                     <div class="member-info">
@@ -205,17 +254,32 @@
                         University of Chicago</p>
                     </div>
                 </div>
+            </div>
+          
+      
+        
+          
+          <div class="row">
+                <div class="col-xs-12 col-sm-6 member">
+                    <img src="images/people/hong.jpg">
+                    <div class="member-info">
+                        <p><span class="name">Zhi Hong</span><br>
+                        <span class="position">Graduate Student</span><br>
+                        Department of Computer Science<br>
+                        University of Chicago</p>
+                    </div>
+                </div>
                 
       
         
           
                 <div class="col-xs-12 col-sm-6 member">
-                    <img src="images/people/rlourenco.jpg">
+                    <img src="images/people/schwarting.jpg">
                     <div class="member-info">
-                        <p><span class="name">Ricardo B. Lourenço</span><br>
-                        <span class="position">Graduate Student</span><br>
-                        Department of Computer Science<br>
-                        University of Chicago</p>
+                        <p><span class="name">Marcus Schwarting</span><br>
+                        <span class="position">Researcher</span><br>
+                        Data Science and Learning Division<br>
+                        Argonne National Laboratory</p>
                     </div>
                 </div>
             </div>
@@ -238,9 +302,9 @@
         
           
                 <div class="col-xs-12 col-sm-6 member">
-                    <img src="images/people/hong.jpg">
+                    <img src="images/people/baughman.png">
                     <div class="member-info">
-                        <p><span class="name">Zhi Hong</span><br>
+                        <p><span class="name">Matt Baughman</span><br>
                         <span class="position">Graduate Student</span><br>
                         Department of Computer Science<br>
                         University of Chicago</p>
@@ -253,9 +317,9 @@
           
           <div class="row">
                 <div class="col-xs-12 col-sm-6 member">
-                    <img src="images/people/nickolay.jpg">
+                    <img src="images/people/max.jpg">
                     <div class="member-info">
-                        <p><span class="name">Sam Nickolay</span><br>
+                        <p><span class="name">Maksim Levental</span><br>
                         <span class="position">Graduate Student</span><br>
                         Department of Computer Science<br>
                         University of Chicago</p>
@@ -263,26 +327,15 @@
                 </div>
                 
       
-        
-          
-                <div class="col-xs-12 col-sm-6 member">
-                    <img src="images/people/skluzacek.jpg">
-                    <div class="member-info">
-                        <p><span class="name">Tyler J. Skluzacek</span><br>
-                        <span class="position">Graduate Student</span><br>
-                        Department of Computer Science<br>
-                        University of Chicago</p>
-                    </div>
-                </div>
-            </div>
-          
-      
      
       
+       
+            </div>
       
     
     <h1>Alumni</h1>
     <ul>
+    <li><a href="https://www.cdm.depaul.edu/Faculty-and-Staff/Pages/faculty-info.aspx?fid=1459">Roselyne Tchoua</a>, Ph.D., DePaul University, Chicago</li>
 	<li>Quan Pham, Ph.D., Allianz Australia </li>
 	<li>Tim Armstrong, Ph.D., Cloudera</li>
 	<li>Atilla Soner Balkır, Ph.D., Google</li>
@@ -299,28 +352,32 @@
     </ul>
 
 
-    
-    
-    </main>
-		
-    <footer>
-      <div class="container">
-				<div class="row">
-				<div class="col-sm-2"></div>
-					 <div class="col-sm-3"><a href="http://www.ci.uchicago.edu/"><img class="img-responsive" src="http://localhost:4000/images/theme/ci.png"></a></div>
-					 <div class="col-sm-3"><a href="http://www.uchicago.edu/"><img class="img-responsive" src="http://localhost:4000/images/theme/uchicago.png"></a></div>
-					 <div class="col-sm-3"><a href="https://www.anl.gov/"><img class="img-responsive" src="http://localhost:4000/images/theme/anl.png"></a></div>
-					<div class="col-sm-2"></div>
-				</div>
-        <!-- 
+
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3"><a href="http://www.ci.uchicago.edu/"><img class="img-responsive"
+              src="http://localhost:4000/images/theme/ci.png"></a></div>
+        <div class="col-sm-3"><a href="http://www.uchicago.edu/"><img class="img-responsive"
+              src="http://localhost:4000/images/theme/uchicago.png"></a></div>
+        <div class="col-sm-3"><a href="https://www.anl.gov/"><img class="img-responsive"
+              src="http://localhost:4000/images/theme/anl.png"></a></div>
+        <div class="col-sm-2"></div>
+      </div>
+      <!-- 
 				<div class="row">
               <div class="col-xs-12">
                 <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> The University of Chicago</p>
               </div>
           </div>
 					-->
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-  </body>
+</body>
+
 </html>
