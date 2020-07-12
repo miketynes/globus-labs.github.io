@@ -1,8 +1,8 @@
 ---
-title: "Yuliana Zamora"
-image: "zamora.jpg"
-position: "Graduate Student"
+title: "Rohan Kumar"
+image: "rohankumar.jpg"
+position: "Masters Student"
 department: "Department of Computer Science"
 institution: "University of Chicago"
-ranking: 31
+ranking: 34
 ---
