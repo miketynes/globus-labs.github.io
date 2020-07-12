@@ -6,16 +6,16 @@ title: Blog
 <h1>Blog</h1>
 
 <div class="blog">
-  {% for blog in site.blog %}
+  {% for blog in site.blog reversed %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a></h1>
+      <h3><a href="{{ site.baseurl }}{{ blog.url }}">{{ blog.title }}</a></h3>
 
-      <div class="entry">
+      <!-- <div class="entry">
         {{ blog.excerpt }}
-      </div>
+      </div> -->
 
-      <a href="{{ site.baseurl }}{{ blog.url }}" class="read-more">Read More</a>
+      <!-- <a href="{{ site.baseurl }}{{ blog.url }}" class="read-more">Read More</a> -->
     </article>
   {% endfor %}
 </div>
