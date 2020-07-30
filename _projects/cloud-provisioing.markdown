@@ -1,8 +1,8 @@
 ---
 layout: project
-title:  "Cloud Provisioning"
+title:  "SCRIMP"
 image: "provision.png"
-teaser: "We are developing methods to automate the provisioning of cloud computing infrastructure"
+teaser: "We are developing methods to automate the provisioning of cloud resourcs to create optimal compute environments"
 featured: false
 description: "Cloud platforms are increasingly relied upon to conduct large scale science. However, the method by which infrastructure is provisioned and managed are ad hoc. We are developing new methods to profile application performance, predict cloud market conditions, and automate provisioning decisions."
 ---
@@ -22,15 +22,23 @@ and efficiency of leveraging cloud computing platforms by an order of magnitude 
 
 Our research focuses on three core areas:
 (1) developing new cloud profiling models that can efficiently predict application performance (execution
-time, accuracy, and resource usage) on many different cloud instance types; 
-(2) exploring cloud market prediction models to support provisioning of volatile instances at low cost 
+time, accuracy, and resource usage) across heterogeneous environments; 
+(2) exploring cloud pricing and performance modeling to support provisioning of volatile instances at low cost 
 and with low risk; and 
-(3) creating a user-oriented provisioning service that uses application profiles and market 
+(3) creating a cost-aware provisioning service that uses application profiles and compute environment 
 prediction methods to automate
-and optimize infrastructure provisioning decisions and cloud management based on user requirements (e.g.,
+and optimize infrastructure provisioning decisions and heterogeneous management based on user requirements (e.g.,
 optimizing run time, reducing costs). 
 
 Further reading
+
+- C. Wu, T. Summer, Z. Li, A. Woodard, R. Chard, M. Baughman, Y. Babuji, K. Chard, J. Pitt, and I. Foster, ["ParaOpt: Automated Application Parameterization and Optimization for the Cloud"] (https://labs.globus.org/pubs/wu-cloudcom-2019.pdf) IEEE International Conference on Cloud Computing Technology and Science. 2019.
+
+- M. Baughman, S. Caton, C. Haas, R. Chard, R. Wolski, I. Foster, and K. Chard, ["Deconstructing the 2017 changes to AWS spot market pricing"] (https://www.researchgate.net/profile/Matthew_Baughman/publication/333939795_Deconstructing_the_2017_Changes_to_AWS_Spot_Market_Pricing/links/5d163c56458515c11c0061b3/Deconstructing-the-2017-Changes-to-AWS-Spot-Market-Pricing.pdf) 10th Workshop on Scientific Cloud Computing. 2019.
+
+- M. Baughman, R. Chard, L. Ward, J. Pitt, K. Chard, and I. Foster, ["Profiling and Predicting Application Performance on the Cloud"] (https://labs.globus.org/pubs/Baughman_UCC_2018.pdf) 11th IEEE/ACM International Conference on Cloud Computing. 2018.
+
+- M. Baughman, C. Haas, R. Wolski, I. Foster, and K. Chard, ["Predicting Amazon spot prices with LSTM networks"](https://labs.globus.org/pubs/Baughman_ScienceCloud_2018.pdf) 9th Workshop on Scientific Cloud Computing. 2018.
 
 - R. Chard, K. Chard, R. Wolski, R. Madduri, B. Ng, K. Bubendorfer, and I. Foster, ["Cost-Aware Cloud Profiling, Prediction, and Provisioning as a Service,"](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7515692&isnumber=7515592) IEEE Cloud Computing 4 (4) : 48-59. 2017.
 - R. Chard, K. Chard, B. Ng, K. Bubendorfer, A. Rodriguez, R. Madduri, and I. Foster, ["An Automated Tool Profiling Service for the Cloud,"](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7515692&isnumber=7515592) 2016 16th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGrid), Cartagena, 2016, pp. 223-232.
