@@ -1,7 +1,7 @@
 ---
 layout: news
 title: "The funcX project is looking for a software engineer"
-date:  2020-06-18 10:13:16 -0700
+date:  2020-08-06 10:13:16 -0700
 type: join
 ---
 
