@@ -5,4 +5,4 @@ date:  2020-09-10 12:00:00 -0700
 type: award
 ---
 
-[Parsl](http://parsl-project.org/) featured in [Research Software](https://rseng.github.io/rseng/software/parsl).
+[Parsl](http://parsl-project.org/) featured in [Research Software Encyclopedia](https://rseng.github.io/rseng/software/parsl).
