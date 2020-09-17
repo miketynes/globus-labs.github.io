@@ -20,7 +20,7 @@ title: News
             </div>
         </div>
         <div class="col-xs-11 news-info">
-            <p>{{ n.content }} [{{ n.date | date: '%B %d, %Y' }}]</p>
+            <p>{{ n.content | remove: '<p>' | remove: '</p>' }} [{{ n.date | date: '%B %d, %Y' | remove: '<p>' | remove: '</p>'  }}]</p>
         </div>
       </div>
     </div>
