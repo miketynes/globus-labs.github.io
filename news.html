@@ -20,8 +20,7 @@ title: News
             </div>
         </div>
         <div class="col-xs-11 news-info">
-            <p><span class="name">{{ n.date | date: '%B %d, %Y' }}</span><br>
-            <p>{{ n.content }}</p>
+            <p>{{ n.content }} [{{ n.date | date: '%B %d, %Y' }}]</p>
         </div>
       </div>
     </div>
