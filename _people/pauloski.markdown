@@ -1,8 +1,8 @@
 ---
-title: "Rohan Kumar"
-image: "rohankumar.jpg"
-position: "Masters Student"
+title: "Greg Pauloski"
+image: "pauloski.jpg"
+position: "Graduate Student"
 department: "Department of Computer Science"
 institution: "University of Chicago"
-ranking: 35
+ranking: 34
 ---
