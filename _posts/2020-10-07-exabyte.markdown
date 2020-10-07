@@ -1,0 +1,8 @@
+---
+layout: news
+title: "Globus moves 1 exabyte"
+date:  2020-10-07 12:00:00 -0700
+type: award
+---
+
+Globus moves one exabyte of data! [Read more here](https://www.globus.org/press-releases/globus-moves-1-exabyte-0)
