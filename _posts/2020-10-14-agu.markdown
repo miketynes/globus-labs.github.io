@@ -1,0 +1,8 @@
+---
+layout: news
+title: "Takuya Kurihana's poster accepted at the AGU fall meeting"
+date:  2020-10-14 10:00:00 -0700
+type: paper
+---
+Takuya Kurihana's poster, [A data-driven cloud classification framework based on a rotationally invariant autoencoder](https://agu.confex.com/agu/fm20/meetingapp.cgi/Paper/770321)
+was accepted to be presented at the AGU fall meeting. Congratulations, Tak!
