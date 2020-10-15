@@ -1,0 +1,7 @@
+---
+layout: news
+title: "Ian interviewed for Materials Data Matters podcast"
+date:  2020-10-12 10:00:00 -0700
+type: podcast
+---
+Ian Foster was featured in the Material Data Matters podcast about how materials are related to big data. Check it out [here](https://podcasts.apple.com/us/podcast/data-science/id1526956749?i=1000488029291)!

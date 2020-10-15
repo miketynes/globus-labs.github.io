@@ -1,0 +1,8 @@
+---
+layout: news
+title: "Ian interviewed by Wired magazine"
+date:  2020-10-12 10:00:00 -0700
+type: paper
+---
+Ian Foster was interviewed by Wired magazine about how machine learning is being used to speed up battery development:
+[AI Is Throwing Battery Development Into Overdrive](https://www.wired.com/story/ai-is-throwing-battery-development-into-overdrive/).
