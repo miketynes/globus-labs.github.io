@@ -1,0 +1,7 @@
+---
+layout: news
+title: "Maksim Levental's paper accepted at XLOOP 2020 Workshop at SC20"
+date: 2020-10-16 10:43:00 -0700
+type: paper
+---
+The paper 'Towards Online Steering of Flame Spray Pyrolysis Nanoparticle Synthesis', led by Maksim Levental, was accepted at the XLOOP 2020 Workshop at SC20. Congratulations, Max!
