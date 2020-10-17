@@ -4,5 +4,5 @@ image: "rohankumar.jpg"
 position: "Masters Student"
 department: "Department of Computer Science"
 institution: "University of Chicago"
-ranking: 35
+ranking: 36
 ---
