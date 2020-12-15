@@ -1,0 +1,7 @@
+---
+layout: news
+title: Tak presents at AGU20!
+date:  2020-12-15 1:13:16 -0700
+type: presentation
+---
+Tak presented his poster [A Data-Driven Cloud Classification Framework Based On A Rotation-Invariant Autoencoder](https://agu2020fallmeeting-agu.ipostersessions.com/default.aspx?s=6F-FE-57-B0-35-A0-F1-E1-15-B7-22-81-57-4F-95-82&guestview=true) at [AGU Fall Meeting 2020](https://www.agu.org/fall-meeting)!

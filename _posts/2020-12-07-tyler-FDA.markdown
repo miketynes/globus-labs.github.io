@@ -1,0 +1,7 @@
+---
+layout: news
+title: Tyler's nightware accepted by FDA
+date:  2020-11-115 01:15:16 -0700
+type: news
+---
+Tyler Skluzacek's app, NightWare, won the FDA approval! The news is spotlighted by [UChicago CS Home Page](https://www.cs.uchicago.edu/news/article/wired-nightware/) and [other MEDIA](https://www.npr.org/2020/12/06/943647610/he-designed-a-smartwatch-app-to-help-stop-his-dads-nightmares)!
