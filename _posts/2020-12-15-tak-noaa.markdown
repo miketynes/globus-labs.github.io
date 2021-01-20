@@ -1,0 +1,7 @@
+---
+layout: news
+title: Tak presents at NOAA's workshop on AI in Environment Science!
+date:  2020-12-15 1:13:16 -0700
+type: presentation
+---
+Tak presented his poster [A Data-Driven Cloud Classification Framework Based On A Rotation-Invariant Autoencoder](https://www.star.nesdis.noaa.gov/star/documents/meetings/2020AI/posters/SessionII/20201215_Kurihana_R1.pdf) at the [2nd NOAA Workshop on Leveraging AI in Environmental Sciences](https://www.star.nesdis.noaa.gov/star/meeting_2020AIWorkshop_agenda.php#)!
