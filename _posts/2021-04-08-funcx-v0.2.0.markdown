@@ -1,0 +1,8 @@
+---
+layout: news
+title: funcX v0.2.0 is out now!
+date:  2021-04-08 10:13:16 -0700
+type: presentation
+---
+
+Check out all the new features released in the [newest version of funcX](https://funcx.readthedocs.io/en/latest/index.html)! funcX is our FaaS framework specifically designed for high performance function serving.
