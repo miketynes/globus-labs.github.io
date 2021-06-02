@@ -1,40 +1,42 @@
 ---
 layout: project
 title:  "SCRIMP"
-image: "provision.png"
-teaser: "We are developing methods to automate the provisioning of cloud resourcs to create optimal compute environments"
+image: "arch.png"
+teaser: "Automating cost-aware profiling, prediction, and provisioning of cloud and HPC resources."
 featured: false
 description: "Cloud platforms are increasingly relied upon to conduct large scale science. However, the method by which infrastructure is provisioned and managed are ad hoc. We are developing new methods to profile application performance, predict cloud market conditions, and automate provisioning decisions."
 ---
 
 Cloud computing has the potential to revolutionize scientific computing, much as it has transformed
 enterprise information technology. By providing an elastically scalable pool of computing resources
-that can be provisioned on demand, cloud computing can allow any researcher to perform even the largest
+that can be provisioned on demand or automatically, cloud computing can allow any researcher to perform even the largest
 data analyses. Yet cloud computing is no panacea in its current form. First, it requires significant technical
 knowledge to efficiently provision and manage cloud resources. Second, it can easily become expensive,
-even when resource provisioning systems automatically acquire resources and avoid holding onto them
-longer than intended.
+even when resource provisioning systems automatically provision and release resources as needed.
 
 The Scalable Cost-Aware Cloud Infrastructure Management and Provisioning (SCRIMP) project aims to address
 these challenges by developing new, more efficient cloud provisioning methods and integrating these
-new methods into automated cloud access tools. In so doing, the project will improve the complexity, cost,
+new methods into automated cloud and HPC access tools. In so doing, the project will improve the complexity, cost,
 and efficiency of leveraging cloud computing platforms by an order of magnitude or more. 
 
-Our research focuses on three core areas:
+Our research focuses on four core areas:
 (1) developing new cloud profiling models that can efficiently predict application performance (execution
 time, accuracy, and resource usage) across heterogeneous environments; 
 (2) exploring cloud pricing and performance modeling to support provisioning of volatile instances at low cost 
 and with low risk; and 
-(3) creating a cost-aware provisioning service that uses application profiles and compute environment 
-prediction methods to automate
-and optimize infrastructure provisioning decisions and heterogeneous management based on user requirements (e.g.,
-optimizing run time, reducing costs). 
+(3) creating an automated cost-aware provisioning service using serverless infrastructure to deploy tasks on diverse computing resources based on time, monetary, and service cost constraints. 
 
 Further reading
 
+- M. Baughman, R. Kumar, I. Foster, K. Chard, "Expanding Cost-Aware Function Execution with Multidimensional Notions of Cost". 1st Workshop on High Performance Serverless Computing. 2021.
+
+- R. Kumar, M. Baughman, R. Chard, Z. Li, Y, Babuji, I. Foster, and K. Chard, "Coding the Computing Continuum: Fluid Function Execution in Heterogeneous Computing Environments". 30th Heterogeneity in Computing Workshop. 2021.
+
+- M. Baughman, N. Chakubaji, H. Truong, K. Kreics, K. Chard, and I. Foster, ["Measuring, Quantifying, and Predicting the Cost-Accuracy Tradeoff"] (https://acris.aalto.fi/ws/portalfiles/portal/41076847/paper.pdf) 3rd IEEE International Workshop on Benchmarking, Performance Tuning, and Optimization for Big Data Applications. 2019.
+
 - C. Wu, T. Summer, Z. Li, A. Woodard, R. Chard, M. Baughman, Y. Babuji, K. Chard, J. Pitt, and I. Foster, ["ParaOpt: Automated Application Parameterization and Optimization for the Cloud"] (https://labs.globus.org/pubs/wu-cloudcom-2019.pdf) IEEE International Conference on Cloud Computing Technology and Science. 2019.
 
-- M. Baughman, S. Caton, C. Haas, R. Chard, R. Wolski, I. Foster, and K. Chard, ["Deconstructing the 2017 changes to AWS spot market pricing"] (https://www.researchgate.net/profile/Matthew_Baughman/publication/333939795_Deconstructing_the_2017_Changes_to_AWS_Spot_Market_Pricing/links/5d163c56458515c11c0061b3/Deconstructing-the-2017-Changes-to-AWS-Spot-Market-Pricing.pdf) 10th Workshop on Scientific Cloud Computing. 2019.
+- M. Baughman, S. Caton, C. Haas, R. Chard, R. Wolski, I. Foster, and K. Chard, ["Deconstructing the 2017 changes to AWS spot market pricing"] (https://labs.globus.org/pubs/Baughman_deconstructing_2019.pdf) 10th Workshop on Scientific Cloud Computing. 2019.
 
 - M. Baughman, R. Chard, L. Ward, J. Pitt, K. Chard, and I. Foster, ["Profiling and Predicting Application Performance on the Cloud"] (https://labs.globus.org/pubs/Baughman_UCC_2018.pdf) 11th IEEE/ACM International Conference on Cloud Computing. 2018.
 
