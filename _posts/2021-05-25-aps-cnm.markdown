@@ -1,0 +1,8 @@
+---
+layout: news
+title: Raf and Ryan present at CNM-APS meeting
+date:  2021-05-25 10:13:16 -0700
+type: presentation
+---
+
+Raf Vescovi and Ryan Chard present at the virtual 2021 APS/CNM Joint Virtual Users Meeting. 
