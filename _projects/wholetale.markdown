@@ -3,8 +3,8 @@ layout: project
 title:  "Whole Tale"
 image: "wholetale.png"
 featured: false
-teaser: "A cloud-hosted platform for conducting and sharing reproducible science"
-description: "A cloud-hosted platform for conducting and sharing reproducible science"
+teaser: "Whole Tale is a cloud-hosted platform for conducting and sharing reproducible science"
+description: "Whole Tale cloud-hosted platform for conducting and sharing reproducible science. Researchers can use the platform to conduct interactive research in a custom computing environment. They may then export the resulting tale, capturing data, code, computational environment, and narrative."
 ---
 
 
