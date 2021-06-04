@@ -3,7 +3,7 @@ layout: project
 title:  "Gladier"
 image: "funcx.png"
 teaser: "Globus Automation for Data-Intensive Experimental Research"
-featured: true
+featured: false
 description: "Globus Automation for Data-Intensive Experimental Research"
 ---
 
