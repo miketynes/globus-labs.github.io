@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Serverless Supercomputing"
-image: "funcx.png"
+image: "funcx-logo.png"
 teaser: "funcX is a Function as a Service platform for scientific computing."
 featured: true
 description: "funcX is a Function as a Service (FaaS) platform for science. It is designed to be applied to existing cyberinfrastructures to provide scalable, secure, and on-demand execution of short duration scientific functions."
