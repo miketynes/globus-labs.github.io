@@ -1,7 +1,7 @@
 ---
 layout: project
 title:  "Colmena"
-image: "colmena.png"
+image: "colmena.svg"
 teaser: "Machine Learning-Based Steering of Ensemble Simulations"
 featured: false
 description: "Colmena is a Python library for building applications that combine AI and simulation workflows on HPC. Its core feature is a communication library that simplifies tools for intelligently steering large ensemble simulations."
