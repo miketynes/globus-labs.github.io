@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "SCRIMP"
+title:  "Cost-aware computing"
 image: "arch.png"
 teaser: "Automating cost-aware profiling, prediction, and provisioning of cloud and HPC resources."
 featured: false
