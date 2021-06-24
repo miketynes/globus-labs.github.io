@@ -1,0 +1,8 @@
+---
+layout: news
+title: Additive Manufacturing paper accepted to journal!
+date:  2021-06-09 10:13:16 -0700
+type: presentation
+---
+
+Check out Ben's [new paper](https://doi.org/10.1007/s40192-021-00215-6) on additive manufacturing modeling in [Integrating Materials and Manufacturing Integration](https://link.springer.com/journal/40192)!
