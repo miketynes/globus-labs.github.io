@@ -1,0 +1,9 @@
+---
+layout: news
+title: Kyle @ Internet 2 Community Voices Series
+date:  2021-07-06 10:13:16 -0700
+type: presentation
+---
+
+Kyle speaks at [Internet 2 Community Voices Series](https://internet2.edu/internet2-community-voices-series/#science) on “Science Gateways: Sustaining Integral Solutions for Accelerating Science”. Recording to follow soon!
+ 
