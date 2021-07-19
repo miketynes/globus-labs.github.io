@@ -1,0 +1,7 @@
+---
+layout: news
+title: HPC4Mfg award
+date:  2021-07-19 10:00:00 -0700
+type: award
+---
+Ben and his co-investigators have received $297,000 from DOE's High Performance Computing Research at U.S. National Laboratories program for their project “Next Generation Nonwovens Manufacturing Based on Model-Driven Simulation Machine Learning Approach”. They will use a combination of HPC based CFD simulations and a machine learning to minimize energy consumption of melt blown fiber manufacturing processes. See the official announcement [here](https://www.energy.gov/eere/amo/articles/13-projects-receive-37-million-high-performance-computing-research-us-national).
