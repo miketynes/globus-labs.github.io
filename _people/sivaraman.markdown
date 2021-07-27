@@ -4,5 +4,5 @@ image: "GS.jpg"
 position: "Assistant Scientist"
 department: "Data Science and Learning"
 institution: "Argonne National Laboratory"
-ranking: 35
+ranking: 22
 ---
