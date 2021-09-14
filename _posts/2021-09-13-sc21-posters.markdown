@@ -1,0 +1,8 @@
+---
+layout: news
+title: Globus Labs has 4 posters accepted to SC21
+date:  2021-09-13 10:13:16 -0700
+type: presentation
+---
+
+Globus Labs congratulates the following students on their poster acceptances to SC21: Kevin Gao, Matt Baughman, Matthew Chen + Erica Hsu (joint), and Ryan Wong. 
