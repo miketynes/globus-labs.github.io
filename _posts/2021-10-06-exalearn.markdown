@@ -1,0 +1,10 @@
+---
+layout: news
+title: ExaLearn
+date:  2021-10-06 10:13:16 -0700
+type: paper
+published: true
+---
+
+Big group effort on Exascale Machine Learning has been published in [
+The International Journal of High Performance Computing Applications](https://doi.org/10.1177%2F10943420211029302).
