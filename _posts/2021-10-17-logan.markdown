@@ -1,0 +1,9 @@
+---
+layout: news
+title: Logan
+date:  2021-10-17 10:13:16 -0700
+type: presentation
+published: true
+---
+
+Our very own Logan Ward has begun his transition from research scientist [to becoming the next Carl Sagan](https://www.youtube.com/playlist?list=PLEjVJ0F11Nmn8Rc0OblMtzFfOGI1rAeIf)... Just kidding! Logan's recordings from his Applied AI for Materials Science taught at UChicago during Winter 2021 are now available.

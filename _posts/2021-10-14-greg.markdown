@@ -1,0 +1,9 @@
+---
+layout: news
+title: KAISE
+date:  2021-10-14 10:13:16 -0700
+type: paper
+published: true
+---
+
+Yuanjian's [Understanding Effectiveness of Multi-error-bounded Lossy Compression for Preserving Ranges of Interest in Scientific Analysis](https://arxiv.org/abs/2107.01739) has been accepted into the [7th International Workshop on Data Analysis and Reduction for Big Scientific Data](https://web.njit.edu/~qliu/drbsd7.html). Congratulations Yuanjian!

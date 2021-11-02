@@ -1,0 +1,10 @@
+---
+layout: news
+title: Student Research Competition Posters
+date:  2021-10-10 10:13:16 -0700
+type: paper
+published: true
+---
+
+Several students posters this year at [SC21](https://sc21.supercomputing.org/session/?sess=sess241) including: [Regulating Traffic in a Crowded Cache: Overcoming the Container Explosion Problem](https://sc21.supercomputing.org/?post_type=page&p=3479&id=spostu118&sess=sess241) by [Kevin Gao](https://sc21.supercomputing.org/?post_type=page&p=3478&uid=021693), [Delving Into the Abyss: A Distributed Decompression System for Indexing Compressed Repositories
+](https://sc21.supercomputing.org/?post_type=page&p=3479&id=spostu115&sess=sess241) by [Ryan Wong](https://sc21.supercomputing.org/?post_type=page&p=3478&uid=541693), [Mitigating the Metadata Mess: Autonomous Metadata Extraction Pipelines for Large-Scale Data Repositories](https://sc21.supercomputing.org/?post_type=page&p=3479&id=spostu111&sess=sess241) by [Matthew Chen](https://sc21.supercomputing.org/?post_type=page&p=3478&uid=749593) and [Erica Hsu](https://sc21.supercomputing.org/?post_type=page&p=3478&uid=801693).
