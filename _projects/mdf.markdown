@@ -15,6 +15,8 @@ and analysis by:
 
 Currently, MDF stores 40 TB of data from simulation and experiment, and also indexes hundreds of datasets contained in external repositories, with millions of individual MDF metadata records created from these datasets to aid fine-grained discovery.
 
+The MDF is developing a serverless implementation of its data publication and discovery service using Globus Flows serviceS. This upgrde will allow us to improve the efficiency, decrease maintenance costs, and allow for scaling the MDF data publication concepts to other scientific domains.
+
 <a href="https://www.materialsdatafacility.org" class="btn btn-lg btn-success">Visit the Materials Data Facility</a>
 
 # Publications
