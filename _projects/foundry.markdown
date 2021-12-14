@@ -21,4 +21,4 @@ Other Links
 
 Support
 
-support part
+This work was supported by the National Science Foundation under NSF Award Number: 1931306 "Collaborative Research: Framework: Machine Learning Materials Innovation Infrastructure".
