@@ -12,6 +12,7 @@ Machine learning and data science approaches are becoming critical to scientific
 Publications
 
 -  Xiang-Guo Li, Ben Blaiszik, Marcus Emory Schwarting, Ryan Jacobs,  Aristana Scourtas, K. J. Schmidt,  Paul M. Voyles, and  Dane Morgan ["Graph network based deep learning of bandgaps"](https://aip.scitation.org/doi/10.1063/5.0066009) The Journal of Chemical Physics (2021)
+-  Jingrui Wei, Ben Blaiszik, Dane Morgan, and Paul Voyles ["Benchmark tests of atom-locating CNN models with a consistent dataset"](https://www.cambridge.org/core/journals/microscopy-and-microanalysis/article/benchmark-tests-of-atomlocating-cnn-models-with-a-consistent-dataset/820A111B3BDEB7FB56D85F8D40DEB2BA) Microscopy and Microanalysis Volume 27 Supplement S1 (July 2021)
 
 
 Other Links
