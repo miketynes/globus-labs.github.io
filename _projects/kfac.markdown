@@ -4,7 +4,7 @@ title:  "**KAISA**: a **K**-FAC-enabled, **A**daptable, **I**mproved, and **S**c
 image: "kfac.png"
 teaser: "Deep Neural Network Training with Distributed K-FAC"
 featured: false
-description: "KAISA enables efficient and scalable second-order optimization for deep neural networks. Training with KAISA can reduce training time compared to conventional optimizers (e.g., SGD), and KAISA can adapt the memory footprint, communication, and computation given model and hardware characteristics to improve performance and increase scalability.
+description: "KAISA enables efficient and scalable second-order optimization for deep neural networks. Training with KAISA can reduce training time compared to conventional optimizers (e.g., SGD), and KAISA can adapt the memory footprint, communication, and computation given model and hardware characteristics to improve performance and increase scalability."
 ---
 
 Kronecker-factored Approximate Curvature (K-FAC) has recently been shown to converge faster in deep neural network (DNN) training than stochastic gradient descent (SGD); however, K-FAC’s larger memory footprint hinders its applicability to large models.
