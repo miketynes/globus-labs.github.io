@@ -14,9 +14,13 @@ The amount of scientific literature published every year is growing at an overwh
  
 This avalanche of publications and scientific facts however is not yet machine accessible and cannot easily be transformed into human-consumable knowledge. The most common current practice is to recruit experts to manually extract and curate published properties (e.g., the Physical Properties of Polymers Handbook). This approach is laborious, expensive, and quickly outdated as new works are continuously being published. While the explosive growth of the World Wide Web has fostered huge efforts in information extraction systems, machine "reading" is still a challenging task requiring human intervention due to the heterogeneity and the lack of structure in much web-accessible data.
  
+<center><div><img class="img-responsive" width="70%" text-align="center" src="https://labs.globus.org/images/projects/InfoExtractWorkflow.png"></div></center> 
+
 The goal of this work is to demonstrate that moderate supervision from humans, using appropriate tools, can generate high quality data for the scientific community and produce an improved system that learns from user input. We have developed workflows that identify scientific named entities and extracting their property data from publications. 
 
 The named entity tagger is the first step in the scientific information extraction workflow. It is built on bidirectional LSTM networks and conditional random fields and leverages knowledge from external sources such as Wikipedia to boost its learning performance. Experiments show that it outperforms a leading domain-specific extraction toolkit by up to 50%, as measured by F1 score. while also being easily adapted to new domains. Our model has been applied to extract drug-like molecules from publications on COVID-19 and found 18 candidate molecules that was previously not considered by the experimentalists.
+
+Language models such as BERT are often used in state-of-the-art Information extraction systems. The original BERT model is trained on a non-scientific corpus, namely the Wikipedia and BookCorpus, which limits their performance on scientific tasks. Domain-specific BERT models such as PubMedBERT and BioBERT exists, but their training corpus are limited to certain disciplines like chemistry and biology. We trained a more general science-focused BERT model and evaluated it on downstream tasks such as sentence classification, relation extraction and named entity recognition in a variety of domains including biochemistry, computer science, and sociology. 
 
 <center><div><img width="60%" src="https://labs.globus.org/images/projects/drug_ner.png"></div></center>
 
