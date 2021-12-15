@@ -3,7 +3,7 @@ layout: project
 title:  "Foundry"
 image: "foundry.png"
 teaser: "An open source machine learning platform for scientists"
-featured: true
+featured: false
 description: "Foundry is a platform that allows scientists to share and access datasets and ML models while setting industry benchmarks"
 ---
 
