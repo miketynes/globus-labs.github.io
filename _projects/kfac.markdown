@@ -1,15 +1,21 @@
 ---
 layout: project
-title:  "Distributed K-FAC"
+title:  "**KAISA**: a **K**-FAC-enabled, **A**daptable, **I**mproved, and **S**c**A**lable Second-Order Optimizer Framework"
 image: "kfac.png"
 teaser: "Deep Neural Network Training with Distributed K-FAC"
 featured: false
-description: "Kronecker-factored Approximate Curvature (K-FAC) can enable efficient second-order optimization and faster deep neural network training than traditional optimizers (e.g., SGD). Distributed K-FAC performs the expensive second-order computations in a model-parallel method to efficiently utilize HPC resources."
+description: "KAISA enables efficient and scalable second-order optimization for deep neural networks. Training with KAISA can reduce training time compared to conventional optimizers (e.g., SGD), and KAISA can adapt the memory footprint, communication, and computation given model and hardware characteristics to improve performance and increase scalability."
 ---
 
-Training neural networks with many processors can reduce time-to-solution; however, it is challenging to maintain convergence and efficiency at large scales. The Kronecker-factored Approximate Curvature (K-FAC) was recently proposed as an approximation of the Fisher Information Matrix that can be used in natural gradient optimizers. We have developed a scalable K-FAC implementation and are exploring its applicability in convolutional neural network (CNN) training at scale. We are studying optimization techniques such as layer-wise distribution strategies, inverse-free second-order gradient evaluation, and dynamic K-FAC update decoupling to reduce training time while preserving convergence. We have applied our implementation to residual neural networks (ResNet) on the CIFAR-10 and ImageNet-1k datasets to evaluate the correctness and scalability of our K-FAC gradient preconditioner. With ResNet-50 on the ImageNet-1k dataset, our distributed K-FAC implementation converges to the 75.9% MLPerf baseline in 18-25% less time than does the classic stochastic gradient descent (SGD) optimizer across scales on a GPU cluster.
+Kronecker-factored Approximate Curvature (K-FAC) has recently been shown to converge faster in deep neural network (DNN) training than stochastic gradient descent (SGD); however, K-FAC’s larger memory footprint hinders its applicability to large models.
+We present **KAISA**, a **K**-FAC-enabled, **A**daptable, **I**mproved, and **S**c**A**lable second-order optimizer framework that adapts the memory footprint, communication, and computation given specific models and hardware to improve performance and increase scalability.
+We quantify the tradeoffs between memory and communication cost and evaluate KAISA on large models, including ResNet-50, Mask R-CNN, U-Net, and BERT, on up to 128 NVIDIA A100 GPUs.
+Compared to the original optimizers, KAISA converges 18.1–36.3% faster across applications with the same global batch size. 
+Under a fixed memory budget, KAISA converges 32.5% and 41.6% faster in ResNet-50 and BERT-Large, respectively.
+KAISA can balance memory and communication to achieve scaling efficiency equal to or better than the baseline optimizers.
 
 Try it out on [GitHub](https://github.com/gpauloski/kfac_pytorch).
 
 Publications:
-- J. Gregory Pauloski, Zhao Zhang, Lei Huang, Weijia Xu, and Ian T. Foster. 2020. [Convolutional neural network training with distributed K-FAC](https://arxiv.org/pdf/2007.00784.pdf). In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC ‘20). IEEE Press, Article 94, 1–14.
+- J. Gregory Pauloski, Qi Huang, Lei Huang, Shivaram Venkataraman, Kyle Chard, Ian Foster, and Zhao Zhang. 2021. [KAISA: An Adaptive Second-order Optimizer Framework for Deep Neural Networks](https://dl.acm.org/doi/10.1145/3458817.3476152). In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC '21). Association for Computing Machinery, New York, NY, USA, Article 13, 1–14.
+- J. Gregory Pauloski, Zhao Zhang, Lei Huang, Weijia Xu, and Ian T. Foster. 2020. [Convolutional neural network training with distributed K-FAC](https://dl.acm.org/doi/10.5555/3433701.3433826). In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC ‘20). IEEE Press, Article 94, 1–14.
