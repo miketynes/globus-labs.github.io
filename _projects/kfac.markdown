@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "**KAISA**: a **K**-FAC-enabled, **A**daptable, **I**mproved, and **S**c**A**lable Second-Order Optimizer Framework"
+title:  "KAISA: a K-FAC-enabled, Adaptable, Improved, and ScAlable Second-Order Optimizer Framework"
 image: "kfac.png"
 teaser: "Deep Neural Network Training with Distributed K-FAC"
 featured: false
