@@ -1,0 +1,8 @@
+---
+layout: news
+title: Globus Labs at SC21
+date:  2021-11-08 10:00:00 -0700
+type: presentation
+---
+Check out tutorials, papers, and presentations by Globus Labs members at SC21!
+A full schedule of Globus and Globus Labs events at SC21 is available at [globus.org/events/sc21](https://www.globus.org/events/sc21).

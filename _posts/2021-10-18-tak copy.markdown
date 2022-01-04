@@ -1,0 +1,9 @@
+---
+layout: news
+title: AGU
+date:  2021-10-18 10:13:16 -0700
+type: presentation
+published: true
+---
+
+Tak is presenting [Cloud Clustering Applied to MODIS Calibrated Radiances Over 2003 via Rotationally Invariant Autoencoder](https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/985693) at [AGU21](https://www.agu.org/Fall-Meeting) Wednesday, 15 December 2021.

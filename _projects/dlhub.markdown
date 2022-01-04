@@ -17,7 +17,7 @@ Publications
 
 Other Links
 
-- [Data and Learning Hub for Science (DLHub)](https://www.dlhub.org)
+- [Data and Learning Hub for Science (DLHub)](https://www.dlhub.org) -- here you may browse published models or find links to documentation, relevant GitHub repositories, and Jupyter notebook examples
 
 Support
 

@@ -1,0 +1,9 @@
+---
+layout: news
+title: Workshop on Workflows
+date:  2021-10-11 10:13:16 -0700
+type: paper
+published: true
+---
+
+Many papers this year at [16th Workshop on Workflows](https://works-workshop.org/) including: [ ExaWorks: Workflows for Exascale](https://arxiv.org/abs/2108.13521) by [Al-Saadi et al](), [Not All Tasks Are Created Equal: Adaptive Resource Allocation for Heterogeneous Tasks in Dynamic Workflows]() by [Phung et al](), [A Community Roadmap for Scientific Workflows Research and Development](https://arxiv.org/abs/2110.02168) by [Ferreira da Silva et al]().

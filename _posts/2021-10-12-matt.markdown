@@ -1,0 +1,9 @@
+---
+layout: news
+title: Matt SRC
+date:  2021-10-12 10:13:16 -0700
+type: paper
+published: true
+---
+
+Matt's [Embeddings are All You Need: Transfer Learning in Convolutional Neural Networks using Word Embeddings]() is at [SRC](https://sc21.supercomputing.org/session/?sess=sess241) at SC this year.

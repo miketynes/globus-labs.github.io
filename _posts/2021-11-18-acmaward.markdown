@@ -1,0 +1,7 @@
+---
+layout: news
+title: Ryan Wong and Kevin Gao placed 2nd and 3rd in the ACM SRC
+date:  2021-11-18 13:26:00 -0700
+type: award
+---
+Ryan Wong won the 2nd place with [Delving Into the Abyss: A Distributed Decompression System for Indexing Compressed Repositories](https://sc21.supercomputing.org/proceedings/src_poster/src_poster_pages/spostu115.html). Kevin Gao won the 3rd place with [Regulating Traffic in a Crowded Cache: Overcoming the Container Explosion Problem](https://sc21.supercomputing.org/proceedings/src_poster/src_poster_pages/spostu118.html). Congratulations!

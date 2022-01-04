@@ -1,0 +1,9 @@
+---
+layout: news
+title: DRBSD
+date:  2021-10-15 10:13:16 -0700
+type: paper
+published: true
+---
+
+Greg's [KAISA: An Adaptive Second-Order Optimizer Framework for Deep Neural Networks](https://arxiv.org/abs/2107.01739) has been accepted into SC this year. Congratulations Greg!
