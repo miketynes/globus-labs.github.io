@@ -6,4 +6,4 @@ type: paper
 published: true
 ---
 
-Raf's paper "[Materials Engineering of Violin Soundboards by Stradivari and Guarneri]"(https://onlinelibrary.wiley.com/toc/15213757/2021/133/35) made the cover of Angewandte Chemie
+Raf's paper ["Materials Engineering of Violin Soundboards by Stradivari and Guarneri"](https://onlinelibrary.wiley.com/toc/15213757/2021/133/35) made the cover of Angewandte Chemie
