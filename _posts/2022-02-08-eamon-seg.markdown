@@ -1,0 +1,8 @@
+---
+layout: news
+title: Eamon presented at the Seminar on Economic Geography
+date:  2022-02-08 10:13:16 -0700
+type: presentation
+---
+
+Eamon presented "Being Together in Place as a Catalyst for Scientific Advance" at the Seminar on Economic Geography.
