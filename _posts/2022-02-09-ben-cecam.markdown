@@ -1,0 +1,9 @@
+---
+layout: news
+title: Ben presented and was on a panel at CECAM
+date:  2022-02-08 10:13:16 -0700
+type: presentation
+published: true
+---
+
+Ben presented "A FAIR Approach Towards Fully Realizing the Impact of AI and Machine Learning in Materials Science" and was on a panel for the CECAM Machine actionable data for chemical sciences: Bridging experiments, simulations, and machine learning for spectral data (MADICES) conference.
