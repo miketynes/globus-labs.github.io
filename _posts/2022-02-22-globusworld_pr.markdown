@@ -1,7 +1,7 @@
 ---
 layout: news
-title: "Globus World 2017"
-date:  2022-02-22 11:10:16 -0700
+title: "Globus World 2022"
+date:  2022-02-23 15:20:16 -0700
 type: presentation 
 ---
 

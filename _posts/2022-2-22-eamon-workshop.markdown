@@ -1,7 +1,7 @@
 ---
 layout: news
-title: Raf's paper makes the cover
-date:  2022-2-22 11:10:00 -0700
+title: Eamon presented at workshop
+date:  2022-2-23 15:20:00 -0700
 type: presentation
 published: true
 ---
