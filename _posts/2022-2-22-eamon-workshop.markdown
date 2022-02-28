@@ -1,7 +1,7 @@
 ---
 layout: news
 title: Eamon presented at workshop
-date:  2022-2-23 15:20:00 -0700
+date:  2022-2-22 12:00:00 -0700
 type: presentation
 published: true
 ---
