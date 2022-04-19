@@ -1,0 +1,7 @@
+---
+layout: paper
+title: "The History of the Grid now on arXiv!"
+date:  2022-04-08 13:00:01 -0900
+type: paper
+---
+Ian's 2011 paper "The History of the Grid," originally in ["High Performance Computing: From Grids and Clouds to Exascale"](https://ebooks.iospress.nl/volume/high-performance-computing-from-grids-and-clouds-to-exascale), is now [freely available on arXiv](https://arxiv.org/abs/2204.04312)!
