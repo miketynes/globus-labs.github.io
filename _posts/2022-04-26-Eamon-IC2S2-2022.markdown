@@ -1,0 +1,7 @@
+---
+layout: news
+title: "Eamon will present at IC2S2 2022"
+date:  2022-04-26 10:00:00 -0700
+type: presentation
+---
+Eamon Duede will present "Distance Matters for Science and Scholarship" at the 8th International Conference on Computational Social Science ([IC2S2](https://boothuchicagocaai.wixsite.com/website-2)) at the University of Chicago, July 19-22.
