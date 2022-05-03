@@ -4,4 +4,4 @@ title: "ScholarBERT at IC2S2 2022"
 date:  2022-04-26 10:01:00 -0700
 type: presentation
 ---
-Globus Labs members will present on ScholarBERT at the 8th International Conference on Computational Social Science ([IC2S2](https://boothuchicagocaai.wixsite.com/website-2)) at the University of Chicago, July 19-22.
+Zhi Hong, J. Gregory Pauloski, Aswathy Ajith, Eamon Duede, Kyle Chard and Ian Foster will present "Accelerating Computational Social Science with ScholarBERT" at the 8th International Conference on Computational Social Science ([IC2S2](https://boothuchicagocaai.wixsite.com/website-2)) at the University of Chicago, July 19-22.
