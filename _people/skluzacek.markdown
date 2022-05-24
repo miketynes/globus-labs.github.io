@@ -1,8 +1,8 @@
 ---
-title: "Tyler J. Skluzacek"
+title: "Dr. Tyler J. Skluzacek"
 image: "skluzacek.jpg"
-position: "Graduate Student"
+position: "Graduate"
 department: "Department of Computer Science"
 institution: "University of Chicago"
-ranking: 31
+ranking: 30
 ---
