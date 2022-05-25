@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Matt's Federated Learning paper accepted to IEEE SCC 2022!"
-date:  2022-03-25 13:00:01 -0500
+date:  2022-05-25 13:00:01 -0500
 type: paper
 ---
 
