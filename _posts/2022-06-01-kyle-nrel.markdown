@@ -1,0 +1,8 @@
+---
+layout: presentation
+title: "Kyle NREL"
+date:  2022-06-07 13:00:01 -0500
+type: presentation
+---
+
+Kyle spoke at the NREL Connections Seminar on Scalable Scientific Computing with funcX and Parsl

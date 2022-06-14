@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: presentation
 title: "Ben FAIR ML"
 date:  2022-06-07 13:00:01 -0500
 type: presentation
