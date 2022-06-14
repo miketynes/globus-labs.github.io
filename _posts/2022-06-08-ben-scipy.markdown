@@ -1,0 +1,8 @@
+---
+layout: paper
+title: "Ben Scipy"
+date:  2022-06-08 13:00:01 -0500
+type: presentation
+---
+
+Ben Blaiszik will deliver the keynote at the [SciPy 2022](https://www.globus.org/events/scipy-2022) on software and services to fully realize the impact of AI, Machine Learning, automation, and community engagement in science.
