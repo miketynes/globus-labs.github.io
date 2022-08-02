@@ -1,0 +1,8 @@
+---
+title: "Nathaniel Hudson"
+image: "hudson.jpg"
+position: "Postdoctoral Scholar"
+department: "Department of Computer Science"
+institution: "University of Chicago"
+ranking: 23
+---
