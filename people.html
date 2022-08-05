@@ -25,6 +25,9 @@ title: People
                 {{ person.institution }}</p>
             {% if person.google_scholar != "" %}
                 <p>
+                    {% if person.email %}
+                        <a href="mailto:{{ person.email }}" target="_blank"><i class="fa-solid fa-envelope fa-1x"></i></a>
+                    {% endif %}
                     {% if person.google_scholar %}
                         <a href="{{ person.google_scholar }}" target="_blank"><i class="ai ai-google-scholar ai-1x"></i></a>
                     {% endif %}
