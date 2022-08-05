@@ -1,0 +1,145 @@
+I"Y0<h1 id="motivation">Motivation</h1>
+
+<p>Are you a scientist that suffers from bursitis<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>? 
+Do you loathe dealing with runtimes and infrastructure? 
+Is your favorite calculus the $\lambda$-calculus? 
+Do you have commitment issues with respect to your cloud provider?
+Well do I have an offering for you; presenting a High Performance Function(s) as a Service (HPFaaS) Python framework called <a href="https://funcx.org/"><em>func</em>X</a>.</p>
+
+<p align="center">
+  <img src="/images/blog/inflatable.gif" />
+</p>
+
+<p>In all seriousness though; HPFaaS is a software development paradigm where the fundamental unit of computation is the function and everything else is abstracted away.
+Availing oneself of these abstractions enables one to benefit from data-compute locality<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> and distribution to heterogeneous resources (such as GPUs, FPGAs, and ASICs).
+Another name for this kind of software is “serverless computing”; in the context of the kinds of workloads that scientists typically have, we call this “serverless supercomputing”.</p>
+
+<p>Some example projects that use <em>func</em>X are:</p>
+
+<ul>
+  <li>Synchrotron Serial Crystallography is a method for imaging small crystal samples 1–2 orders of magnitude faster than other methods; using <em>func</em>X SSX researchers were able to discover a <a href="https://www.rcsb.org/structure/6XKM">new structure related to COVID</a></li>
+  <li><a href="https://www.dlhub.org/">DLHub</a> uses <em>func</em>X to support the publication and serving of ML models for on-demand inference for scientific use cases</li>
+  <li>Large distributed file systems produce new metadata at high rates; <a href="https://dl.acm.org/doi/abs/10.1145/3366623.3368140">Xtract</a> uses <em>func</em>X to extract metadata colocated with the data rather than by aggregating centrally</li>
+  <li><a href="https://projects.iq.harvard.edu/atrisovic/publications/real-time-hep-analysis-funcx-high-performance-platform-function-service">Real-time High-energy Physics</a> analysis using Coffea and <em>func</em>X can accelerate studies of decays such as H$\rightarrow$bb
+<!-- * *Quantitative neurocartography* and *connectomics* involve mapping connections in the brain; [auTomo](https://automo.readthedocs.io/en/latest/) uses *func*X as the backing for an automated pipeline that performs quality control on raw brain image data (itself used to calibrate instruments) --></li>
+</ul>
+
+<h1 id="but-what-is-funcx">But what <em>is</em> <em>func</em>X?</h1>
+
+<p><em>func</em>X works by deploying the <em>func</em>X endpoint agent on an arbitrary computer, registering a <em>func</em>X function with a centralized registry, and then calling the function using either the Python SDK or a REST API. 
+So that we can get to the fun stuff quickly we defer discussion of deploying a <em>func</em>X endpoint until the next section and make use of the <a href="https://hub.gke.mybinder.org/user/funcx-faas-funcx-5z0wfg6s/notebooks/examples/Tutorial.ipynb#Running-a-function">tutorial endpoint</a>.</p>
+
+<p>To declare a <em>func</em>X function you just define a conventional Python function like so</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">funcx_sum</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>et voila! To register the function with the centralized <em>func</em>X function registry service we simply call <code class="language-plaintext highlighter-rouge">register_function</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">funcx.sdk.client</span> <span class="kn">import</span> <span class="n">FuncXClient</span>
+<span class="n">fxc</span> <span class="o">=</span> <span class="n">FuncXClient</span><span class="p">()</span>
+<span class="n">func_uuid</span> <span class="o">=</span> <span class="n">fxc</span><span class="p">.</span><span class="n">register_function</span><span class="p">(</span>
+    <span class="n">funcx_sum</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s">"A summation function"</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">func_uuid</code> is then used to call the function on an endpoint; using the tutorial <code class="language-plaintext highlighter-rouge">endpoint_uuid</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">endpoint_uuid</span> <span class="o">=</span> <span class="s">'4b116d3c-1703-4f8f-9f6f-39921e5864df'</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">fxc</span><span class="p">.</span><span class="n">run</span><span class="p">(</span>
+    <span class="n">items</span><span class="p">,</span> 
+    <span class="n">endpoint_id</span><span class="o">=</span><span class="n">endpoint_uuid</span><span class="p">,</span> 
+    <span class="n">function_id</span><span class="o">=</span><span class="n">func_uuid</span>
+<span class="p">)</span>
+<span class="n">fxc</span><span class="p">.</span><span class="n">get_result</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">15</span>
+</code></pre></div></div>
+
+<p>And that’s all there is to it!
+The only caveat (owing to how <em>func</em>X serializes functions) is that all libraries/packages used in the function need to be imported within the body of the function, e.g.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">funcx_sum_2</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+    <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="nb">sum</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="deploying-a-funcx-endpoint">Deploying a <em>func</em>X endpoint</h2>
+
+<p>An endpoint is a persistent service launched by the user on their compute system that serves as a manager for routing requests and executing functions on that compute system. 
+Deploying a <em>func</em>X endpoint is eminently straightforward.
+The endpoint can be configured to connect to the funcX webservice at <a href="https://funcx.org/">funcx.org</a>. 
+Once the endpoint is registered, you can invoke functions to be executed on it.</p>
+
+<p>You can <code class="language-plaintext highlighter-rouge">pip install funcx</code> to get the <em>func</em>X package onto your system.
+Having done this, initiating <em>func</em>X will ask you to authenticate with Globus Auth:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>funcx-endpoint init
+Please <span class="nb">paste </span>the following URL <span class="k">in </span>a browser:
+https://auth.globus.org/v2/oauth2/authorize?client_id<span class="o">=</span>....
+Please Paste your Auth Code Below: 
+</code></pre></div></div>
+
+<p><em>func</em>X requires authentication in order to associate endpoints with users and enforce authentication and access control on the endpoint.</p>
+
+<p>Creating, starting, and stopping the endpoint is as simple as</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>funcx-endpoint configure &lt;ENDPOINT_NAME&gt;
+</code></pre></div></div>
+
+<p>and</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>funcx-endpoint start &lt;ENDPOINT_NAME&gt;
+</code></pre></div></div>
+
+<p>and</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>funcx-endpoint stop &lt;ENDPOINT_NAME&gt;
+</code></pre></div></div>
+
+<p>How to set configuration parameters and other details are available in the <a href="https://funcx.readthedocs.io/en/latest/endpoints.html">documentation</a> but there’s not much more to it than that.
+You can deploy endpoints anywhere that you can run <code class="language-plaintext highlighter-rouge">pip install funcx</code>.</p>
+
+<h2 id="architecture-and-implementation">Architecture and Implementation</h2>
+
+<p><em>func</em>X consists of endpoints and a registry that publishes endpoints and registered functions:</p>
+
+<p align="center">
+  <img src="/images/blog/funcx_arch.png" width="500" />
+</p>
+
+<p>Each endpoint runs a daemon that spawns managers that themselves orchestrate a pool of <em>workers</em> that run <em>func</em>X functions within containers<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>:</p>
+
+<p>The endpoint also implements fault tolerance facilities using a watch dog process and heartbeats from the managers.</p>
+
+<p>Communication between the <em>func</em>X service, the endpoints, and the managers is all over <a href="https://zeromq.org/">ZeroMQ</a>.
+For all of the misers<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup> in the audience, <em>func</em>X implements all of the standard optimization strategies to make execution more efficient with respect to latency and compute (memoization, container warming, request batching).
+For the paranoiacs<sup id="fnref:4:1" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup> in the audience, <em>func</em>X authenticates and authorizes registering and calling functions using <a href="https://docs.globus.org/api/auth/specification/">Globus Auth</a> and sandboxes functions using containerization and file system namespacing therein.
+More details (along with performance metrics and comparisons with commercial competitors) are available in the <a href="https://arxiv.org/abs/2005.04215"><em>func</em>X paper</a>.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p><em>func</em>X is for scientists that have compute needs that fluctuate dramatically in time and resource requirements.
+The project is open source (available on <a href="https://github.com/funcx-faas/funcX">GitHub</a>) and provides a <a href="https://mybinder.org/v2/gh/funcx-faas/funcx/master?filepath=examples%2FTutorial.ipynb">binder instance</a> that you can immediately experiment with.
+If you have any questions or you’re interested in contributing feel free to reach out to the project or myself directly!</p>
+
+<h1 id="foonotes">Foonotes</h1>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Not the mallady but bursty compute loads! <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Where the compute is co-located with the data for reduced I/O latency. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Various containerization systems on different platforms (Docker, Kubernetes, <a href="https://sylabs.io/">Singularity</a>, <a href="https://github.com/NERSC/shifter">Shifter</a>). <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>Just kidding! <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:4:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
+    </li>
+  </ol>
+</div>
+:ET

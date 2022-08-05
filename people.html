@@ -6,38 +6,59 @@ title: People
 <h1>People</h1>
 
 {% assign people = site.people | sort: 'ranking' %}
+{% assign peopleRowsEnded = 0 %}
 
 {% for person in people %}
 {% assign loopindex = forloop.index | modulo: 2 %}
+
+<!-- Start the people row here if the condition is met. -->
 {% if loopindex == 1 %}
 <div class="row">
+{% endif %}
+
     <div class="col-xs-12 col-sm-6 member">
-        <img src="images/people/{{ person.image }}">
+        <img src="images/people/{{ person.image }}" class="img-responsive" style="max-width: 225px;">
         <div class="member-info">
             <p><span class="name">{{ person.title }}</span><br>
                 <span class="position">{{ person.position }}</span><br>
                 {{ person.department }}<br>
                 {{ person.institution }}</p>
+            {% if person.google_scholar != "" %}
+                <p>
+                    {% if person.google_scholar %}
+                        <a href="{{ person.google_scholar }}" target="_blank"><i class="ai ai-google-scholar ai-1x"></i></a>
+                    {% endif %}
+                    {% if person.linkedin %}
+                        <a href="{{ person.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin fa-1x"></i></a>
+                    {% endif %}
+                    {% if person.orcid %}
+                        <a href="{{ person.orcid }}" target="_blank"><i class="ai ai-orcid ai-1x"></i></a>
+                    {% endif %}
+                    {% if person.web %}
+                        <a href="{{ person.web }}" target="_blank"><i class="fa-solid fa-link fa-1x"></i></a>
+                    {% endif %}
+                </p>
+            {% endif %}
         </div>
     </div>
-    {% else %}
-    <div class="col-xs-12 col-sm-6 member">
-        <img src="images/people/{{ person.image }}">
-        <div class="member-info">
-            <p><span class="name">{{ person.title }}</span><br>
-                <span class="position">{{ person.position }}</span><br>
-                {{ person.department }}<br>
-                {{ person.institution }}</p>
-        </div>
-    </div>
+
+<!-- Is this the end of the "row" div. If so, place an ending tag here. -->
+{% if loopindex == 0 %}
 </div>
 {% endif %}
+
 {% endfor %}
 
 {% assign val = people.size | modulo: 2 %}
-{% if val == 1 %}
-</div>
+{% if val == 0 %}
+    </div>
+    {% assign peopleRowsEnded = 1 %}
 {% endif %}
+
+{% if peopleRowsEnded == 0 %}
+    </div>
+{% endif %}
+
 
 
 <h1>Alumni</h1>

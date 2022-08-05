@@ -1,0 +1,15 @@
+I";<p>Kronecker-factored Approximate Curvature (K-FAC) has recently been shown to converge faster in deep neural network (DNN) training than stochastic gradient descent (SGD); however, K-FAC’s larger memory footprint hinders its applicability to large models.
+We present <strong>KAISA</strong>, a <strong>K</strong>-FAC-enabled, <strong>A</strong>daptable, <strong>I</strong>mproved, and <strong>S</strong>c<strong>A</strong>lable second-order optimizer framework that adapts the memory footprint, communication, and computation given specific models and hardware to improve performance and increase scalability.
+We quantify the tradeoffs between memory and communication cost and evaluate KAISA on large models, including ResNet-50, Mask R-CNN, U-Net, and BERT, on up to 128 NVIDIA A100 GPUs.
+Compared to the original optimizers, KAISA converges 18.1–36.3% faster across applications with the same global batch size. 
+Under a fixed memory budget, KAISA converges 32.5% and 41.6% faster in ResNet-50 and BERT-Large, respectively.
+KAISA can balance memory and communication to achieve scaling efficiency equal to or better than the baseline optimizers.</p>
+
+<p>Try it out on <a href="https://github.com/gpauloski/kfac_pytorch">GitHub</a>.</p>
+
+<p>Publications:</p>
+<ul>
+  <li>J. Gregory Pauloski, Qi Huang, Lei Huang, Shivaram Venkataraman, Kyle Chard, Ian Foster, and Zhao Zhang. 2021. <a href="https://dl.acm.org/doi/10.1145/3458817.3476152">KAISA: An Adaptive Second-order Optimizer Framework for Deep Neural Networks</a>. In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC ‘21). Association for Computing Machinery, New York, NY, USA, Article 13, 1–14.</li>
+  <li>J. Gregory Pauloski, Zhao Zhang, Lei Huang, Weijia Xu, and Ian T. Foster. 2020. <a href="https://dl.acm.org/doi/10.5555/3433701.3433826">Convolutional neural network training with distributed K-FAC</a>. In Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC ‘20). IEEE Press, Article 94, 1–14.</li>
+</ul>
+:ET

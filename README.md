@@ -17,3 +17,21 @@ Procedure for adding new publication
 	- Note: Only add publication to the top of the bibtex document if it is a new publication. If it is not new, check the dates of the other publications and add yours in its correct chronological place in the document.
 	
 3. Add both files into the git repo and verify appearance on the [Globus Labs website](https://labs.globus.org/publications.html) within 5 minutes or so.
+
+***
+
+## Running Locally for Testing
+
+### Linux
+...
+
+### macOS
+Steps are very similar to Linux (see above). First, make sure that `jekyll` is properly installed on your system. This will require installing Ruby and some other packages (information on how to do this can be found [here](https://jekyllrb.com/docs/installation/macos/)).
+
+Once `jekyll` is installed, run the following command in the root directory of the `globus-labs.github.io` project:
+```sh
+jekyll serve --config _config.yml
+```
+
+### Windows
+...

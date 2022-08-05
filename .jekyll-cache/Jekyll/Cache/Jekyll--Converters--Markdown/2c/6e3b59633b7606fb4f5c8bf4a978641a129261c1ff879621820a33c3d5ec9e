@@ -1,0 +1,13 @@
+I"º
+<ul>
+  <li><a href="#motivation">Motivation</a></li>
+  <li><a href="#but-what-is-funcx">But what <em>is</em> <em>func</em>X?</a>
+    <ul>
+      <li><a href="#deploying-a-funcx-endpoint">Deploying a <em>func</em>X endpoint</a></li>
+      <li><a href="#architecture-and-implementation">Architecture and Implementation</a></li>
+    </ul>
+  </li>
+  <li><a href="#conclusion">Conclusion</a></li>
+  <li><a href="#foonotes">Foonotes</a></li>
+</ul>
+:EF
