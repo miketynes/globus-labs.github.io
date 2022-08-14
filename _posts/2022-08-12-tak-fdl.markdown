@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Tak's project places top 3 in FDL competition"
+date: 2022-08-12 17:00:00 -0700
+type: award
+---
+Tak and his colleagues win the Unexpected Discovery award (one of the top 3 awards!)
+at the [Frontier Development Lab](https://frontierdevelopmentlab.org/) 2022 live showcase for their work on environmental remediation. Congrats Tak 🎉 !
