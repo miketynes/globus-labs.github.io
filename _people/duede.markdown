@@ -1,6 +1,6 @@
 ---
 title: "Eamon Duede"
-image: "eamon.jpeg"
+image: "eamon.jpg"
 position: "Affiliated Researcher"
 department: "Department of Philosophy"
 institution: "University of Chicago"
