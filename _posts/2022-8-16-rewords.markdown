@@ -1,0 +1,9 @@
+---
+layout: news
+title: Paper accepted to rewords
+date:  2022-8-16 13:26:00 -0700
+type: paper
+published: true
+---
+
+Jim and Ian (in collaboration with Justin Wozniak) had a paper accepted to the ReWords workshop at eScience.
