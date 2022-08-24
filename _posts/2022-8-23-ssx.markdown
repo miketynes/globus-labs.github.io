@@ -1,0 +1,9 @@
+---
+layout: news
+title: Gladier SSX paper 
+date:  2022-8-23 13:26:00 -0700
+type: paper
+published: true
+---
+
+Ryan,  Raf, and Ian contributed to a paper ["Fixed-target serial crystallography at the Structural Biology Center"](https://onlinelibrary.wiley.com/doi/abs/10.1107/S1600577522007895)
