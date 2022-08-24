@@ -1,0 +1,9 @@
+---
+layout: news
+title: Paper on rural AI accepted to IEEE Internet computing
+date:  2022-8-23 13:26:00 -0700
+type: paper
+published: true
+---
+
+Matt's paper on "Rural AI: Serverless-Powered Federated Learning for Remote Applications" was accepted to IEEE Internet Computing
