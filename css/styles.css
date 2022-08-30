@@ -228,8 +228,12 @@ blockquote:before {
 /************************
   Header
 ************************/
-header#masthead {
+header#masthead,
+.navbar {
     background-color: #27518F;
+}
+#navbarNav {
+  background-color: #27518F;
 }
 header#masthead .navbar-brand {
     height: auto;
