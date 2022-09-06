@@ -1,5 +1,38 @@
 ---
 layout: default
 ---
-      <h1>{{ page.title }}</h1>
-          {{ content }}
+
+{% assign github_link = page.github | strip | strip_newlines %}
+{% assign website_link = page.website | strip | strip_newlines %}
+
+<div class="row">
+    <div class="col-md-3">
+        <img src="../images/projects/{{ page.image }}" class="img-responsive">
+        <h4>Links</h4>
+        <ul>
+            {% if github_link != "" %}
+            <li><a href="{{ github_link }}">GitHub</a></li>
+            {% endif %}
+            {% if website_link != "" %}
+            <li><a href="{{ website_link }}">Website</a></li>
+            {% endif %}
+        </ul>
+        <h4>People</h4>
+        <ul>
+            {% for p in page.people %}
+            <li>{{ p }}</li>
+            {% endfor %}
+        </ul>
+        <h4>Tags</h4>
+        <ul>
+            {% for t in page.tags %}
+            <li>{{ t }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="col-md-9">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+    </div>
+</div>
