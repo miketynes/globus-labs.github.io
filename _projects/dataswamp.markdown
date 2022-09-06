@@ -2,9 +2,12 @@
 layout: project
 title:  "Xtract"
 image: "xtract_mania.png"
-featured: false
+people: ["Tyler Skluzacek", "Kyle Chard", "Ian Foster"]
+tags: ["Cloud and Edge Computing", "Data Accessibility"]
 teaser: "Metadata Extraction for Everyone"
-description: "Leveraging FaaS to extract metadata from large, distributed, and complex data sets"
+github: "https://github.com/xtracthub"
+website:
+active: false
 ---
 
 The rapid generation of data from distributed IoT devices, scientific instruments, and compute clusters presents unique data management challenges. The influx of large, 
@@ -17,14 +20,12 @@ In our most recent paper "A Serverless Framework for Automated Bulk Metadata Ext
 extraction workflows for data stored in the Materials Data Facility at Argonne National Lab. We showed that we could scalably process over 2.2 million files
 in under 6 hours by using supercomputing resources. 
 
-Publications
-
+#### Publications
 - A Serverless Framework for Automated Bulk Metadata Extraction (link coming soon!)
 - [Serverless Workflows for Indexing Large Scientific Data](https://labs.globus.org/pubs/skluzacek_wosc.pdf). WoSC, 2019.
 - [Skluma: A Statistical Learning Pipeline for Taming Unkempt Data Repositories](https://www.researchgate.net/publication/317352352_Skluma_A_Statistical_Learning_Pipeline_for_Taming_Unkempt_Data_Repositories). SSDBM, 2017.
 
-Acknowledgements
-
+#### Funding and Acknowledgements
 We gratefully acknowledge the computing resources provided and 
 operated by the Research Computing Center at the University of 
 Chicago; and the Joint Laboratory for System Evaluation (JLSE) and 
