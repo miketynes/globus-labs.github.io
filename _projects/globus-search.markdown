@@ -5,6 +5,7 @@ image: "search.png"
 teaser: "We are developing methods to index large amounts of scientific data distributed over heterogeneous storage systems"
 featured: false
 description: "Vast quantities of scientific data are distributed across storage systems and data repositories. We are developing methods to crawl, extract metadata from, and index those data."
+active: false
 ---
 The changing landscape of science has created a world in which
 significant amounts of scientific data is now distributed across a 
@@ -29,5 +30,3 @@ within different formations, developing techniques to
 index this metadata both securely and flexibly using 
 typed metadata, and designing approaches for keeping 
 our index in sync with frequently changing data.
-
-        
