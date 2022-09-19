@@ -3,69 +3,139 @@ layout: default
 title: Globus Labs
 ---
 
-
-<div class="jumbotron" style="background-image: url('images/home/facebook-image.jpg'); background-size: cover;">
-    <font color="white">
-        <p style="font-size:30px">Making all research data accessible, discoverable, and usable</p>
-    </font>
-    <p></p>
-</div>
-<div class="row">
-    <div class="col-xs-12">
-        <p>Globus Labs is a research group led by Prof. Ian Foster and Dr. Kyle Chard that spans the <a
-                href="https://www.cs.uchicago.edu/">Department of Computer Science</a> at the University of Chicago and the <a
-                href="https://www.anl.gov/dsl">Data Science and Learning Division</a> at Argonne National Laboratory.
-            Our modest goal is to realize a world in which <strong>all research data are
-                reliably, rapidly, and securely accessible, discoverable, and usable</strong>. To this end, we work on a
-            broad range of research problems in data-intensive computing and research data management. Our work is made
-            possible by much-appreciated support from the National Science Foundation, National Institutes of Health,
-            Department of Energy, National Institute of Standards and Technology, and other sources, and in addition to
-            computer science, engages fields as diverse as materials science, biology, archaeology, climate policy, and
-            social sciences. We work closely with the team developing the <a href="https://www.globus.org">Globus
-                research data management platform</a>, who often challenge us to think bigger&mdash;and sometimes
-            implement our less crazy ideas.
-        </p>
-    </div>
-</div>
-<hr>
-
-<h4>FEATURED PROJECTS</h4>
-<div class="row">
-    {% for project in site.projects %}
-    {% if project.featured %}
-    <div class="col-xs-4">
-        <a href="{{ project.url }}"><img class="img-responsive" src="images/projects/{{ project.image }}"></a>
-        <p>{{ project.teaser }}</p>
-    </div>
-    {% endif %}
+<!-- 
+  START of Carousel
+-->
+{% assign carouselItems = site.carousel | sort: 'order' %}
+<div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+  
+  <!-- Creates the slide indicators at the bottom of the carousel. -->
+  <div class="carousel-indicators">
+    {% for item in carouselItems %}
+      {% assign loopIndex = forloop.index %}
+      {% if loopIndex == 1 %}
+        <button type="button" data-bs-target="#homeCarousel" 
+                data-bs-slide-to="{{ loopIndex | minus: 1 }}" class="active" aria-current="true" 
+                aria-label="Slide {{ loopIndex }}"></button>
+      {% else %}
+        <button type="button" data-bs-target="#homeCarousel" 
+                data-bs-slide-to="{{ loopIndex | minus: 1 }}" aria-label="Slide {{ loopIndex }}"></button>
+      {% endif %}
     {% endfor %}
-</div>
+  </div>
 
-<hr>
-<h4>RECENT NEWS</h4>
-<div class="row news">
-    {% for post in site.posts limit:4 %}
-    <div class="col-xs-3">
-        <div class="center-block">
-            <div class="glyphicon-circle">
-                {% if post.type == "award" %}
-                <span class="glyphicon glyphicon-glass"></span>
-                {% elsif post.type == "paper" %}
-                <span class="glyphicon glyphicon-duplicate"></span>
-                {% elsif post.type == "presentation" %}
-                <span class="glyphicon glyphicon-blackboard"></span>
-                {% elsif post.type == "join" %}
-                <span class="glyphicon glyphicon-user"></span>
-                {% endif %}
-            </div>
+  <!-- 
+    This initializes the carousel slides (which are provided as Markdown files in `_carousel` directory). 
+  -->
+  <div class="carousel-inner">
+    {% assign firstItem = true %}
+    {% for item in carouselItems %}
+      
+      {% if firstItem == true %}
+      <div class="carousel-parent carousel-item text-center active">
+      {% else %}
+      <div class="carousel-parent carousel-item text-center">
+      {% endif %}
+
+        <div class="carousel-bg" style="background-image: url('/images/carousel/{{ item.image }}');"></div>
+        <div class="carousel-content">
+          <img src="/images/carousel/{{ item.image }}" class="img-fluid carousel-img">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="carousel-text">{{ item.title }}</h5>
+            <p class="carousel-text">{{ item.caption }}</p>
+          </div>
         </div>
-        <p>{{ post.content }}</p>
-    </div>
+        
+      </div>
+      {% assign firstItem = false %}
+    {% endfor %}
+  </div>
+
+  <!-- 
+    Next/Previous slide buttons. 
+  -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
+<!-- 
+  END of Carousel 
+-->
+
+
+<div class="row mt-3">
+  <div class="col">
+    <p class="lh-base">Globus Labs is a research group led by Prof. Ian Foster and Dr. Kyle Chard that spans the 
+      <a href="https://www.cs.uchicago.edu/">Department of Computer Science</a> at the University 
+      of Chicago and the <a href="https://www.anl.gov/dsl">Data Science and Learning Division</a> 
+      at Argonne National Laboratory. Our modest goal is to realize a world in which <strong>all 
+        research data are reliably, rapidly, and securely accessible, discoverable, and usable</strong>. 
+        To this end, we work on a broad range of research problems in data-intensive computing and research 
+        data management. Our work is made possible by much-appreciated support from the National Science 
+        Foundation, National Institutes of Health, Department of Energy, National Institute of Standards 
+        and Technology, and other sources, and in addition to computer science, engages fields as diverse 
+        as materials science, biology, archaeology, climate policy, and social sciences. We work closely 
+        with the team developing the <a href="https://www.globus.org">Globus research data management platform</a>, 
+        who often challenge us to think bigger&mdash;and sometimes implement our less crazy ideas.
+    </p>
+  </div>
+</div>
+<hr>
+
+
+<h4 class="text-uppercase">Featured Projects</h4>
+<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+    {% for project in site.projects %}
+      {% if project.featured %}
+        <a href="{{ project.url }}" class="text-reset text-decoration-none">
+          <div class="card project-card">
+              <div class="card-body">
+                  <img class="img-responsive" src="images/projects/{{ project.image }}"
+                      style="max-height: 100px;">
+                  <p class="mt-2 link">
+                      <span class="name">{{ project.title }}</span> <br>
+                      {{ project.teaser }}
+                  </p> 
+              </div>
+          </div>
+        </a>
+      {% endif %}
     {% endfor %}
 </div>
 
+
 <hr>
-<h4>RECENT BLOG POSTS</h4>
+<h4 class="text-uppercase">Recent News</h4>
+<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
+  {% for post in site.posts limit:4 %}
+    <div class="card border-0 text-center">
+      <div class="card-body">
+        <!-- <div class="glyphicon-circle"> -->
+          {% if post.type == 'award' %}
+            <i class="bi bi-award-fill icon-circle"></i>
+          {% elsif post.type == 'paper' %}
+            <i class="bi bi-file-text-fill icon-circle"></i>
+          {% elsif post.type == 'presentation' %}
+            <i class="bi bi-easel2-fill icon-circle"></i>
+          {% elsif post.type == 'join' %}
+            <i class="bi bi-person-plus-fill icon-circle"></i>
+          {% endif %}
+        <!-- </div> -->
+        <p>{{ post.content }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+<hr>
+<h4 class="text-uppercase">Recent Blog Posts</h4>
 <div class="row news">
     {% for blog in site.blog limit:4 %}
     <div class="col-xs-3">
