@@ -3,65 +3,85 @@ layout: default
 title: People
 ---
 
-<h1>People</h1>
 
+<h1 class="mb-3">People</h1>
+<div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 {% assign people = site.people | sort: 'ranking' %}
-{% assign peopleRowsEnded = 0 %}
-
 {% for person in people %}
-{% assign loopindex = forloop.index | modulo: 2 %}
+    
+    <div class="col">
+        <div class="contact-card card bg-light mb-3 shadow-sm">
+            <div class="card-header bg-light text-center mt-1">
+                <h5 class="m-b-xs fancy-header-darker"><strong>{{ person.title }}</strong></h5>
+            </div>
 
-<!-- Start the people row here if the condition is met. -->
-{% if loopindex == 1 %}
-<div class="row">
-{% endif %}
+            <div class="card-body text-center p-0">
+                
+                <!-- Get the background image URL. -->
+                {% if person.image and person.image != "" %}
+                    {% assign img_url = "/images/people/" | append: person.image %}
+                {% else %}
+                    {% assign img_url = "/images/people/generic-globus.png" %}
+                {% endif %}
 
-    <div class="col-xs-12 col-sm-6 member">
-        <img src="images/people/{{ person.image }}" class="img-responsive" style="max-width: 225px;">
-        <div class="member-info">
-            <p><span class="name">{{ person.title }}</span><br>
-                <span class="position">{{ person.position }}</span><br>
-                {{ person.department }}<br>
-                {{ person.institution }}</p>
-            {% if person.google_scholar != "" %}
-                <p>
+                <!-- Check if the `img_url` exists or not. -->
+                {% assign img_exists = site.static_files | where: "path", img_url | first %}
+                {% if img_exists == nil %}
+                    {% assign img_url = "/images/people/generic-globus.png" %}
+                {% endif %}
+
+                <div class="contact-card-img-bg-parent">
+                    <div class="contact-card-img-bg bg-secondary mb-2" 
+                         style="background-image: url('{{ img_url }}');"></div>
+                    <div class="contact-card-img rounded-circle border border-2 zoom-1_1" 
+                         style="background-image: url('{{ img_url }}');"></div>
+                </div>
+
+                <div class="contact-card-text mt-3 bg-light p-3">
+                    <div class="font-bold"><strong>{{ person.position }}</strong></div>
+                    <address class="m-t-md">
+                        <small>
+                            {{ person.department }}  <br>
+                            {{ person.institution }}
+                        </small>
+                    </address>
+                </div>
+
+                <div class="d-flex justify-content-around mb-2">
+                    {% assign contact_link_class = "contact-link link-dark zoom-1_25" %}
                     {% if person.email %}
-                        <a href="mailto:{{ person.email }}" target="_blank"><i class="fa-solid fa-envelope fa-1x"></i></a>
+                        <a href="mailto:{{ person.email }}" class="{{ contact_link_class }}" target="_blank">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
                     {% endif %}
                     {% if person.google_scholar %}
-                        <a href="{{ person.google_scholar }}" target="_blank"><i class="ai ai-google-scholar ai-1x"></i></a>
+                        <a href="{{ person.google_scholar }}" class="{{ contact_link_class }}" target="_blank">
+                            <i class="ai ai-google-scholar ai-1x"></i>
+                        </a>
                     {% endif %}
                     {% if person.linkedin %}
-                        <a href="{{ person.linkedin }}" target="_blank"><i class="fa-brands fa-linkedin fa-1x"></i></a>
+                        <a href="{{ person.linkedin }}" class="{{ contact_link_class }}" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
                     {% endif %}
                     {% if person.orcid %}
-                        <a href="{{ person.orcid }}" target="_blank"><i class="ai ai-orcid ai-1x"></i></a>
+                        <a href="{{ person.orcid }}" class="{{ contact_link_class }}" target="_blank">
+                            <i class="ai ai-orcid ai-1x"></i>
+                        </a>
                     {% endif %}
                     {% if person.web %}
-                        <a href="{{ person.web }}" target="_blank"><i class="fa-solid fa-link fa-1x"></i></a>
+                        <a href="{{ person.web }}" class="contact-link link-dark zoom-1_25" target="_blank">
+                            <i class="bi bi-link-45deg"></i>
+                        </a>
                     {% endif %}
-                </p>
-            {% endif %}
+                </div>
+    
+            </div>
         </div>
     </div>
 
-<!-- Is this the end of the "row" div. If so, place an ending tag here. -->
-{% if loopindex == 0 %}
-</div>
-{% endif %}
-
 {% endfor %}
-
-{% assign val = people.size | modulo: 2 %}
-{% if val == 0 %}
-    </div>
-    {% assign peopleRowsEnded = 1 %}
-{% endif %}
-
-{% if peopleRowsEnded == 0 %}
-    </div>
-{% endif %}
-
+</div>
 
 
 <h1>Alumni</h1>
@@ -91,14 +111,11 @@ title: People
 </ul>
 
 
-
 <h1>Former Research Assistants</h1>
 Dozens of talented high school, undergraduate, and graduate students have contributed to
 research in our group. Information about part-time research positions is available <a href='join.html'>here</a>.
 The following is a partial list of students who have worked with
 us over the last few years (we're working to complete the list so please let us know if we missed your name).
-
-
 <ul>
     <li><a href="https://www.linkedin.com/in/ethan-schondorf-4a67951b7">Ethan Schondorf</a> Ph.D., University of
         Wisconsin-Madison</li>

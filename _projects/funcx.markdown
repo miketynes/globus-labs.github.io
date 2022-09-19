@@ -4,6 +4,10 @@ title:  "funcX"
 image: "funcx-logo.png"
 teaser: "funcX is a Function as a Service platform for scientific computing."
 featured: true
+github: "https://github.com/funcx-faas/funcX"
+website: "https://funcx.org"
+hashtags: ["FaaS", "Serverless"]
+people: ["Ryan Chard", "Yadu Nand Babuji", "Kyle Chard", "Ben Blaiszik", "Logan Ward", "Ian Foster"]
 description: "funcX is a Function as a Service (FaaS) platform for science. It is designed to be applied to existing cyberinfrastructures to provide scalable, secure, and on-demand execution of short duration scientific functions."
 ---
 
@@ -21,15 +25,14 @@ We have developed a prototype implementation of funcX and applied it to a range 
 Try it out at:
 [https://funcx.org](https://funcx.org)
 
-Further reading
+#### Further reading
 - Chard, Ryan, Babuji, Yadu, Li, Zhuozhao, Skluzacek, Tyler, Woodard, Anna, Blaiszik, Ben, Foster, Ian and Chard, Kyle. "FuncX: A Federated Function Serving Fabric for Science." Proceedings of the 29th International Symposium on High-Performance Parallel and Distributed Computing. pp 65–76. 2020.K. 
 - Chard and I. Foster. "Serverless Science for Simple, Scalable, and Shareable Scholarship." 15th International Conference on eScience (eScience). pp 432-438. 2019.
 - Ryan Chard, Tyler J. Skluzacek, Zhuozhao Li, Yadu Babuji, Anna Woodard, Ben Blaiszik, Steven Tuecke, Ian Foster and Kyle Chard. "Serverless Supercomputing: High Performance Function as a Service for Science." . 2019.
 - Skluzacek, Tyler J., Chard, Ryan, Wong, Ryan, Li, Zhuozhao, Babuji, Yadu N., Ward, Logan, Blaiszik, Ben, Chard, Kyle and Foster, Ian. "Serverless Workflows for Indexing Large Scientific Data." Proceedings of the 5th International Workshop on Serverless Computing. pp 43–48. 2019.
 - Anna Elizabeth Woodard, Ana Trisovic, Zhuozhao Li, Yadu Babuji, Ryan Chard, Tyler Skluzacek, Ben Blaiszik, Daniel S. Katz, Ian Foster and Kyle Chard. "Real-time HEP analysis with funcX, a high-performance platform for function as a service." EPJ Web of Conferences. 245. pp 07046. 2020.
 
-Funding
-
+#### Funding
 funcX is supported by NSF 2004894/2004932 and an Argonne Lab Directed Research and Development award.
 
 

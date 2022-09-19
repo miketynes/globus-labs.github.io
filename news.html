@@ -4,24 +4,35 @@ title: News
 ---
 <h1>News</h1>
 
-{% for n in site.posts %}
 <div class="row">
-    <div class="col-xs-1">
-        <div class="glyphicon-circle pull-right">
-        {% if n.type == "award" %}
-            <span class="glyphicon glyphicon-glass"></span>
-        {% elsif n.type == "paper" %}
-            <span class="glyphicon glyphicon-duplicate"></span>
-        {% elsif n.type == "presentation" %}
-            <span class="glyphicon glyphicon-blackboard"></span>
-        {% elsif n.type == "join" %}
-            <span class="glyphicon glyphicon-user"></span>
-        {% endif %}
-        </div>
-    </div>
-    <div class="col-xs-11 news-info">
-        <p>{{ n.content | remove: '<p>' | remove: '</p>' }} [{{ n.date | date: '%B %d, %Y' | remove: '<p>' | remove: '</p>'  }}]</p>
-    </div>
-    </div>
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Date</th>
+                <th scope="col">News</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for post in site.posts %}
+                <tr>
+                    <td class="text-center">
+                        {% if post.type == 'award' %}
+                            <i class="bi bi-award-fill icon"></i>
+                        {% elsif post.type == 'paper' %}
+                            <i class="bi bi-file-text-fill icon"></i>
+                        {% elsif post.type == 'presentation' %}
+                            <i class="bi bi-easel2-fill icon"></i>
+                        {% elsif post.type == 'join' %}
+                            <i class="bi bi-person-plus-fill icon"></i>
+                        {% endif %}
+                    </td>
+                    <td>{{ post.date | date: '%b.&nbsp;%d,&nbsp;%Y' }}</td>
+                    <td style="word-wrap: break-word;">
+                        {{ post.content }}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </div>
-{% endfor %}

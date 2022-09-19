@@ -29,6 +29,8 @@ collections:
     output: true
   publications:
     output: false
+  carousel:
+    output: false
 # Build settings
 
 # Jekyll 3 now only supports Kramdown for Markdown
