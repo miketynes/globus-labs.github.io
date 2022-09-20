@@ -13,7 +13,7 @@ image: "proxystore.png"
 people: ["Greg Pauloski", "Valerie Hayot-Sasson", "Kyle Chard", "Ian Foster"]
 
 [comment]: # List of project tags. Remove all that do not apply
-tags: [
+hashtags: [
     "Cloud and Edge Computing",
     "Compute Frameworks",
 ]
