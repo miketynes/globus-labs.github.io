@@ -8,7 +8,7 @@ image: "info-extraction.png"
 
 people: ["Zhi Hong", "Aswathy Ajith", "Greg Pauloski", "Eamon Duede", "Kyle Chard", "Ian Foster"]
 
-tags: [
+hashtags: [
     "Machine Learning",
     "Materials Science"
 ]
