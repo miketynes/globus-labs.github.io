@@ -13,7 +13,7 @@ image: "TODO.jpg"
 people: ["TODO", "Kyle Chard", "Ian Foster"]
 
 [comment]: # List of project tags. Remove all that do not apply
-tags: [
+hashtags: [
     "Machine Learning",
     "Cloud and Edge Computing",
     "Materials Science",
