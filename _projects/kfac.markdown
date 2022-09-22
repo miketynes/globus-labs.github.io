@@ -3,7 +3,7 @@ layout: project
 title: "KAISA: Scalable Second-Order Deep Neural Network Training"
 image: "kfac.png"
 people: ["Greg Pauloski", "Zhao Zhang", "Kyle Chard", "Ian Foster"]
-tags: [
+hashtags: [
     "Machine Learning",
 ]
 github: "https://github.com/gpauloski/kfac-pytorch"
