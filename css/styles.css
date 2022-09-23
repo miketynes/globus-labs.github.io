@@ -243,12 +243,15 @@ header#masthead,
 #navbarNav {
     background-color: var(--globus-blue);
     color: #fff;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 #navbarNav .nav-link {
   color: #fff;
+  margin-right: 15px;
 }
 .nav-link {
-  margin-right: 10px;
+  padding: 10px;
 }
 .nav-link:hover {
   -webkit-box-shadow:inset 0px 0px 0px 10px rgba(255, 255, 255, 0.25);
