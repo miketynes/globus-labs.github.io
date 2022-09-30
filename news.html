@@ -3,38 +3,38 @@ layout: default
 title: News
 ---
 <h1>News</h1>
-
-<p>Here is a list of news items related to Globus Labs. For more timely updates, please follow us on <a href="https://www.twitter.com/LabsGlobus" target="_blank">Twitter <i class="bi bi-twitter"></i></a>.</p>
-
-<div class="row">
-    <table class="table table-borderless">
-        <thead>
-            <tr>
-                <th scope="col"></th>
-                <th scope="col">Date</th>
-                <th scope="col">News</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for post in site.posts %}
-                <tr>
-                    <td class="text-center">
-                        {% if post.type == 'award' %}
-                            <i class="bi bi-award-fill icon"></i>
-                        {% elsif post.type == 'paper' %}
-                            <i class="bi bi-file-text-fill icon"></i>
-                        {% elsif post.type == 'presentation' %}
-                            <i class="bi bi-easel2-fill icon"></i>
-                        {% elsif post.type == 'join' %}
-                            <i class="bi bi-person-plus-fill icon"></i>
-                        {% endif %}
-                    </td>
-                    <td>{{ post.date | date: '%b.&nbsp;%d,&nbsp;%Y' }}</td>
-                    <td style="word-wrap: break-word;">
-                        {{ post.content }}
-                    </td>
-                </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+<div class="row mb-5">
+    <div class="col">
+        <p>Here is a list of news items related to Globus Labs. For more timely updates, please follow us on <a href="https://www.twitter.com/LabsGlobus" target="_blank">Twitter <i class="bi bi-twitter"></i></a>.</p>
+    </div>
 </div>
+
+{% for post in site.posts %}
+    {% if forloop.last == false %}
+        {% assign borderClass = "border-bottom" %}
+    {% else %}
+        {% assign borderClass = "" %}
+    {% endif %}
+    <div class="row {{ borderClass }} mb-3">
+        <div class="col-md-2">
+            <p>
+                {% if post.type == 'award' %}
+                    <i class="bi bi-award icon"></i>
+                {% elsif post.type == 'paper' %}
+                    <i class="bi bi-file-text icon"></i>
+                {% elsif post.type == 'presentation' %}
+                    <i class="bi bi-easel2 icon"></i>
+                {% elsif post.type == 'join' %}
+                    <i class="bi bi-person-plus icon"></i>
+                {% else %}
+                    <i class="bi bi-newspaper icon"></i>
+                {% endif %}
+                <span class="mr-3">&nbsp;</span>
+                {{ post.date | date: '%b.&nbsp;%d,&nbsp;%Y' }}
+            </p>
+        </div>
+        <div class="col-md-10 news-post">
+            {{ post.content }}
+        </div>
+    </div>
+{% endfor %}
