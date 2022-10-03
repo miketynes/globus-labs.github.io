@@ -11,7 +11,7 @@ description: Automation of classificaiton of fluffy "cloud" in the air identify 
 ---
 
 Clouds represent the single largest uncertainty in projections of future climate change.
-Their multi-scale nature means that even state-of-the-art numerical climate simulations cannot reliably project how their distribution, frequency, and properties will alter under high-$CO^2$~ conditions.
+Their multi-scale nature means that even state-of-the-art numerical climate simulations cannot reliably project how their distribution, frequency, and properties will alter under high-$CO^2$ conditions.
 Observational data may therefore be key to understanding cloud behavior, but the information contained in decades and petabytes of multispectral cloud imagery from satellite instruments has received only limited use.
 Recent advances in artificial intelligence (AI) now allow tapping this underutilized resource to improve understanding of cloud dynamics and feedbacks.
 A core requirement for analysis of cloud images is *dimension reduction*: dividing a complex high-resolution spatial field into a more limited set of categories. 
