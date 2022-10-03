@@ -71,6 +71,7 @@ a {
   position: relative;
   height: var(--contact-img-space-height);
   width: 100%;
+  overflow: hidden;
 }
 
 .contact-card-img-bg {
@@ -91,7 +92,8 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+  /* overflow: hidden;
+  -moz-overflow:hidden */
 }
 
 .contact-card-img-bg::before {
