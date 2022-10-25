@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: "Kyle Presented at NSDF"
 date: 2022-10-24 11:03:53 -0700
-type: 
+type: "presentation"
 ---
 
 Kyle presented "Globus: A Platform for Global Data Management" at the [NSDF meeting](https://nationalsciencedatafabric.org/nsdf-ahm-2022).

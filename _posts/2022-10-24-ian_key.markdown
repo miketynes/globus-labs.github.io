@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: "Ian Keynote at eResearch Australia"
 date: 2022-10-24 11:03:53 -0700
-type: 
+type: "presentation"
 ---
 
 Ian delivered the keynote at eResearch Australia on the new [Patterns paper](https://doi.org/10.1016/j.patter.2022.100606)!
