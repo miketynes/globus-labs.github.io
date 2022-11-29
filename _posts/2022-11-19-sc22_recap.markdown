@@ -1,0 +1,9 @@
+---
+layout: news
+title: GLabs at SC22
+date:  2022-11-19 13:26:00 -0700
+type: presentation
+published: true
+---
+
+[Globus](https://www.globus.org/) and Glabs had a great week at SC22 in Dallas! You can check out all of our talks, papers, and panels [here](https://www.globus.org/events/sc22).

@@ -1,0 +1,9 @@
+---
+layout: news
+title: Tak's paper accepted to MDPI Remote Sensing
+date:  2022-11-03 13:26:00 -0700
+type: paper
+published: true
+---
+
+Tak's paper "AICCA: AI-driven Cloud Classification Atlas" was accepted in [MDPI, Remote Sensing](https://www.mdpi.com/journal/remotesensing)! A preprint is available [on arXiv](https://arxiv.org/pdf/2209.15096.pdf).
