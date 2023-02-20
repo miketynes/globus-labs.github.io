@@ -1,0 +1,8 @@
+---
+layout: post
+title: Parsl selected for CZI funding
+date: 2022-11-10 11:03:53 -0700
+type: award
+---
+
+[Parsl](https://parsl-project.org/) was [selected](https://chanzuckerberg.com/eoss/proposals/sustaining-parsl-enabling-extreme-scale-biomedicine/) by the [Chan-Zuckerberg Initiative](https://chanzuckerberg.com/) for funding to support essential open source software for science!
