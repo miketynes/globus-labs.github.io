@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Matt Paper Presentation eScience"
+date: 2022-10-24 11:03:53 -0700
+type: "presentation"
+---
+
+Matt presented his paper "FLoX: Federated Learning with FaaS at the Edge" at [eScience 2022](https://www.escience-conference.org/2022).

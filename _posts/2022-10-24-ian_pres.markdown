@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Ian Presented at ESnet6"
+date: 2022-10-24 11:03:53 -0700
+type: "presentation"
+---
+
+Ian [presented](https://www.slideshare.net/ssuser6a41e4/esnet6-and-smart-instruments) at [ESnet6 launch event](https://www.hpcwire.com/2022/10/11/esnet6-launches-heralding-a-new-era-in-scientific-networking/) on “How ESnet6 enables new smart instruments for21st Century science”.
