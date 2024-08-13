@@ -7,26 +7,33 @@ featured: false
 description: "Cloud platforms are increasingly relied upon to conduct large scale science. However, the method by which infrastructure is provisioned and managed are ad hoc. We are developing new methods to profile application performance, predict cloud market conditions, and automate provisioning decisions."
 ---
 
-Cloud computing has the potential to revolutionize scientific computing, much as it has transformed
-enterprise information technology. By providing an elastically scalable pool of computing resources
-that can be provisioned on demand or automatically, cloud computing can allow any researcher to perform even the largest
-data analyses. Yet cloud computing is no panacea in its current form. First, it requires significant technical
-knowledge to efficiently provision and manage cloud resources. Second, it can easily become expensive,
-even when resource provisioning systems automatically provision and release resources as needed.
+The Computing Continuum is the idea that increasingly fast networks enable substantial access to distributed compute resources, including the cloud, 
+high performance computers (HPC), and the edge. Fluid computing across the continuum allows scientists and users to best utilize the resources that they 
+have access to by pushing compute tasks to all resources rather than just one at a time. While novel methods and technologies have put this dream within reach,
+substantial hurdles are still necessary to cross in order to put this in the hands of of compute users everywhere.
 
-The Scalable Cost-Aware Cloud Infrastructure Management and Provisioning (SCRIMP) project aims to address
-these challenges by developing new, more efficient cloud provisioning methods and integrating these
-new methods into automated cloud and HPC access tools. In so doing, the project will improve the complexity, cost,
-and efficiency of leveraging cloud computing platforms by an order of magnitude or more. 
+The Scalable Cost-Aware Cloud Infrastructure Management and Provisioning (SCRIMP) project aimed to address these challenges by developing new, more efficient cloud provisioning methods and integrating these new methods into automated cloud and HPC access tools. Now, the Distributed Execution of Lambdas with Tradeoff Analysis (DELTA) project encompasses the cloud-specific methodologies developed through SCRIMP along with cutting edge techniques using serverless computing to push compute everywhere in the computing continuum.
 
 Our research focuses on four core areas:
-(1) developing new cloud profiling models that can efficiently predict application performance (execution
-time, accuracy, and resource usage) across heterogeneous environments; 
-(2) exploring cloud pricing and performance modeling to support provisioning of volatile instances at low cost 
-and with low risk; and 
+(1) developing profiling methods to characterize workload execution characteristics;
+(2) exploring tradeoffs in computational cost across computing resources, from cloud to edge, in order to inform intelligent resource selection; and 
 (3) creating an automated cost-aware provisioning service using serverless infrastructure to deploy tasks on diverse computing resources based on time, monetary, and service cost constraints. 
 
 Further reading
+
+- N. Hudson, H. Khamfroush, M. Baughman, D.E. Lucani, K. Chard, I. Foster, "QoS-aware edge AI placement and scheduling with multiple implementations in FaaS-based edge computing". Future Generation Computer Systems, 2024.
+
+- R. Ananthakrishnan, Y. Babuji, M. Baughman, J. Bryan, K. Chard, R. Chard, B. Clifford, I. Foster, D. Katz, K. Hunter Kesling, C. Janidlo, R. Mello, L. Wang, "Enabling Remote Management of FaaS Endpoints with Globus Compute Multi-User Endpoints". PEARC, 2024.
+
+- M. Baughman, N. Hudson, I. Foster, K. Chard, "Balancing Federated Learning Trade-Offs for Heterogeneous Environments". PerCom, 2023.
+
+- S. Caton, M. Baughman, C. Haas, R. Chard, I. Foster, K. Chard, "Assessing the Current State of AWS Spot Market Forecastability". SuperCompCloud, 2022.
+
+- M. Baughman, I. Foster, K. Chard "Exploring tradeoffs in federated learning on serverless computing architectures". eScience, 2022.
+
+- O. Almurshed, P. Patros, V. Huang, M. Mayo, M. Ooi, R. Chard, K. Chard, O. Rana, H. Nagra, M. Baughman, I. Foster, "Adaptive edge-cloud environments for rural AI". International Conference on Services Computing, 2022.
+
+- M. Baughman, I. Foster, K. Chard, "Enhancing Automated FaaS with Cost-aware Provisioning of Cloud Resources". eScience, 2021.
 
 - M. Baughman, R. Kumar, I. Foster, K. Chard, "Expanding Cost-Aware Function Execution with Multidimensional Notions of Cost". 1st Workshop on High Performance Serverless Computing. 2021.
 
