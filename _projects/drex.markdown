@@ -27,7 +27,7 @@ website: ""
 teaser: "Algorithms and models for fast, reliable data storage using erasure coding with heterogeneous storage nodes"
 
 [comment]: # Set to false if the project is no longer maintained
-active: false
+active: true
 
 ---
 
