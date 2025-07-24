@@ -37,8 +37,8 @@ Accurately predicting water levels is one of the most important tasks for monito
 by monitoring stations deployed by the National Oceanographic and Atmospheric Administration (NOAA) and the United States Geological Survey (USGS). These two organizations deploy the 
 majority of US-based water level sensors in riverine and coastal environments.
 
-WaterMark establishes a benchmark for water level prediction using modern AI. We test a variety of neural network approaches to modeling the temporal and spatial components of these 
-sensor networks. Our goal is to improve predictions in these sensor networks, while developing novel methods to induce inductive biases in these spatio-temporal networks.
+WaterMark establishes a benchmark for water level prediction using modern AI methods. We evaluate a variety of neural network approaches to modeling the temporal and spatial components of these 
+sensor networks. Our goal is to improve predictions in these sensor networks, while developing novel methods to induce inductive biases in spatio-temporal networks.
 
 #### Publications
 <!-- List the full citations for each paper here with links to where to find it. -->
