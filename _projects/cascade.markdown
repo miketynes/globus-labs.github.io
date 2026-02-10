@@ -6,13 +6,13 @@ teaser: "Distributed on-the-fly learning for ML surrogates"
 featured: false
 description: "Cascade is a continual-learning tool for scientific simulations. 
 It uses distributed agents to run scientific simulations with ML surrogates, detect when these surrogates are likely to be unreliable, 
-generate new training data, fine-tune models, and retry simulations run under models flagged as unreliable"
+generate new training data, fine-tune models, and rerun untrusted simulation segments with updated models"
 ---
 
-Machine learning (ML) surrogates can accelerate scientific simulations by orders of magnitude by replacing expensive numerical subroutines with comparably cost-effective ML model evaluations, but concerns about their reliability remain active among scientists.
-Of particular concern is the possibility that a simulation will enter a state outside of the ML surrogate's training domain, leading to innacruate predictions.
-On-the-fly learning, wherein ML surrogates are continually monitored for accuracy and updated when inaccuracy is suspected, increases the reliability of ML-driven simulations
-Recent work from our group, Proxima, uses control-theory to ensure that simulation error meets a user-defined bound.
+Machine learning (ML) surrogates can accelerate scientific simulations by orders of magnitude by replacing expensive numerical subroutines with comparably cost-effective ML model evaluations, but concerns about their reliability remain active among scientists. 
+Of particular concern is the possibility that a simulation will enter a state outside of the ML surrogate's training domain, leading to innacurate predictions. 
+On-the-fly learning, wherein ML surrogates are continually monitored for accuracy and updated when inaccuracy is suspected, increases the reliability of ML-driven simulations. 
+Recent work from our group, Proxima, uses control-theory to ensure that simulation error meets a user-defined bound. 
 Cascade extends Proxima to a distributed setting to take full advantage of HPC resources.
 
 
