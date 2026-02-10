@@ -13,7 +13,7 @@ Machine learning (ML) surrogates can accelerate scientific simulations by orders
 Of particular concern is the possibility that a simulation will enter a state outside of the ML surrogate's training domain, leading to innacruate predictions.
 On-the-fly learning, wherein ML surrogates are continually monitored for accuracy and updated when inaccuracy is suspected, increases the reliability of ML-driven simulations
 Recent work from our group, Proxima, uses control-theory to ensure that simulation error meets a user-defined bound.
-Cascade extends Proxima to a distributed setting to take full advantage of HPC resources. \
+Cascade extends Proxima to a distributed setting to take full advantage of HPC resources.
 
 
 Implementations of Proxima and cascade can be found here
